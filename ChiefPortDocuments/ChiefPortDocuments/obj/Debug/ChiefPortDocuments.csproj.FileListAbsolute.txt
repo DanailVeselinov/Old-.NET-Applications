@@ -1,0 +1,81 @@
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.exe.config
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\MainWindow.baml
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\MainWindow.g.cs
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\App.g.cs
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments_MarkupCompile.cache
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.g.resources
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.Properties.Resources.resources
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.csproj.GenerateResource.Cache
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\TemplatedDocuments\ISPS\7. ISPS LETTER 3-10%.xls
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.exe
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.pdb
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.exe
+c:\users\eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.pdb
+C:\Users\Eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\TagsList
+C:\Users\Eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments_Content.g.cs
+C:\Users\Eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\TemplatedDocuments\1 BDWM.APP V. CARGO SAFETY OPERATION CHECKLIST.Rev13.doc
+C:\Users\Eddy\documents\visual studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\DocsList
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\BrowseFolder.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\BrowseFolder.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments_MarkupCompile.lref
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.application
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.application
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\FolderSelect.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\FolderSelect.g.cs
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.exe.config
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.exe
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.pdb
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\BrowseFolder.baml
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\FolderSelect.baml
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\BrowseFolder.g.cs
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\FolderSelect.g.cs
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\MainWindow.g.cs
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\App.g.cs
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments_Content.g.cs
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments_MarkupCompile.cache
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments_MarkupCompile.lref
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\DocsList
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\TagsList
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\TemplatedDocuments\1 BDWM.APP V. CARGO SAFETY OPERATION CHECKLIST.Rev13.doc
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\TemplatedDocuments\ISPS\7. ISPS LETTER 3-10%.xls
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.exe.manifest
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.application
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.exe
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.pdb
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\MainWindow.baml
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.g.resources
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.Properties.Resources.resources
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.csproj.GenerateResource.Cache
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.exe.manifest
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.application
+D:\Downloads\Programming\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.exe.config
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.exe
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.pdb
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\DocsList
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\TagsList
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\TemplatedDocuments\1 BDWM.APP V. CARGO SAFETY OPERATION CHECKLIST.Rev13.doc
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\TemplatedDocuments\ISPS\7. ISPS LETTER 3-10%.xls
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.application
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.exe
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\bin\Debug\ChiefPortDocuments.pdb
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\BrowseFolder.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\FolderSelect.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\BrowseFolder.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\FolderSelect.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\MainWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\App.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments_Content.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments_MarkupCompile.cache
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments_MarkupCompile.lref
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\MainWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.g.resources
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.Properties.Resources.resources
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.csproj.GenerateResource.Cache
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.application
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\ChiefPortDocuments\ChiefPortDocuments\obj\Debug\ChiefPortDocuments.csprojResolveAssemblyReference.cache

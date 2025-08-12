@@ -1,0 +1,90 @@
+﻿<Window x:Class="ChiefPortDocuments.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ChiefPortDocuments"
+        Title="Chief Officer Port Documents" Background="MediumBlue"  MaxHeight="700" MaxWidth="1200"  Closing="Window_Closing" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>            
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+    <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <Label Content="Select Printer" Foreground="White"/>
+                        <ComboBox Name="PrinterSelector" ItemsSource="{Binding}" HorizontalAlignment="Left" Width="250"/>
+                    </StackPanel>
+                    <Button Content="Print Selected" Click="Button_Click" IsDefault="True" Height="40" Width="150" Margin="10,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" >
+                
+        <StackPanel Orientation="Vertical" Margin="0,0,10,0">
+
+                        <Button Name="Add" Content="Add Tag" Click="Add_Click" Margin="0,10"/>
+                        <Button Name="Save" Content="Save Tags" Click="Save_Click" Margin="0,0,0,10"/>
+                        <Label Content="Tags" Foreground="White"/>
+                        <DataGrid Name="TagsGrid" ItemsSource="{DynamicResource ResourceKey='StoredTags'}" CanUserAddRows="True" AutoGenerateColumns="False" Margin="0,5,30,-5.2" CanUserDeleteRows="True" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxWidth="350" LostFocus="TagsGrid_LostFocus" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Value" Binding="{Binding Value}" CanUserReorder="False" MaxWidth="250"/>
+                    <DataGridTextColumn Header="Tag" Binding="{Binding Tag}" CanUserReorder="False" MinWidth="100"/>
+                </DataGrid.Columns>            
+            </DataGrid>
+
+            </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+            <TextBox x:Name="PathTBL" Visibility="Collapsed"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+                        <Button Content="Add Document" Click="Button_Click_Add" Margin="0,10"/>
+                        <Button Name="SaveDocs" Content="Save Documents" Click="SaveDocs_Click" Margin="0,0,0,10"/>
+                        <Label Content="Documents" Foreground="White"/>
+                        <ScrollViewer>
+                        <DataGrid x:Name="DocumentsGrid" ItemsSource="{DynamicResource ResourceKey='StoredDocuments'}" AllowDrop="True" Drop="DocumentsGrid_Drop" PreviewDragOver="DocumentsGrid_PreviewDragOver" CanUserAddRows="False" SelectionMode="Single" AutoGenerateColumns="False" ScrollViewer.CanContentScroll="True" LostFocus="DocumentsGrid_LostFocus">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="" IsReadOnly="False">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <ItemContainerTemplate>
+                                    <CheckBox Name="all" Content="all" Click="all_Click"/>
+                                </ItemContainerTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding Path=Sel, Mode=TwoWay,  UpdateSourceTrigger=PropertyChanged}" Click="CheckBox_Click" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <!--<DataGridCheckBoxColumn Binding="{Binding Sel,Mode=TwoWay}" Header="" IsReadOnly="False"/>-->
+                    <DataGridTemplateColumn SortDirection="Ascending" IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel HorizontalAlignment="Center">
+                                        <TextBlock Text="ᴧ" ToolTip="Click to change order" Width="5" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp_Up"/>
+                                    <TextBlock Text="{Binding SortOrder, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Visibility="Collapsed" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="v" ToolTip="Click to change order" Width="5" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp_Down"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                        <DataGridTextColumn Header="Last Print" Binding="{Binding LastPrinted, Mode=OneWay, NotifyOnSourceUpdated=True}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Nick" IsReadOnly="False" Binding="{Binding NickName, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"/>
+                        <DataGridTextColumn  Header="File Name" Binding="{Binding FileName}" MaxWidth="360" IsReadOnly="True"/>
+                        <DataGridTemplateColumn IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <Button Content="View" Click="Button_Click_View"/>
+                                    <Button Content="Delete" Click="Button_Click_Delete"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+        </DataGrid>
+                        </ScrollViewer>
+
+                    </StackPanel>
+    </StackPanel>
+    </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

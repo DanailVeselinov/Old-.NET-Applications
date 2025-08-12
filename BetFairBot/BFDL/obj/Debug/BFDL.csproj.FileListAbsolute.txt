@@ -1,0 +1,25 @@
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\BFDL.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\BFDL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\BFDL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\obj\Debug\BFDL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\obj\Debug\BFDL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\Mail.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\Mail.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\BFBDB.mdf
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\BFBDB_log.ldf
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\BFDL.dll.config
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\BFDL.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\BFDL.pdb
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\EntityFramework.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\Mail.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\EntityFramework.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\bin\Debug\Mail.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\obj\Debug\BFDL.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\obj\Debug\BFDL.pdb
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BFDL\obj\Debug\BFDL.csprojResolveAssemblyReference.cache

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DentistDB.exe" version="1.0.0.0" publicKeyToken="aa4fc5525b88d99f" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\MainIcon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DentistDB" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DentistDB.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DentistDB.exe" size="567720">
+      <assemblyIdentity name="DentistDB" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3SIWJrR7hR+7hUVMj6dKnh5nI8LKJEwnT76UEWuw5Og=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="4994632">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7PfuLv/NbpHnkvpWWNWNhdaaGcn3wG5TPsvcyfYamkw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="591968">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qCwIg0zu2ltJ8o6TRof3GvIwC9rW3160qdtR9s/uvlY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DentistDatabase.mdf" size="6356992" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>27+oC6UroTev/eTRk8HZOIWMdcuNCFEenSaSyJVEXj4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DentistDatabase_log.ldf" size="1638400" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SWmkKvnX8sDD9XhizifA/luBcxjLoKBJvNmh50hbM5o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DentistDB.exe.config" size="2610">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FKks6Ls3KnqmaUhFZOEnJbsvpmwinBGLf7p13ShEMx8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\MainIcon.ico" size="204862">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SsO+ViSggXHbDJrkmkea3e3y3asPV3Rqsv0QM7PRacU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="search.jfif" size="6580">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w51lOuxvdg/iIxvjTxBAI1pduckaclalmFHTaqzQVUc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=EDDY-PC\Eddy" issuerKeyHash="bff29fec910edb44219a4270916e3abe22227910" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>oVzC05hxoOixhIa12S5uXUToZ+4wwIz/Iqr2aVjFRuU=</DigestValue></Reference></SignedInfo><SignatureValue>J84VTGfL8Z4P67d0Nv0bAh63ZB6ioXFtw/zAM6QgOPEPHPT/Z5YDcWDOgNI4JaoAwZyxty/50vW8kQgFAvwLsx8e+XY77okUJL0k608ew0Wpts0al+x0J9X4m/+3G+8ANDbxUkQT8YzpE6FWzC0Oofs2/GwU9VyGAgwirHBhxno=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1Y6S4sFs0Y4ou7AmQoP/Mboa9QYnJFbVQNz1UJCDqUMajF6XR5Jcxljko7alPsZ3wpI3AOoBF7Leqv3LRd/UDdCYHVVNSEiok64j5P/fagdL2f9h5NoVlZ6eWQUXTy4VibVKYGXkGNgDF9/oC/ku2YhJqWMBbOElGAq8A060AXk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e546c55869f6aa22ff8cc030ee67e8445d6e2ed9b58684b1e8a07198d3c25ca1" Description="" Url=""><as:assemblyIdentity name="DentistDB.exe" version="1.0.0.0" publicKeyToken="aa4fc5525b88d99f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=EDDY-PC\Eddy</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>4AhrPPlTfRHQoMQEFoozUH66rgB3fLR/O6wjftmISug=</DigestValue></Reference></SignedInfo><SignatureValue>q+paeukUGcq/K0N4T1ktjoGEIbd8NJ9prhRbxBGQBQpMF1cGkU6mxvjA7+URIC/rBIbV2lgWvPmIsLA+3QVScK+7wNpkQsiTCS4/wUgAAyJEkGTetHZZMNBXfDuAWq+2w9XV2EjB/WczH1QW2dWKecZ0JDpYSkPguC8+cbV+nRo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1Y6S4sFs0Y4ou7AmQoP/Mboa9QYnJFbVQNz1UJCDqUMajF6XR5Jcxljko7alPsZ3wpI3AOoBF7Leqv3LRd/UDdCYHVVNSEiok64j5P/fagdL2f9h5NoVlZ6eWQUXTy4VibVKYGXkGNgDF9/oC/ku2YhJqWMBbOElGAq8A060AXk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQL/WQYVmy9KRHo8c6eUI3ZDANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgARQBEAEQAWQAtAFAAQwBcAEUAZABkAHkwHhcNMjAwNDEyMTcxOTE5WhcNMjEwNDEyMjMxOTE5WjAjMSEwHwYDVQQDHhgARQBEAEQAWQAtAFAAQwBcAEUAZABkAHkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANWOkuLBbNGOKLuwJkKD/zG6GvUGJyRW1UDc9VCQg6lDGoxel0eSXMZY5KO2pT7Gd8KSNwDqARey3qr9y0Xf1A3QmB1VTUhIqJOuI+T/32oHS9n/YeTaFZWenlkFF08uFYm1SmBl5BjYAxff6Av5LtmISaljAWzhJRgKvANOtAF5AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAkYI4EDE/1kSDA93snfzvXqF2+BFLHXGLQYDJArkBIDnUAXLrYK1kRWjoSFXCWUeRCRcVedOCQ9W5GILaxNrvzyV9zsPCD2FbboBTWksAhY40qhPTrZS/XZNS5ZELXenEhZwR5bd18UW0OBPm2XFX/dQatbePMJ+UIa8oI630WwQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

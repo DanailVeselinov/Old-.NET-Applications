@@ -1,0 +1,102 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="WpfBNFTExtract.MainWindow" Name="MainWindowName"
+        xmlns:local="clr-namespace:WpfBNFTExtract"
+        Title="Rest Hoursv BNFT Extract" MinHeight="500" MinWidth="700" SizeToContent="WidthAndHeight" MouseMove="MainWindowName_MouseMove" WindowStyle="None" AllowsTransparency="True" Opacity="0.9" WindowStartupLocation="CenterScreen" Foreground="{Binding Path=Value,ElementName=ThemeSlider,Converter={StaticResource RGBConverterForeground}}" Background="{Binding Path=Value,ElementName=ThemeSlider,Converter={StaticResource RGBConverter}}" Loaded="MainWindowName_Loaded" Closed="MainWindowName_Closed" Cursor="Wait">
+    <StackPanel ScrollViewer.CanContentScroll="True">
+        <Button Content="X" Click="ExitButton_Click" IsCancel="True" Background="red" Foreground="White" FontSize="17" FontWeight="Bold" Height="25" Width="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <StackPanel Name="HeadStackPanel" Orientation="Horizontal" ScrollViewer.CanContentScroll="True">
+            <StackPanel Orientation="Vertical">
+                <StackPanel>
+                    <TextBlock x:Name="ShipName" FontSize="18" Text=""></TextBlock>
+                    <TextBlock x:Name="IMONumber" FontSize="12" Text=""></TextBlock>
+                    <TextBlock x:Name="Flag" FontSize="12" Text=""></TextBlock>
+                </StackPanel>
+                <DatePicker HorizontalAlignment="Left" x:Name="DPicker" FontSize="20" Margin="5" SelectedDateChanged="DatePicker_SelectedDateChanged" VerticalAlignment="Top" FirstDayOfWeek="Monday" SelectedDateFormat="Long"/>
+                <CheckBox x:Name="IDLCB" Height="30"   IsChecked="False" Checked="IDLCB_Checked" Unchecked="IDLCB_Unchecked" Visibility="Collapsed" HorizontalAlignment="Center">
+                    <TextBox Text="IDL Eastward" FontSize="20" IsEnabled="False" FontWeight="Bold"/>
+                </CheckBox>
+                <Button x:Name="DailyReport" Content="Daily Report"  Height="30" Click="DailyReport_Click" Margin="10,5"/>
+                <Label x:Name="LastDailyReport" HorizontalAlignment="Center" Margin="0,-5,0,5" Foreground="{Binding Path=Value,ElementName=ThemeSlider,Converter={StaticResource RGBConverterForeground}}" Background="{Binding Path=Value,ElementName=ThemeSlider,Converter={StaticResource RGBConverter}}"></Label>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center">
+                <Button x:Name="MonthlyReport" Content="Monthly Report" Click="MonthlyReport_Click" Height="30" Margin="10,5"/>
+                <Button x:Name="BunkerReport" Content="Bunker Report" Click="BunkerReport_Click" Height="30" Margin="10,5"/>
+                <Button x:Name="MonthlyPersonal" Content="Monthly Personal" Height="30" Click="MonthlyPersonal_Click"  Margin="10,5"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <TextBlock Text="Holidays List" FontSize="16"/>
+                <ListView x:Name="HolidaysGrid" ToolTip="Your can add and delete Holiday Dates as per Company's List of Official Hollidays for current Year." MaxHeight="100" MinWidth="80" ItemsSource="{DynamicResource ResourceKey='HolidaysList'}" ItemStringFormat="dd.MMM.yyyy" Foreground="{Binding Foreground, ElementName=MainWindowName}" Background="{Binding Background, ElementName=MainWindowName}">
+                    
+                </ListView>
+                <StackPanel Orientation="Horizontal" >
+                    <Button Margin="5,0" HorizontalAlignment="Stretch" MinWidth="30" FontSize="12"  Click="Button_Click_Add" ToolTip="Add Holiday date as per Company's Holidays list">Add</Button>
+                    <Button Margin="5,0" HorizontalAlignment="Stretch" MinWidth="30" FontSize="12"  Click="Button_Click_Del" ToolTip="Delete Holiday date as per Company's Holidays list">Del</Button>
+                </StackPanel>
+            </StackPanel>
+            <Calendar Name="HolidaySelectCalendar" DisplayMode="Month" FirstDayOfWeek="Monday" IsEnabled="False" Visibility="Collapsed" SelectionMode="SingleDate" SelectedDatesChanged="HolidaySelectCalendar_SelectedDatesChanged"></Calendar>
+            <StackPanel>
+                <TextBlock Text="Theme Slider" HorizontalAlignment="Center" FontSize="16"></TextBlock>
+                <Slider Name="ThemeSlider" Maximum="63" LargeChange="5" Margin="0,5" SmallChange="1" Width="255" Value="60" ValueChanged="ThemeSlider_ValueChanged"></Slider>
+                <Button x:Name="ChangeDataSourceButton" ToolTip="If you expirience problem connecting to database click" Click="ChangeDataSourceButton_Click" Content="Change Data Location"/>
+                <!--<Button x:Name="ExitButton" Content="Exit" Click="ExitButton_Click" Height="40" FontSize="30" Margin="0,10,0,0"/>-->
+            </StackPanel>
+        </StackPanel>
+
+        <DataGrid x:Name="RESTHOURSGRID" ItemsSource="{Binding}" AutoGenerateColumns="False" SelectionMode="Extended" SelectionUnit="CellOrRowHeader" Margin="0,0,0.4,0" ScrollViewer.CanContentScroll="True" Background="{Binding Background, ElementName=MainWindowNameName}" Foreground="{Binding Foreground, ElementName=MainWindowName}" RowBackground="{Binding Background, RelativeSource={RelativeSource Self}}" MouseDoubleClick="RESTHOURSGRID_MouseDoubleClick" CanUserAddRows="False" CanUserReorderColumns="False" CanUserDeleteRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="Name" Binding="{Binding Name}" Width="120"/>
+                <DataGridTextColumn  Header="Rank" Binding="{Binding Rank}" Width="60"/>
+                <DataGridTextColumn  Header="00" Binding="{Binding H01A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="01" Binding="{Binding H01B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H02A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="02" Binding="{Binding H02B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H03A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="03" Binding="{Binding H03B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H04A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="04" Binding="{Binding H04B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H05A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="05" Binding="{Binding H05B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H06A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="06" Binding="{Binding H06B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H07A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="07" Binding="{Binding H07B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H08A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="08" Binding="{Binding H08B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H09A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="09" Binding="{Binding H09B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H10A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="10" Binding="{Binding H10B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H11A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="11" Binding="{Binding H11B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H12A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="12" Binding="{Binding H12B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H13A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="13" Binding="{Binding H13B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H14A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="14" Binding="{Binding H14B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H15A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="15" Binding="{Binding H15B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H16A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="16" Binding="{Binding H16B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H17A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="17" Binding="{Binding H17B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H18A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="18" Binding="{Binding H18B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H19A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="19" Binding="{Binding H19B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H20A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="20" Binding="{Binding H20B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H21A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="21" Binding="{Binding H21B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H22A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="22" Binding="{Binding H22B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H23A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="23" Binding="{Binding H23B}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="" Binding="{Binding H24A}" MaxWidth="30"/>
+                <DataGridTextColumn  Header="24" Binding="{Binding H24B}" MaxWidth="30"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </StackPanel>
+</Window>

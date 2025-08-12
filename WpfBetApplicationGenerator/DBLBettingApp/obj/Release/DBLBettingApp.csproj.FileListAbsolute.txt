@@ -1,0 +1,62 @@
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Release\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Release\DBLBettingApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\obj\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\obj\Release\DBLBettingApp.pdb
+C:\Users\Sabina\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\BFDBL.sdf
+C:\Users\Sabina\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\DBLBettingApp.dll.config
+C:\Users\Sabina\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\DBLBettingApp.dll
+C:\Users\Sabina\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\DBLBettingApp.pdb
+C:\Users\Sabina\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\EntityFramework.dll
+C:\Users\Sabina\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\EntityFramework.xml
+C:\Users\Sabina\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\obj\Release\DBLBettingApp.dll
+C:\Users\Sabina\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\obj\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\DBLBettingApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\obj\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\obj\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\obj\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\obj\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\obj\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\obj\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.SqlServerCompact.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.SqlServerCompact.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\BFDBL.sdf
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.dll.config
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.pdb
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.SqlServerCompact.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\EntityFramework.SqlServerCompact.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\obj\Release\DBLBettingApp.csprojResolveAssemblyReference.cache
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\obj\Release\DBLBettingApp.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DBLBettingApp\obj\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\BFBDB.mdf
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\BFBDB_log.ldf
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DBLBettingApp\obj\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DBLBettingApp\obj\Release\DBLBettingApp.pdb

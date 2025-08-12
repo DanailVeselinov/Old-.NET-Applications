@@ -1,0 +1,7 @@
+[{"Id":1, "InvoiceId":1, "ItemName":"\u0423\u0435\u043b\u0440\u0443\u0443\u0442 ", "ValueOfPayment":186.0, "CurrencyOfPayment":""},
+ {"Id":2, "InvoiceId":1, "ItemName":"\u041f\u0440\u043e\u0442\u0435\u0439\u043f\u044a\u0440", "ValueOfPayment":106.26, "CurrencyOfPayment":""},
+ {"Id":3, "InvoiceId":2, "ItemName":"\u0430\u0430", "ValueOfPayment":270.0, "CurrencyOfPayment":""},
+ {"Id":4, "InvoiceId":3, "ItemName":"\u0410\u043d\u0435\u0441\u0442\u0435\u0437\u0438\u044f \u0438\u043d\u0436", "ValueOfPayment":84.0, "CurrencyOfPayment":""},
+ {"Id":5, "InvoiceId":4, "ItemName":"\u043e\u0433\u043b\u0435\u0434\u0430\u043b\u0446\u0430 \u0430\u0440\u0441\u043a\u043e\u0442", "ValueOfPayment":2640.0, "CurrencyOfPayment":""},
+ {"Id":6, "InvoiceId":9, "ItemName":"\u0440\u0430\u0434\u043e\u0441\u0442\u0438\u043d\u0430", "ValueOfPayment":80.0, "CurrencyOfPayment":""},
+ {"Id":7, "InvoiceId":11, "ItemName":"2\u0445 ULTRAPACK,\u043d\u0435\u0438\u043c\u043f\u0440\u0435\u0433\u043d\u0438\u0440\u0430\u043d\u0430", "ValueOfPayment":75.9, "CurrencyOfPayment":""}]

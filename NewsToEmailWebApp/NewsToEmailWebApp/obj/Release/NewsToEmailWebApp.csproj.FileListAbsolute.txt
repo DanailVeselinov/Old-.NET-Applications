@@ -1,0 +1,84 @@
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Content\Site.css
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Site.Master
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Site.Master.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Site.Master.designer.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\NewsToEmailWebApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\NewsToEmailWebApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\NewsToEmailWebApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.Core.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\MaradTestDBL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\System.Web.Optimization.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\System.Web.Providers.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\WebGrease.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\MaradTestDBL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.Core.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\obj\Release\NewsToEmailWebApp.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\obj\Release\NewsToEmailWebApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\obj\Release\NewsToEmailWebApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Content\Site.css
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Site.Master
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Site.Master.cs
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Site.Master.designer.cs
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\NewsToEmailWebApp.dll.config
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\NewsToEmailWebApp.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\NewsToEmailWebApp.pdb
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.Core.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\EntityFramework.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\MaradTestDBL.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\System.Web.Optimization.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\System.Web.Providers.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\WebGrease.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\MaradTestDBL.pdb
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\EntityFramework.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.Core.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\obj\Release\NewsToEmailWebApp.csprojResolveAssemblyReference.cache
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\obj\Release\NewsToEmailWebApp.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailWebApp\obj\Release\NewsToEmailWebApp.pdb

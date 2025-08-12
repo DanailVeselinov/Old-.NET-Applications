@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BNFT_VSLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2000" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CWCREW">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CODE" Type="nvarchar" MaxLength="50" />
+    <Property Name="LASTNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="FIRSTNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="FATHERNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="MOTHERNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="WIFENAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="CHILD_NUM" Type="smallint" />
+    <Property Name="ADDRESS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CITY" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZIPCODE" Type="nvarchar" MaxLength="50" />
+    <Property Name="COUNTRY" Type="nvarchar" MaxLength="50" />
+    <Property Name="TELEPHONE1" Type="nvarchar" MaxLength="50" />
+    <Property Name="TELEPHONE2" Type="nvarchar" MaxLength="50" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="BRTH_PLC" Type="nvarchar" MaxLength="50" />
+    <Property Name="BRTH_DT" Type="datetime" />
+    <Property Name="RECOMMENDED" Type="nvarchar" MaxLength="50" />
+    <Property Name="NEXTOFKIN" Type="nvarchar" MaxLength="50" />
+    <Property Name="NEXTADDRESS" Type="nvarchar" MaxLength="50" />
+    <Property Name="NEXTCITY" Type="nvarchar" MaxLength="50" />
+    <Property Name="NEXTZIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="NEXTTEL" Type="nvarchar" MaxLength="50" />
+    <Property Name="RELATION" Type="nvarchar" MaxLength="50" />
+    <Property Name="PSPRT_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="PSPRT_PLACE" Type="nvarchar" MaxLength="50" />
+    <Property Name="PSPRT_ISSUE" Type="datetime" />
+    <Property Name="PSPRT_EXPIRY" Type="datetime" />
+    <Property Name="SB_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SB_PLACE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SB_ISSUE" Type="datetime" />
+    <Property Name="SB_EXPIRY" Type="datetime" />
+    <Property Name="FL_MARITAL" Type="int" />
+    <Property Name="REMARKS" Type="ntext" />
+    <Property Name="CWPNATION_ID" Type="int" />
+    <Property Name="CWPRELIGION_ID" Type="int" />
+    <Property Name="CWPRANK_ID" Type="int" />
+    <Property Name="DATEIN" Type="datetime" />
+    <Property Name="USERIN_ID" Type="int" />
+    <Property Name="DATEUPD" Type="datetime" />
+    <Property Name="USERUPD_ID" Type="int" />
+    <Property Name="FL_ONBOARD" Type="smallint" />
+    <Property Name="DOC_DIR_NAME" Type="nvarchar" MaxLength="250" />
+    <Property Name="ATCH_DIR" Type="nvarchar" MaxLength="250" />
+    <Property Name="ATCH_REM" Type="ntext" />
+    <Property Name="DATE_IN" Type="datetime" />
+    <Property Name="DATE_UPD" Type="datetime" />
+    <Property Name="RLS_NO" Type="smallint" />
+    <Property Name="FL_CHNG" Type="smallint" />
+    <Property Name="FL_SENT" Type="smallint" />
+    <Property Name="FL_REXST" Type="smallint" />
+    <Property Name="FL_FRNG" Type="nvarchar" MaxLength="50" />
+    <Property Name="LASTNAME_GR" Type="nvarchar" MaxLength="50" />
+    <Property Name="FIRSTNAME_GR" Type="nvarchar" MaxLength="50" />
+    <Property Name="FATHERNAME_GR" Type="nvarchar" MaxLength="50" />
+    <Property Name="FL_USE" Type="smallint" />
+    <Property Name="SIZE_POLO" Type="nvarchar" MaxLength="100" />
+    <Property Name="SIZE_PANTS" Type="nvarchar" MaxLength="100" />
+    <Property Name="SIZE_OVERALL" Type="nvarchar" MaxLength="100" />
+    <Property Name="SIZE_WINTER" Type="nvarchar" MaxLength="100" />
+    <Property Name="SIZE_TSHIRT" Type="nvarchar" MaxLength="100" />
+    <Property Name="SIZE_SHOES" Type="nvarchar" MaxLength="100" />
+    <Property Name="SIZE_CATER" Type="nvarchar" MaxLength="100" />
+    <Property Name="BRTH_PLC_GR" Type="nvarchar" MaxLength="50" />
+    <Property Name="MIDDLENAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="PAG_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="HEALTH_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SSS_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SKYPE_ACCOUNT" Type="nvarchar" MaxLength="250" />
+    <Property Name="FB_ACCOUNT" Type="nvarchar" MaxLength="250" />
+    <Property Name="TRM_DATE" Type="datetime" />
+    <Property Name="FL_TRM_REASON" Type="smallint" />
+  </EntityType>
+  <EntityType Name="CWCREWSERV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CWCREW_ID" Type="int" />
+    <Property Name="VSL_ID" Type="int" />
+    <Property Name="CWPRANK_ID" Type="int" />
+    <Property Name="CWPAITIOL_ID" Type="int" />
+    <Property Name="DATEE" Type="datetime" />
+    <Property Name="DATED" Type="datetime" />
+    <Property Name="REM1" Type="ntext" />
+    <Property Name="REM2" Type="ntext" />
+    <Property Name="CUR" Type="nvarchar" MaxLength="50" />
+    <Property Name="FL_OTHER" Type="smallint" />
+    <Property Name="FL_PASSEG" Type="smallint" />
+    <Property Name="STARTING_DT" Type="datetime" />
+    <Property Name="ARVD_HOME_DT" Type="datetime" />
+    <Property Name="DATEIN" Type="datetime" />
+    <Property Name="USERIN_ID" Type="int" />
+    <Property Name="DATEUPD" Type="datetime" />
+    <Property Name="USERUPD_ID" Type="int" />
+    <Property Name="FL_MGSERV" Type="smallint" />
+    <Property Name="PORTE_ID" Type="int" />
+    <Property Name="PORTD_ID" Type="int" />
+    <Property Name="DATE_UPD" Type="datetime" />
+    <Property Name="DATE_IN" Type="datetime" />
+    <Property Name="FL_PREP" Type="smallint" />
+    <Property Name="LARGE_ADVANCE" Type="float" />
+    <Property Name="OLD_ID" Type="int" />
+    <Property Name="CWRHSCHED_ID" Type="int" />
+    <Property Name="FL_RHERR" Type="int" />
+    <Property Name="PROP_DT" Type="datetime" />
+    <Property Name="FL_PROMOT" Type="smallint" />
+    <Property Name="PRV_RANK_ID" Type="int" />
+    <Property Name="ADVANCE_AMNT" Type="float" />
+  </EntityType>
+  <EntityType Name="CWPRANK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCR" Type="nvarchar" MaxLength="50" />
+    <Property Name="ABREV" Type="nvarchar" MaxLength="50" />
+    <Property Name="AA" Type="smallint" />
+    <Property Name="FL_USE" Type="smallint" />
+    <Property Name="OLD_ID" Type="int" />
+    <Property Name="FL_CLSF" Type="smallint" />
+    <Property Name="FL_INTEGR" Type="int" />
+    <Property Name="DESCR_GR" Type="nvarchar" MaxLength="50" />
+    <Property Name="FL_TYPE" Type="smallint" />
+    <Property Name="FL_DSGN" Type="smallint" />
+  </EntityType>
+  <EntityType Name="CWRESTHRS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VSL_ID" Type="int" />
+    <Property Name="RH_DATE" Type="datetime" />
+    <Property Name="CWCREW_ID" Type="int" />
+    <Property Name="CWSERV_ID" Type="int" />
+    <Property Name="H01A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H01B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H02A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H02B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H03A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H03B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H04A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H04B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H05A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H05B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H06A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H06B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H07A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H07B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H08A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H08B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H09A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H09B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H10A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H10B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H11A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H11B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H12A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H12B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H13A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H13B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H14A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H14B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H15A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H15B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H16A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H16B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H17A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H17B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H18A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H18B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H19A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H19B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H20A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H20B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H21A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H21B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H22A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H22B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H23A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H23B" Type="nvarchar" MaxLength="2" />
+    <Property Name="H24A" Type="nvarchar" MaxLength="2" />
+    <Property Name="H24B" Type="nvarchar" MaxLength="2" />
+    <Property Name="FL_RSLTS" Type="smallint" />
+    <Property Name="FL_UPD" Type="smallint" />
+    <Property Name="FL_FLZD" Type="smallint" />
+    <Property Name="RH_RSLTS" Type="ntext" />
+    <Property Name="RH_NOTES" Type="ntext" />
+    <Property Name="REST_24" Type="float" />
+    <Property Name="WRK_24" Type="float" />
+    <Property Name="REST_IN24" Type="float" />
+    <Property Name="REST_IN7D" Type="float" />
+    <Property Name="REST_IN3D" Type="float" />
+    <Property Name="RLS_NO" Type="smallint" />
+    <Property Name="FL_CHNG" Type="smallint" />
+    <Property Name="FL_SENT" Type="smallint" />
+    <Property Name="FL_REXST" Type="smallint" />
+    <Property Name="FL_DLT" Type="smallint" />
+    <Property Name="REST_PER_NUM" Type="int" />
+    <Property Name="RH_LOG" Type="ntext" />
+    <Property Name="VO_ID" Type="int" />
+    <Property Name="CS_ID" Type="int" />
+    <Property Name="FL_HIDE" Type="smallint" />
+    <Property Name="REPL_REMARKS" Type="ntext" />
+    <Property Name="FL_EWdate" Type="smallint" />
+    <Property Name="NONC_24" Type="float" />
+    <Property Name="FL_EXCEPTION" Type="smallint" />
+    <Property Name="fl_excelption" Type="smallint" />
+  </EntityType>
+  <EntityType Name="CWRHSCHED">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CWPRANK_ID" Type="int" />
+    <Property Name="S_DSGN" Type="nvarchar" MaxLength="1" />
+    <Property Name="FL_WK" Type="smallint" />
+    <Property Name="NOTES" Type="ntext" />
+    <Property Name="FL_USE" Type="smallint" />
+    <Property Name="DATE_IN" Type="smalldatetime" />
+    <Property Name="USERIN_ID" Type="int" />
+    <Property Name="DATE_UPD" Type="smalldatetime" />
+    <Property Name="USERUPD_ID" Type="int" />
+    <Property Name="VSL_ID" Type="int" />
+    <Property Name="DESCR" Type="nvarchar" MaxLength="50" />
+    <Property Name="CS_ID" Type="int" />
+    <Property Name="VO_ID" Type="int" />
+    <Property Name="RLS_NO" Type="int" />
+    <Property Name="FL_CHNG" Type="smallint" />
+    <Property Name="FL_SENT" Type="smallint" />
+    <Property Name="FL_REXST" Type="smallint" />
+  </EntityType>
+  <EntityType Name="PFINT_DATELINE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DATE_LINE" Type="datetime" />
+    <Property Name="FL_EW" Type="nvarchar" MaxLength="1" />
+    <Property Name="VSL_ID" Type="int" />
+    <Property Name="USERIN_ID" Type="int" />
+    <Property Name="USERUPD_ID" Type="int" />
+    <Property Name="FL_DATELINE" Type="smallint" />
+    <Property Name="DATE_IN" Type="datetime" />
+    <Property Name="DATE_UPD" Type="datetime" />
+    <Property Name="CS_ID" Type="int" />
+    <Property Name="VO_ID" Type="int" />
+    <Property Name="FL_CHNG" Type="smallint" />
+    <Property Name="FL_SENT" Type="smallint" />
+    <Property Name="RLS_NO" Type="smallint" />
+    <Property Name="FL_DLT" Type="smallint" />
+    <Property Name="FL_REXST" Type="smallint" />
+  </EntityType>
+  <EntityType Name="SQEVENT_HST">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SITE_ID" Type="int" />
+    <Property Name="SQEVENT_ID" Type="int" />
+    <Property Name="DONE_DT" Type="smalldatetime" />
+    <Property Name="DONE_BY" Type="nvarchar" MaxLength="50" />
+    <Property Name="EVT_NOTES" Type="ntext" />
+    <Property Name="SQEVENT_HST_ID" Type="int" />
+    <Property Name="FL_COMBINE" Type="smallint" />
+    <Property Name="DOC_TYPE" Type="smallint" />
+    <Property Name="DOC_ID" Type="int" />
+    <Property Name="CS_ID" Type="int" />
+    <Property Name="VO_ID" Type="int" />
+    <Property Name="FL_CHNG" Type="smallint" />
+    <Property Name="FL_REXST" Type="smallint" />
+    <Property Name="FL_SENT" Type="smallint" />
+    <Property Name="RLS_NO" Type="smallint" />
+    <Property Name="EVENT_REF" Type="nvarchar" MaxLength="10" />
+    <Property Name="EVENT_DT" Type="smalldatetime" />
+    <Property Name="FL_STATUS" Type="smallint" />
+    <Property Name="CANCEL_DT" Type="smalldatetime" />
+    <Property Name="CANCEL_BY" Type="nvarchar" MaxLength="50" />
+    <Property Name="DATE_IN" Type="smalldatetime" />
+    <Property Name="USERIN_ID" Type="int" />
+    <Property Name="DATE_UPD" Type="smalldatetime" />
+    <Property Name="USERUPD_ID" Type="int" />
+    <Property Name="MODID" Type="smallint" />
+    <Property Name="DOC_LNK_ID" Type="int" />
+    <Property Name="DOC_LNK_TP" Type="int" />
+    <Property Name="EVENT_DT_TO" Type="datetime" />
+    <Property Name="SQCATEG_ID" Type="int" />
+    <Property Name="FL_APPLIED" Type="smallint" />
+    <Property Name="FRM_HR" Type="int" />
+    <Property Name="FRM_MIN" Type="int" />
+    <Property Name="UP_HR" Type="int" />
+    <Property Name="UP_MIN" Type="int" />
+    <Property Name="FL_MDL" Type="int" />
+    <Property Name="FL_DLT" Type="int" />
+    <Property Name="FL_HEADER" Type="smallint" />
+    <Property Name="FL_ROW_KIND" Type="smallint" />
+    <Property Name="SCDL_NOTES" Type="ntext" />
+    <Property Name="SQEVENT_SCHD_ID" Type="int" />
+    <Property Name="BGN_FACT" Type="float" />
+    <Property Name="BGN_DATE" Type="datetime" />
+    <Property Name="END_DATE" Type="datetime" />
+    <Property Name="KEYID" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="SQEVENT_HST_PARTIC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SQEVENT_HST_ID" Type="int" />
+    <Property Name="CWCREW_ID" Type="int" />
+    <Property Name="CWSERV_ID" Type="int" />
+    <Property Name="FROM_DT" Type="datetime" />
+    <Property Name="TO_DT" Type="datetime" />
+    <Property Name="FRM_HR" Type="int" />
+    <Property Name="FRM_MIN" Type="int" />
+    <Property Name="UP_HR" Type="int" />
+    <Property Name="UP_MIN" Type="int" />
+    <Property Name="VSQEVENT_HST_ID" Type="int" />
+    <Property Name="CW_CODE" Type="nvarchar" MaxLength="50" />
+    <Property Name="FL_PARTIC" Type="smallint" />
+    <Property Name="PARTIC_REMARKS" Type="ntext" />
+    <Property Name="SQDRL_HST_ID" Type="int" />
+    <Property Name="AA" Type="smallint" />
+  </EntityType>
+  <EntityType Name="VSL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="VSL_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="TRN_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="ABRV" Type="nvarchar" MaxLength="50" />
+    <Property Name="EX_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_TYPE_ID" Type="int" />
+    <Property Name="VSL_YARD" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_HULL_NO" Type="nvarchar" MaxLength="15" />
+    <Property Name="VSL_BLT" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_KEEL" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_DWT" Type="float" />
+    <Property Name="VSL_CROSS" Type="float" />
+    <Property Name="VSL_NATION_TONAG" Type="float" />
+    <Property Name="BEAM_M" Type="float" />
+    <Property Name="BEAM_F" Type="float" />
+    <Property Name="DPTH_M" Type="float" />
+    <Property Name="DPTH_F" Type="float" />
+    <Property Name="DRFT_M" Type="float" />
+    <Property Name="DRFT_F" Type="float" />
+    <Property Name="VSL_FLAG_ID" Type="int" />
+    <Property Name="PORT_REGISTR" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_NOID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IMO_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="MAIN_CLASS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CLASS_NOTATON" Type="nvarchar" MaxLength="50" />
+    <Property Name="SIGNAL_LTRS" Type="nvarchar" MaxLength="50" />
+    <Property Name="SPD_LD" Type="float" />
+    <Property Name="SPD_BAL" Type="float" />
+    <Property Name="IFO_LD" Type="float" />
+    <Property Name="IFO_BAL" Type="float" />
+    <Property Name="IFO_PORT" Type="float" />
+    <Property Name="IFO_IDL" Type="float" />
+    <Property Name="IFO_HEAT" Type="float" />
+    <Property Name="DO_SEA_BAL" Type="float" />
+    <Property Name="DO_SEA" Type="float" />
+    <Property Name="DO_PORT" Type="float" />
+    <Property Name="DO_IDL" Type="float" />
+    <Property Name="LUB_ENG" Type="float" />
+    <Property Name="LUB_CYL" Type="float" />
+    <Property Name="LUB_DG" Type="float" />
+    <Property Name="LUB_TURBO" Type="float" />
+    <Property Name="CONS_WATER" Type="float" />
+    <Property Name="VSL_ENG_ID" Type="int" />
+    <Property Name="ENG_MODEL" Type="nvarchar" MaxLength="50" />
+    <Property Name="ENG_POWER" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_OWN" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_OWN_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_MNG" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_MNG_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_MNG_ADR" Type="ntext" />
+    <Property Name="VSL_MNG_CITY" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_MNG_ZIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_MNG_CNTRY" Type="nvarchar" MaxLength="50" />
+    <Property Name="NOTE_DTL" Type="ntext" />
+    <Property Name="NOTE_REGISTR" Type="ntext" />
+    <Property Name="NOTE_SPD" Type="ntext" />
+    <Property Name="NOTE_ENG" Type="ntext" />
+    <Property Name="NOTE_SPC_DTLS" Type="ntext" />
+    <Property Name="NOTE_OWN" Type="ntext" />
+    <Property Name="FL_USE" Type="smallint" />
+    <Property Name="AA" Type="smallint" />
+    <Property Name="PREFIX" Type="nvarchar" MaxLength="50" />
+    <Property Name="ME_LD_CONS" Type="float" />
+    <Property Name="ME_BAL_CONS" Type="float" />
+    <Property Name="AUX_LD_FO_CONS" Type="float" />
+    <Property Name="AUX_BAL_FO_CONS" Type="float" />
+    <Property Name="AUX_LD_DO_CONS" Type="float" />
+    <Property Name="AUX_BAL_DO_CONS" Type="float" />
+    <Property Name="AUX_LD_FO_FTP" Type="nvarchar" MaxLength="50" />
+    <Property Name="AUX_BAL_FO_FTP" Type="nvarchar" MaxLength="50" />
+    <Property Name="AUX_LD_DO_FTP" Type="nvarchar" MaxLength="50" />
+    <Property Name="AUX_BAL_DO_FTP" Type="nvarchar" MaxLength="50" />
+    <Property Name="ME_LD_FTP" Type="nvarchar" MaxLength="50" />
+    <Property Name="ME_BAL_FTP" Type="nvarchar" MaxLength="50" />
+    <Property Name="VSL_LOA" Type="float" />
+    <Property Name="VSL_GEAR" Type="smallint" />
+    <Property Name="CUB_M" Type="float" />
+    <Property Name="CUB_M_UNIT" Type="nvarchar" MaxLength="50" />
+    <Property Name="FL_DSGN" Type="smallint" />
+    <Property Name="FL_USEFMC" Type="smallint" />
+    <Property Name="FL_PROP" Type="smallint" />
+    <Property Name="IMAGE_ID" Type="smallint" />
+    <Property Name="VSL_CAPACITY" Type="float" />
+    <Property Name="VSL_DRAFT" Type="float" />
+    <Property Name="VSL_TONS_RATE" Type="float" />
+    <Property Name="VSL_TONS_FL_INC_CM" Type="smallint" />
+    <Property Name="VSL_CONSTANT_WT" Type="float" />
+    <Property Name="VSL_FW" Type="float" />
+    <Property Name="VSL_CREW" Type="nvarchar" MaxLength="4000" />
+    <Property Name="VSL_TELECOM" Type="nvarchar" MaxLength="4000" />
+    <Property Name="VSL_DESCR_REP" Type="nvarchar" MaxLength="4000" />
+    <Property Name="USERIN_ID" Type="int" />
+    <Property Name="DATE_UPD" Type="smalldatetime" />
+    <Property Name="USERUPD_ID" Type="int" />
+    <Property Name="DATE_IN" Type="smalldatetime" />
+    <Property Name="MNG_DATE_FRM" Type="smalldatetime" />
+    <Property Name="MNG_DATE_UP" Type="smalldatetime" />
+    <Property Name="PRJ_RUNCOST" Type="float" />
+    <Property Name="MARKET_VALUE" Type="float" />
+    <Property Name="FL_TYPE" Type="smallint" />
+    <Property Name="LUB_ENG_CAPACITY" Type="float" />
+    <Property Name="LUB_CYL_CAPACITY" Type="float" />
+    <Property Name="LUB_DG_CAPACITY" Type="float" />
+    <Property Name="DG_FO_LD" Type="float" />
+    <Property Name="DG_FO_BAL" Type="float" />
+    <Property Name="acsite_id" Type="int" />
+    <Property Name="OLD_CWPENGINE_ID" Type="int" />
+    <Property Name="OLD_CWPVSLTYPE_ID" Type="int" />
+    <Property Name="OLD_CWPFLAG_ID" Type="int" />
+    <Property Name="VSL_DPT_ID" Type="int" />
+    <Property Name="VSL_RSP_ID" Type="int" />
+    <Property Name="VSL_LOC_ID" Type="int" />
+    <Property Name="FL_FORM_TYPE" Type="smallint" />
+    <Property Name="CAPACITY_BILGE" Type="float" />
+    <Property Name="CAPACITY_SLOP" Type="float" />
+    <Property Name="CAPACITY_SEWAGE" Type="float" />
+    <Property Name="IFO_TNK_LOAD_PORT" Type="float" />
+    <Property Name="IFO_TNK_DISH_PORT" Type="float" />
+    <Property Name="VSL_SIZE" Type="nvarchar" MaxLength="50" />
+    <Property Name="FL_CONTAINER" Type="smallint" />
+    <Property Name="IMO_PLACE" Type="nvarchar" MaxLength="150" />
+    <Property Name="IMO_PLACE_GR" Type="nvarchar" MaxLength="50" />
+    <Property Name="REG_NO" Type="nvarchar" MaxLength="15" />
+    <Property Name="VSL_ENGINE" Type="nvarchar" MaxLength="150" />
+    <Property Name="VSL_MNG_CNTRY_GR" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VSL_FLAG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCR" Type="nvarchar" MaxLength="50" />
+    <Property Name="ABRV" Type="nvarchar" MaxLength="50" />
+    <Property Name="AA" Type="smallint" />
+    <Property Name="FL_USE" Type="smallint" />
+    <Property Name="DESCR_GR" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="BNFT_VSLModelStoreContainer">
+    <EntitySet Name="CWCREW" EntityType="Self.CWCREW" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWCREWSERV" EntityType="Self.CWCREWSERV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWPRANK" EntityType="Self.CWPRANK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWRESTHRS" EntityType="Self.CWRESTHRS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWRHSCHED" EntityType="Self.CWRHSCHED" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PFINT_DATELINE" EntityType="Self.PFINT_DATELINE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SQEVENT_HST" EntityType="Self.SQEVENT_HST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SQEVENT_HST_PARTIC" EntityType="Self.SQEVENT_HST_PARTIC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VSL" EntityType="Self.VSL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VSL_FLAG" EntityType="Self.VSL_FLAG" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,202 @@
+c:\users\eddy\documents\visual studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.exe.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistDatabase.mdf
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistDatabase_log.ldf
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.exe
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\MainWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\New Patient.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\MainWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\New Patient.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\App.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB_Content.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB_MarkupCompile.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.g.resources
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.Properties.Resources.resources
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.csproj.GenerateResource.Cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.exe
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB_MarkupCompile.lref
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\TaskWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\TaskWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\ClientsListWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\ClientsListWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\search.jfif
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\Client.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistModel.Context.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistModel.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistModel.Designer.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\StatusTable.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\Task.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\TeethCode.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistModel.Context.tt
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistModel.edmx.diagram
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistModel.tt
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\AddStatusWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\AddStatusWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.application
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.application
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\AddDoctorWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\AddDoctorWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\AccountWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\AccountWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\AddDoctorWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\AddStatusWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\MainWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\AccountWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\AddDoctorWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\AddStatusWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\ClientsListWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\MainWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\New Patient.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\TaskWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\App.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB_Content.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB_MarkupCompile.cache
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB_MarkupCompile.lref
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.exe
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.pdb
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\DentistDatabase.mdf
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\DentistDatabase_log.ldf
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\search.jfif
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.exe.config
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.application
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.exe
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\DentistDB.pdb
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\ExpensesWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\AccountWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\ClientsListWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\ExpensesWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\New Patient.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\TaskWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.g.resources
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.Properties.Resources.resources
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.csproj.GenerateResource.cache
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.application
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\Add_ExpensesWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\Add_ExpensesWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.csproj.CoreCompileInputs.cache
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\Google.Protobuf.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\MySql.Data.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\System.Buffers.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\System.Memory.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\ZstdNet.dll
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\Google.Protobuf.pdb
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\Google.Protobuf.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\MySql.Data.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\System.Buffers.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\System.Memory.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.csproj.CopyComplete
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\LoginWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\LoginWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2019\Projects\DentistDB\DentistDB\obj\Debug\DentistDB.csproj.AssemblyReference.cache
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.csproj.AssemblyReference.cache
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\AddDoctorWindow.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\AddStatusWindow.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\MainWindow.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\AccountWindow.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\AddDoctorWindow.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\AddStatusWindow.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\Add_ExpensesWindow.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\ClientsListWindow.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\ExpensesWindow.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\LoginWindow.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\MainWindow.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\New Patient.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\TaskWindow.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\App.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB_Content.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB_MarkupCompile.cache
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB_MarkupCompile.lref
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.exe
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.pdb
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\DentistDatabase.mdf
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\DentistDatabase_log.ldf
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\search.jfif
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\DentistDB.exe.config
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\DentistDB.exe.manifest
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\DentistDB.application
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\DentistDB.exe
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\DentistDB.pdb
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\EntityFramework.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\EntityFramework.SqlServer.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\Google.Protobuf.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\K4os.Compression.LZ4.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\K4os.Hash.xxHash.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\MySql.Data.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\MySql.Data.EntityFramework.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Buffers.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Memory.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\EntityFramework.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\EntityFramework.SqlServer.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\Google.Protobuf.pdb
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\Google.Protobuf.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\K4os.Compression.LZ4.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\K4os.Hash.xxHash.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\MySql.Data.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\MySql.Data.EntityFramework.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Buffers.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Memory.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\AccountWindow.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\Add_ExpensesWindow.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\ClientsListWindow.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\ExpensesWindow.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\LoginWindow.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\New Patient.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\TaskWindow.baml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.g.resources
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.Properties.Resources.resources
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.csproj.GenerateResource.cache
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.csproj.CoreCompileInputs.cache
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.exe.manifest
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.application
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\obj\Debug\DentistDB.csproj.Up2Date
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.IO.Pipelines.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Numerics.Vectors.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\WpfColorFontDialog.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\ZstdSharp.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.IO.Pipelines.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Numerics.Vectors.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\Devart.Data.dll
+D:\Downloads\Programming\Projects\DentistDBOnline\DentistDB\DentistDB\bin\Debug\Devart.Data.MySql.dll

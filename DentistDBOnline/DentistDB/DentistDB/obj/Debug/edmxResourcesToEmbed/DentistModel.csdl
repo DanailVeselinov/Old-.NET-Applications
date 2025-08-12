@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DentistDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SecondName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonalIdNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TypeID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDate" Type="DateTime" Precision="0" />
+    <Property Name="Sex" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Phone1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Phone2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FirstDate" Type="DateTime" Precision="3" />
+    <Property Name="LastDateUpdate" Type="DateTime" Precision="3" />
+    <Property Name="ClinicalDisorders" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="true" />
+    <Property Name="C11" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C12" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C13" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C14" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C15" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C16" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C17" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C18" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C21" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C22" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C23" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C24" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C25" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C26" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C27" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C28" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C31" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C32" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C33" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C34" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C35" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C36" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C37" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C38" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C41" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C42" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C43" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C44" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C45" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C46" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C47" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C48" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="C51" Type="Boolean" Nullable="false" />
+    <Property Name="C52" Type="Boolean" Nullable="false" />
+    <Property Name="C53" Type="Boolean" Nullable="false" />
+    <Property Name="C54" Type="Boolean" Nullable="false" />
+    <Property Name="C55" Type="Boolean" Nullable="false" />
+    <Property Name="C61" Type="Boolean" Nullable="false" />
+    <Property Name="C62" Type="Boolean" Nullable="false" />
+    <Property Name="C63" Type="Boolean" Nullable="false" />
+    <Property Name="C64" Type="Boolean" Nullable="false" />
+    <Property Name="C65" Type="Boolean" Nullable="false" />
+    <Property Name="C71" Type="Boolean" Nullable="false" />
+    <Property Name="C72" Type="Boolean" Nullable="false" />
+    <Property Name="C73" Type="Boolean" Nullable="false" />
+    <Property Name="C74" Type="Boolean" Nullable="false" />
+    <Property Name="C75" Type="Boolean" Nullable="false" />
+    <Property Name="C81" Type="Boolean" Nullable="false" />
+    <Property Name="C82" Type="Boolean" Nullable="false" />
+    <Property Name="C83" Type="Boolean" Nullable="false" />
+    <Property Name="C84" Type="Boolean" Nullable="false" />
+    <Property Name="C85" Type="Boolean" Nullable="false" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StatusTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="StatusCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StatusDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StatusColourCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TeethCode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Byte" Nullable="false" />
+    <Property Name="ToothName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DentistDatabaseEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="StatusTables" EntityType="Self.StatusTable" />
+    <EntitySet Name="TeethCodes" EntityType="Self.TeethCode" />
+    <EntitySet Name="Doctors" EntityType="DentistDatabaseModel.Doctor" />
+    <EntitySet Name="Tasks" EntityType="DentistDatabaseModel.Task" />
+    <EntitySet Name="Invoices" EntityType="DentistDatabaseModel.Invoice" />
+    <EntitySet Name="InvoiceItems" EntityType="DentistDatabaseModel.InvoiceItem" />
+    <EntitySet Name="Suppliers" EntityType="DentistDatabaseModel.Supplier" />
+  </EntityContainer>
+  <EntityType Name="Doctor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="16" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ClientId" Type="Int32" Nullable="false" />
+    <Property Name="ToothCode" Type="Byte" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Diagnose" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DoctorId" Type="Int32" />
+    <Property Name="PriceNOI" Type="Double" />
+    <Property Name="PriceDT" Type="Double" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="SupplierId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="IsCashPayment" Type="Boolean" />
+    <Property Name="InvoiceNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateOfPayment" Type="DateTime" Precision="7" />
+    <Property Name="Sum" Type="Decimal" Precision="10" Scale="4" />
+    <Property Name="Currency" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="InvoiceItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="InvoiceId" Type="Int32" />
+    <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ValueOfPayment" Type="Decimal" Precision="10" Scale="4" />
+    <Property Name="CurrencyOfPayment" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="BulStat" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="NewsToEmail" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Eddy\\Documents\\Visual\ Studio\ 2013\\Projects\\NewsToEmailWebApp\\NewsToEmailWebApp\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Eddy\\Documents\\Visual\ Studio\ 2013\\Projects\\NewsToEmailWebApp\\NewsToEmailWebApp\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Entities-Web.config Connection String" description="" value="metadata=res://*/;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=EDDY-PC\EDDY;Initial Catalog=NewsToEmailDB;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework&quot;" tags="" />
+  <parameter name="MaradDBEntities-Web.config Connection String" description="" value="metadata=res://*/MaradTestDBModel.csdl|res://*/MaradTestDBModel.ssdl|res://*/MaradTestDBModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=EDDY-PC\EDDYSERVER;Initial Catalog=MaradDB;Integrated Security=True&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Eddy\\Documents\\Visual\ Studio\ 2013\\Projects\\NewsToEmailWebApp\\NewsToEmailWebApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MaradDBEntities']/@connectionString" />
+  </parameter>
+  <parameter name="NewsToEmailDBEntities-Web.config Connection String" description="" value="metadata=res://*/NewsToEmailDBModel.csdl|res://*/NewsToEmailDBModel.ssdl|res://*/NewsToEmailDBModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=EDDY-PC\EDDYSERVER;Initial Catalog=NewsToEmailDB;Persist Security Info=True;User ID=Eddy;Password=Eddy8479;MultipleActiveResultSets=True;Application Name=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Eddy\\Documents\\Visual\ Studio\ 2013\\Projects\\NewsToEmailWebApp\\NewsToEmailWebApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NewsToEmailDBEntities']/@connectionString" />
+  </parameter>
+  <parameter name="NewsToEmailDBEntities1-Web.config Connection String" description="" value="metadata=res://*/;provider=System.Data.SqlClient;provider connection string=&quot;data source=EDDY-PC\EDDY;initial catalog=NewsToEmailDB;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework;App=EntityFramework&quot;" tags="" />
+</parameters>

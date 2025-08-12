@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BFDBLModelStoreContainer" CdmEntityContainer="BFDBLEntities">
+    <EntitySetMapping Name="ActiveBetLines1">
+      <EntityTypeMapping TypeName="BFDBLModel.ActiveBetLines">
+        <MappingFragment StoreEntitySet="ActiveBetLines">
+          <ScalarProperty Name="ProfitPerBet" ColumnName="ProfitPerBet" />
+          <ScalarProperty Name="TotalAmmountMatchedMin" ColumnName="TotalAmmountMatchedMin" />
+          <ScalarProperty Name="TotalAmmountMatchedMax" ColumnName="TotalAmmountMatchedMax" />
+          <ScalarProperty Name="WinnersMax" ColumnName="WinnersMax" />
+          <ScalarProperty Name="WinnersMin" ColumnName="WinnersMin" />
+          <ScalarProperty Name="RunnersMax" ColumnName="RunnersMax" />
+          <ScalarProperty Name="RunnersMin" ColumnName="RunnersMin" />
+          <ScalarProperty Name="MarketTypes" ColumnName="MarketTypes" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CountryCodes" ColumnName="CountryCodes" />
+          <ScalarProperty Name="ExchangeID" ColumnName="ExchangeID" />
+          <ScalarProperty Name="IsBSP" ColumnName="IsBSP" />
+          <ScalarProperty Name="IsInPlay" ColumnName="IsInPlay" />
+          <ScalarProperty Name="ToEventDate" ColumnName="ToEventDate" />
+          <ScalarProperty Name="FromEventDate" ColumnName="FromEventDate" />
+          <ScalarProperty Name="OddLimitMax" ColumnName="OddLimitMax" />
+          <ScalarProperty Name="OddLimitMin" ColumnName="OddLimitMin" />
+          <ScalarProperty Name="DateStarted" ColumnName="DateStarted" />
+          <ScalarProperty Name="MarketType" ColumnName="MarketType" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="BetLineID" ColumnName="BetLineID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Markets">
+      <EntityTypeMapping TypeName="BFDBLModel.Market">
+        <MappingFragment StoreEntitySet="Markets">
+          <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+          <ScalarProperty Name="TurningInPlay" ColumnName="TurningInPlay" />
+          <ScalarProperty Name="BSPMarket" ColumnName="BSPMarket" />
+          <ScalarProperty Name="TotalAmountMatched" ColumnName="TotalAmountMatched" />
+          <ScalarProperty Name="NumberOfWinners" ColumnName="NumberOfWinners" />
+          <ScalarProperty Name="NumberOfRunners" ColumnName="NumberOfRunners" />
+          <ScalarProperty Name="LastRefresh" ColumnName="LastRefresh" />
+          <ScalarProperty Name="ISO3CountryCode" ColumnName="ISO3CountryCode" />
+          <ScalarProperty Name="ExchangeID" ColumnName="ExchangeID" />
+          <ScalarProperty Name="BetDelay" ColumnName="BetDelay" />
+          <ScalarProperty Name="EventHierarchy" ColumnName="EventHierarchy" />
+          <ScalarProperty Name="MenuPath" ColumnName="MenuPath" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="MarketStatus" ColumnName="MarketStatus" />
+          <ScalarProperty Name="MarketType" ColumnName="MarketType" />
+          <ScalarProperty Name="MarketName" ColumnName="MarketName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

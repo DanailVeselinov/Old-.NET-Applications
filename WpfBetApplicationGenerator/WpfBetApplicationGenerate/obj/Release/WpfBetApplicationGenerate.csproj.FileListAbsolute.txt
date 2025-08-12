@@ -1,0 +1,157 @@
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\WpfBetApplicationGenerate\bin\Release\WpfBetApplication.exe.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.exe
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DatabasePlacedBets.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\Image\refreshBtn.png
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.exe.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.application
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\HtmlAgilityPack.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.WebHost.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\HtmlAgilityPack.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\HtmlAgilityPack.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.WebHost.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerate.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\DialogWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\PlacedBet.baml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\DialogWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\EditBetlineWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\MainWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\PlacedBet.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\App.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_Content.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_MarkupCompile.cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_MarkupCompile.lref
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\EditBetlineWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\MainWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.g.resources
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplication.Properties.Resources.resources
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerate.csproj.GenerateResource.Cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.TrustInfo.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.application
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.exe
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.XmlSerializers.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.XmlSerializers.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DatabasePlacedBets.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\Image\refreshBtn.png
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.exe.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.application
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.exe
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\HtmlAgilityPack.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.WebHost.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\HtmlAgilityPack.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\HtmlAgilityPack.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.WebHost.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerate.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\DialogWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\PlacedBet.baml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\DialogWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\EditBetlineWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\MainWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\PlacedBet.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\App.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_Content.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_MarkupCompile.cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_MarkupCompile.lref
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\EditBetlineWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\MainWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.g.resources
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplication.Properties.Resources.resources
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerate.csproj.GenerateResource.Cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.TrustInfo.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.application
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.exe
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.SqlServerCompact.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.SqlServerCompact.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DatabasePlacedBets.sdf
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\BFDBL.sdf
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\Image\refreshBtn.png
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.exe.config
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.exe.manifest
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.application
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.exe
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\WpfBetApplicationGenerator.pdb
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DatabasePlacedBets.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DBLBettingApp.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.SqlServerCompact.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\HtmlAgilityPack.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Net.Http.Formatting.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.WebHost.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\Newtonsoft.Json.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DatabasePlacedBets.pdb
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\DBLBettingApp.pdb
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\EntityFramework.SqlServerCompact.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\HtmlAgilityPack.pdb
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\HtmlAgilityPack.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Net.Http.Formatting.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\bin\Release\System.Web.Http.WebHost.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerate.csprojResolveAssemblyReference.cache
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\DialogWindow.baml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\PlacedBet.baml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\DialogWindow.g.cs
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\EditBetlineWindow.g.cs
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\MainWindow.g.cs
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\PlacedBet.g.cs
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\App.g.cs
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_Content.g.cs
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_MarkupCompile.cache
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_MarkupCompile.lref
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\EditBetlineWindow.baml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\MainWindow.baml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.g.resources
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplication.Properties.Resources.resources
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerate.csproj.GenerateResource.Cache
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.TrustInfo.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.exe.manifest
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.application
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.exe
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerate.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\DialogWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\PlacedBet.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\DialogWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\EditBetlineWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\PlacedBet.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\App.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_Content.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_MarkupCompile.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator_MarkupCompile.lref
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.exe
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\WpfBetApplicationGenerator.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerate\obj\Release\MainWindow.g.cs

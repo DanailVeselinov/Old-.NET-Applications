@@ -1,0 +1,15 @@
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\bin\Debug\TestDB.exe.config
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\bin\Debug\TestDB.exe
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\bin\Debug\TestDB.pdb
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\bin\Debug\EntityFramework.dll
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\bin\Debug\EntityFramework.xml
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\TestDB.csprojResolveAssemblyReference.cache
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\MainWindow.baml
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\MainWindow.g.cs
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\App.g.cs
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\TestDB_MarkupCompile.cache
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\TestDB.g.resources
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\TestDB.Properties.Resources.resources
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\TestDB.csproj.GenerateResource.Cache
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\TestDB.exe
+c:\users\eddy\documents\visual studio 2013\Projects\TestDB\TestDB\obj\Debug\TestDB.pdb

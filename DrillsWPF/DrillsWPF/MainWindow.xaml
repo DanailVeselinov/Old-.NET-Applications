@@ -1,0 +1,30 @@
+﻿<Window x:Class="DrillsWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Drills and Trainings">
+    <ScrollViewer>
+        <StackPanel Orientation="Horizontal">
+            <TabControl>
+                <TabItem Header="Crew">
+                    
+                </TabItem>
+                <TabItem Header="Tags">
+                    
+                </TabItem>
+                <TabItem Header="Drills and Trainings">
+                    
+                </TabItem>
+            </TabControl>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Plan Drills and Trainings" Margin="5"/>
+                    <Button Content="Suggest Dates and time" Margin="5"/>
+                    <Button Content="Prepare Selected" Margin="5"/>
+                    <Button Content="Print Selected" Margin="5"/>
+                    <Button Content="Print Participants List" Margin="5"/>
+                </StackPanel>
+                <DataGrid x:Name="MonthlySchedule"></DataGrid>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

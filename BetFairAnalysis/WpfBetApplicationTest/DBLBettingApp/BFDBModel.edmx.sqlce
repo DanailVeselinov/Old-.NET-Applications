@@ -1,0 +1,97 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server Compact Edition
+-- --------------------------------------------------
+-- Date Created: 05/07/2013 13:33:29
+-- Generated from EDMX file: C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\BFDBModel.edmx
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- NOTE: if the constraint does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- NOTE: if the table does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'Betlines'
+CREATE TABLE [Betlines] (
+    [BetlineId] int IDENTITY(1,1) NOT NULL,
+    [stakeRangeMin] float  NOT NULL,
+    [stakeRangeMax] float  NOT NULL,
+    [initialProfitPerBet] float  NOT NULL,
+    [profitPerBet] float  NOT NULL,
+    [lastBetLost] bit  NOT NULL,
+    [isActive] bit  NOT NULL,
+    [currencyCode] nvarchar(4000)  NOT NULL,
+    [Filter_FilterId] int  NOT NULL
+);
+GO
+
+-- Creating table 'Filters'
+CREATE TABLE [Filters] (
+    [FilterId] int IDENTITY(1,1) NOT NULL,
+    [eventTypes] nvarchar(4000)  NULL,
+    [fromEventDate] datetime  NULL,
+    [toEventDate] datetime  NULL,
+    [isInPlay] bit  NULL,
+    [isBSP] bit  NULL,
+    [exchangeId] tinyint  NULL,
+    [countryCodes] nvarchar(4000)  NOT NULL,
+    [isActive] bit  NULL,
+    [marketTypes] nvarchar(4000)  NULL,
+    [runnersMin] int  NOT NULL,
+    [runnersMax] int  NOT NULL,
+    [winnersMin] int  NOT NULL,
+    [winnersMax] int  NOT NULL,
+    [totalAmmountMatchedMin] float  NOT NULL,
+    [totalAmmountMatchedMax] float  NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [BetlineId] in table 'Betlines'
+ALTER TABLE [Betlines]
+ADD CONSTRAINT [PK_Betlines]
+    PRIMARY KEY ([BetlineId] );
+GO
+
+-- Creating primary key on [FilterId] in table 'Filters'
+ALTER TABLE [Filters]
+ADD CONSTRAINT [PK_Filters]
+    PRIMARY KEY ([FilterId] );
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- Creating foreign key on [Filter_FilterId] in table 'Betlines'
+ALTER TABLE [Betlines]
+ADD CONSTRAINT [FK_BetlinesFilters]
+    FOREIGN KEY ([Filter_FilterId])
+    REFERENCES [Filters]
+        ([FilterId])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_BetlinesFilters'
+CREATE INDEX [IX_FK_BetlinesFilters]
+ON [Betlines]
+    ([Filter_FilterId]);
+GO
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------

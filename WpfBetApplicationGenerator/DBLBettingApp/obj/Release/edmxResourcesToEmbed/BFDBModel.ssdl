@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BFDBLModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BFDBLModelStoreContainer">
+    <EntitySet Name="Betlines" EntityType="BFDBLModel.Store.Betlines" store:Type="Tables" />
+    <EntitySet Name="Emails" EntityType="BFDBLModel.Store.Emails" store:Type="Tables" />
+    <EntitySet Name="Filters" EntityType="BFDBLModel.Store.Filters" store:Type="Tables" />
+    <EntitySet Name="PlacedBets" EntityType="BFDBLModel.Store.PlacedBets" store:Type="Tables" />
+    <AssociationSet Name="Betline" Association="BFDBLModel.Store.Betline">
+      <End Role="Betlines" EntitySet="Betlines" />
+      <End Role="PlacedBets" EntitySet="PlacedBets" />
+    </AssociationSet>
+    <AssociationSet Name="Filter" Association="BFDBLModel.Store.Filter">
+      <End Role="Filters" EntitySet="Filters" />
+      <End Role="Betlines" EntitySet="Betlines" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Betlines">
+    <Key>
+      <PropertyRef Name="BetlineId" />
+    </Key>
+    <Property Name="BetlineId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="stakeRangeMin" Type="float" Nullable="false" />
+    <Property Name="stakeRangeMax" Type="float" Nullable="false" />
+    <Property Name="initialProfitPerBet" Type="float" Nullable="false" />
+    <Property Name="profitPerBet" Type="float" Nullable="false" />
+    <Property Name="lastBetLost" Type="bit" Nullable="false" />
+    <Property Name="isActive" Type="bit" Nullable="false" />
+    <Property Name="currencyCode" Type="nvarchar" MaxLength="5" />
+    <Property Name="Filter_FilterId" Type="int" />
+    <Property Name="lastPlacedBetId" Type="nvarchar" MaxLength="500" />
+    <Property Name="algorithmName" Type="nvarchar" MaxLength="50" />
+    <Property Name="betType" Type="nvarchar" MaxLength="20" />
+    <Property Name="betlineName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Emails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Filters">
+    <Key>
+      <PropertyRef Name="FilterId" />
+    </Key>
+    <Property Name="FilterId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="eventTypes" Type="nvarchar" />
+    <Property Name="fromEventDate" Type="datetime" />
+    <Property Name="toEventDate" Type="datetime" />
+    <Property Name="isInPlay" Type="bit" Nullable="false" />
+    <Property Name="isBSP" Type="bit" />
+    <Property Name="exchangeId" Type="tinyint" />
+    <Property Name="countryCodes" Type="nvarchar" Nullable="false" />
+    <Property Name="isActive" Type="bit" />
+    <Property Name="marketTypes" Type="nvarchar" />
+    <Property Name="runnersMin" Type="int" Nullable="false" />
+    <Property Name="runnersMax" Type="int" Nullable="false" />
+    <Property Name="winnersMin" Type="int" Nullable="false" />
+    <Property Name="winnersMax" Type="int" Nullable="false" />
+    <Property Name="totalAmountMatchedMin" Type="float" />
+    <Property Name="totalAmountMatchedMax" Type="float" />
+    <Property Name="marketNames" Type="nvarchar" />
+    <Property Name="sortedOrdersMatchOdds" Type="nvarchar" MaxLength="20" />
+    <Property Name="sortedOrdersCorrectScore" Type="nvarchar" MaxLength="50" />
+    <Property Name="maxBetsCount" Type="tinyint" />
+    <Property Name="maxAmmountIncremented" Type="int" />
+  </EntityType>
+  <EntityType Name="PlacedBets">
+    <Key>
+      <PropertyRef Name="betId" />
+    </Key>
+    <Property Name="resultCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="sizeMatched" Type="float" Nullable="false" />
+    <Property Name="success" Type="bit" Nullable="false" />
+    <Property Name="betlineId" Type="int" />
+    <Property Name="datePlaced" Type="datetime" Nullable="false" />
+    <Property Name="marketId" Type="int" Nullable="false" />
+    <Property Name="marketMenuPath" Type="nvarchar" MaxLength="200" />
+    <Property Name="averagePrice" Type="float" Nullable="false" />
+    <Property Name="Selection" Type="nvarchar" MaxLength="50" />
+    <Property Name="dateSettled" Type="datetime" />
+    <Property Name="eventId" Type="int" />
+    <Property Name="betId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sortedOrder" Type="int" />
+    <Property Name="marketName" Type="nvarchar" MaxLength="20" />
+    <Property Name="score" Type="ntext" />
+    <Property Name="eventType" Type="int" />
+  </EntityType>
+  <Association Name="Betline">
+    <End Role="Betlines" Type="BFDBLModel.Store.Betlines" Multiplicity="0..1" />
+    <End Role="PlacedBets" Type="BFDBLModel.Store.PlacedBets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Betlines">
+        <PropertyRef Name="BetlineId" />
+      </Principal>
+      <Dependent Role="PlacedBets">
+        <PropertyRef Name="betlineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Filter">
+    <End Role="Filters" Type="BFDBLModel.Store.Filters" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Betlines" Type="BFDBLModel.Store.Betlines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Filters">
+        <PropertyRef Name="FilterId" />
+      </Principal>
+      <Dependent Role="Betlines">
+        <PropertyRef Name="Filter_FilterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

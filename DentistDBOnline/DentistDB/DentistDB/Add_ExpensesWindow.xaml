@@ -1,0 +1,61 @@
+﻿<Window x:Class="DentistDB.Add_ExpensesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DentistDB"
+        mc:Ignorable="d"
+        Title="Add_ExpensesWindow" SizeToContent="WidthAndHeight" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" MaxWidth="700" MaxHeight="500" Background="Aqua">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="True" MaxHeight="500" MaxWidth="700">
+    <StackPanel x:Name="ValuesSP" Orientation="Vertical" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" MaxHeight="500" MaxWidth="700">
+        <StackPanel Orientation="Horizontal" Width="{Binding Width,ElementName=ValuesSP}">
+            <Label Content="Фирма:" Target="{Binding ElementName=CompanyTB}"/>
+            <TextBox x:Name="CompanyTB" MinWidth="200" KeyUp="CompanyTB_KeyUp" GotFocus="CompanyTB_GotFocus"/>            
+        </StackPanel>
+        <ListView x:Name="CompanyLV" Panel.ZIndex="20" Margin="60,0,0,0" Visibility="Collapsed" DataContext="{Binding}" MouseDoubleClick="CompanyLV_MouseDoubleClick" KeyUp="CompanyLV_KeyUp">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackPanel Orientation="Horizontal" Width="{Binding Width,ElementName=ValuesSP}">
+            <Label Content="Адрес:" Target="{Binding ElementName=AddressTB}" />
+            <TextBox x:Name="AddressTB" MinWidth="200"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Width="{Binding Width,ElementName=ValuesSP}">
+            <Label Content="Булстат:" Target="{Binding ElementName=BulstatTB}" />
+            <TextBox x:Name="BulstatTB" MinWidth="150"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Width="{Binding Width,ElementName=ValuesSP}">
+            <Label Content="Фактура Номер:" Target="{Binding ElementName=RecieptTB}" />
+            <TextBox x:Name="RecieptTB" MinWidth="150"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Width="{Binding Width,ElementName=ValuesSP}">
+            <Label Content="Дата на Плащане:" Target="{Binding ElementName=DatePaidTB}" />
+            <DatePicker x:Name="DatePaidTB"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Width="{Binding Width,ElementName=ValuesSP}">
+            <Label Content="Tаблица със артикули:" Target="{Binding ElementName=InvoiceItemsDG}" ToolTip="Добави с Enter и изтрий с Del бутони избрания ред!" />
+            <DataGrid x:Name="InvoiceItemsDG" DataContext="{Binding}" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto"  LostFocus="InvoiceItemsDG_LostFocus" AutoGenerateColumns="False" CanUserAddRows="True" CanUserDeleteRows="True" CanUserSortColumns="True" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Име" Binding="{Binding ItemName}"/>
+                    <DataGridTextColumn Header="Стойност" Binding="{Binding ValueOfPayment, StringFormat=\{0:N2\}}"/>
+                    <DataGridTextColumn Header="Валута" Binding="{Binding CurrencyOfPayment}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Width="{Binding Width,ElementName=ValuesSP}">
+            <Label Content="Стойност на Плащане:" Target="{Binding ElementName=SumTB}" />
+            <TextBox x:Name="SumTB" MinWidth="50" Margin="5,0"/>
+            <TextBox x:Name="Currency" Text="лв." Margin="5,0"/>
+            <ComboBox x:Name="WayPaid" Margin="5,0">
+                <ComboBoxItem Name="Cash" Content="В брой" IsSelected="True"/>
+                <ComboBoxItem Name="Bank" Content="Банков път"/>
+            </ComboBox>
+        </StackPanel>
+        <Button x:Name="UpdateButton" Content="Добави Разход"  Click="Button_Click"/>
+    </StackPanel>
+    </ScrollViewer>
+</Window>

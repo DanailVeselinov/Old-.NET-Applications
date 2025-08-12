@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DentistDatabaseModelStoreContainer" CdmEntityContainer="DentistDatabaseEntities1">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="DentistDatabaseModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="C85" ColumnName="85" />
+          <ScalarProperty Name="C84" ColumnName="84" />
+          <ScalarProperty Name="C83" ColumnName="83" />
+          <ScalarProperty Name="C82" ColumnName="82" />
+          <ScalarProperty Name="C81" ColumnName="81" />
+          <ScalarProperty Name="C75" ColumnName="75" />
+          <ScalarProperty Name="C74" ColumnName="74" />
+          <ScalarProperty Name="C73" ColumnName="73" />
+          <ScalarProperty Name="C72" ColumnName="72" />
+          <ScalarProperty Name="C71" ColumnName="71" />
+          <ScalarProperty Name="C65" ColumnName="65" />
+          <ScalarProperty Name="C64" ColumnName="64" />
+          <ScalarProperty Name="C63" ColumnName="63" />
+          <ScalarProperty Name="C62" ColumnName="62" />
+          <ScalarProperty Name="C61" ColumnName="61" />
+          <ScalarProperty Name="C55" ColumnName="55" />
+          <ScalarProperty Name="C54" ColumnName="54" />
+          <ScalarProperty Name="C53" ColumnName="53" />
+          <ScalarProperty Name="C52" ColumnName="52" />
+          <ScalarProperty Name="C51" ColumnName="51" />
+          <ScalarProperty Name="C48" ColumnName="48" />
+          <ScalarProperty Name="C47" ColumnName="47" />
+          <ScalarProperty Name="C46" ColumnName="46" />
+          <ScalarProperty Name="C45" ColumnName="45" />
+          <ScalarProperty Name="C44" ColumnName="44" />
+          <ScalarProperty Name="C43" ColumnName="43" />
+          <ScalarProperty Name="C42" ColumnName="42" />
+          <ScalarProperty Name="C41" ColumnName="41" />
+          <ScalarProperty Name="C38" ColumnName="38" />
+          <ScalarProperty Name="C37" ColumnName="37" />
+          <ScalarProperty Name="C36" ColumnName="36" />
+          <ScalarProperty Name="C35" ColumnName="35" />
+          <ScalarProperty Name="C34" ColumnName="34" />
+          <ScalarProperty Name="C33" ColumnName="33" />
+          <ScalarProperty Name="C32" ColumnName="32" />
+          <ScalarProperty Name="C31" ColumnName="31" />
+          <ScalarProperty Name="C28" ColumnName="28" />
+          <ScalarProperty Name="C27" ColumnName="27" />
+          <ScalarProperty Name="C26" ColumnName="26" />
+          <ScalarProperty Name="C25" ColumnName="25" />
+          <ScalarProperty Name="C24" ColumnName="24" />
+          <ScalarProperty Name="C23" ColumnName="23" />
+          <ScalarProperty Name="C22" ColumnName="22" />
+          <ScalarProperty Name="C21" ColumnName="21" />
+          <ScalarProperty Name="C18" ColumnName="18" />
+          <ScalarProperty Name="C17" ColumnName="17" />
+          <ScalarProperty Name="C16" ColumnName="16" />
+          <ScalarProperty Name="C15" ColumnName="15" />
+          <ScalarProperty Name="C14" ColumnName="14" />
+          <ScalarProperty Name="C13" ColumnName="13" />
+          <ScalarProperty Name="C12" ColumnName="12" />
+          <ScalarProperty Name="C11" ColumnName="11" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="SecondName" ColumnName="SecondName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PersonalIdNumber" ColumnName="PersonalIdNumber" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Phone1" ColumnName="Phone1" />
+          <ScalarProperty Name="Phone2" ColumnName="Phone2" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="FirstDate" ColumnName="FirstDate" />
+          <ScalarProperty Name="LastDateUpdate" ColumnName="LastDateUpdate" />
+          <ScalarProperty Name="ClinicalDisorders" ColumnName="ClinicalDisorders" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusTables">
+      <EntityTypeMapping TypeName="DentistDatabaseModel.StatusTable">
+        <MappingFragment StoreEntitySet="StatusTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="StatusDescription" ColumnName="StatusDescription" />
+          <ScalarProperty Name="StatusColourCode" ColumnName="StatusColourCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeethCodes">
+      <EntityTypeMapping TypeName="DentistDatabaseModel.TeethCode">
+        <MappingFragment StoreEntitySet="TeethCodes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ToothName" ColumnName="ToothName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doctors">
+      <EntityTypeMapping TypeName="DentistDatabaseModel.Doctor">
+        <MappingFragment StoreEntitySet="Doctors">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="DentistDatabaseModel.Task">
+        <MappingFragment StoreEntitySet="Task">
+          <ScalarProperty Name="PriceDT" ColumnName="PriceDT" />
+          <ScalarProperty Name="PriceNOI" ColumnName="PriceNOI" />
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Diagnose" ColumnName="Diagnose" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ToothCode" ColumnName="ToothCode" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="DentistDatabaseModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="DateOfPayment" ColumnName="DateOfPayment" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="IsCashPayment" ColumnName="IsCashPayment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceItems">
+      <EntityTypeMapping TypeName="DentistDatabaseModel.InvoiceItem">
+        <MappingFragment StoreEntitySet="InvoiceItem">
+          <ScalarProperty Name="CurrencyOfPayment" ColumnName="CurrencyOfPayment" />
+          <ScalarProperty Name="ValueOfPayment" ColumnName="ValueOfPayment" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="DentistDatabaseModel.Supplier">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="BulStat" ColumnName="BulStat" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

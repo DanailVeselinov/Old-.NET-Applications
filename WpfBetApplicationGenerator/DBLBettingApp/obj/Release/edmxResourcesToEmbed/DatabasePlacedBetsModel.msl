@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabasePlacedBetsModelStoreContainer" CdmEntityContainer="DatabasePlacedBetsEntities">
+    <EntitySetMapping Name="PlacedBets">
+      <EntityTypeMapping TypeName="DatabasePlacedBetsModel.PlacedBet">
+        <MappingFragment StoreEntitySet="PlacedBets">
+          <ScalarProperty Name="eventType" ColumnName="eventType" />
+          <ScalarProperty Name="score" ColumnName="score" />
+          <ScalarProperty Name="marketName" ColumnName="marketName" />
+          <ScalarProperty Name="sortedOrder" ColumnName="sortedOrder" />
+          <ScalarProperty Name="betId" ColumnName="betId" />
+          <ScalarProperty Name="dateSettled" ColumnName="dateSettled" />
+          <ScalarProperty Name="Selection" ColumnName="Selection" />
+          <ScalarProperty Name="averagePrice" ColumnName="averagePrice" />
+          <ScalarProperty Name="marketMenuPath" ColumnName="marketMenuPath" />
+          <ScalarProperty Name="marketId" ColumnName="marketId" />
+          <ScalarProperty Name="datePlaced" ColumnName="datePlaced" />
+          <ScalarProperty Name="success" ColumnName="success" />
+          <ScalarProperty Name="resultCode" ColumnName="resultCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

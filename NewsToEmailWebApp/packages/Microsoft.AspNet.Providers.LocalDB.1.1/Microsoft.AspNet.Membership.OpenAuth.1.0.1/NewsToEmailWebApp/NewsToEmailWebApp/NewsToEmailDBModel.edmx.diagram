@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="065413c174c34155968b134df0a3fba4" Name="Diagram1">
+        <EntityTypeShape EntityType="NewsToEmailDBModel.Categories" Width="1.5" PointX="3" PointY="10.625" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.FiltersCategories" Width="1.5" PointX="5.25" PointY="12.5" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.KeyWords" Width="1.5" PointX="3" PointY="8" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.Livescores" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.News" Width="1.5" PointX="5.25" PointY="7.875" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.UsedEmails" Width="1.5" PointX="3" PointY="13.875" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.Users" Width="1.5" PointX="0.75" PointY="1.625" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.UsersWebsites" Width="1.5" PointX="3" PointY="4" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.WebSites" Width="1.5" PointX="0.75" PointY="6" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_categoryId" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_CategoryNews" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_WebSiteId" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_userId" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_KeyWS" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_UsersLivescore" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_WebSiteNews" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_UsersEmails" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_Users1" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_Website1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

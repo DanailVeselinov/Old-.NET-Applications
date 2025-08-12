@@ -1,0 +1,28 @@
+﻿<Window x:Class="StatisticsTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StatisticsTestBFDBL" Height="350" Width="525" Loaded="Window_Loaded">
+    <StackPanel x:Name="mainGrid">
+        <Label Content="Database Address"/>
+        <TextBox x:Name="_dataFileTextBox" Text=""/>
+        <Button Click="Button_Click_Browse"  Content="Browse"/>
+        <Label Content="BetlineId"/>
+        <ComboBox ItemsSource="{Binding}" DisplayMemberPath="betlineName" x:Name="_betlineId"/>
+        <Label>Market Tax Percent %</Label>
+        <ComboBox SelectedIndex="0" x:Name="_taxPercent"/>
+        <UniformGrid Rows="2">
+        <Label>Maximum Stake</Label>
+            <Label>Budjet Step</Label>
+            <Label>Budjets Limit</Label>
+        <TextBox x:Name="_maxStakeTextBox" Text="0"/>
+            <TextBox Text="0.1" x:Name="_budjetStep"/>
+            <TextBox x:Name="_budjetsLimit"/>
+        </UniformGrid>
+        <Button Click="Button_Click" Content="Get Stats"/>
+        <UniformGrid>
+            <Button Content="Get Prices" Click="BestPricesButton_Click"/>
+            <Button Content="Get All Prices" Click="BestPricesAllButton_Click"/>
+        </UniformGrid>
+        <Button Content="Calculate best Real Budjets" Click="BestRealBudjetButton_Click"/>        
+    </StackPanel>
+</Window>

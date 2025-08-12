@@ -1,0 +1,14 @@
+﻿<Window x:Class="DentistDB.AddStatusWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddStatusWindow" Height="200" Width="300">
+    <StackPanel>
+        <Label Content="Цвят:" Target="{Binding ElementName=ColorTB}"/>
+        <TextBlock Name="ColorTB" Text="Кликни за да смениш цвета" Background="{Binding StatusColourCode, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp"/>
+        <Label Content="Код на статуса" ToolTip="до 10 символа" Target="{Binding ElementName=CodeTB}"/>
+        <TextBox Name="CodeTB" Text="{Binding StatusCode,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Описание на Статуса:" Target="{Binding ElementName=DescTB}"/>
+        <TextBox Name="DescTB" Text="{Binding StatusDescription,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Content="Запази" Click="Button_Click"/>
+    </StackPanel>
+</Window>

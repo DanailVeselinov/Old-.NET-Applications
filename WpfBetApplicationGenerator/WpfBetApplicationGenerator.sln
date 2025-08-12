@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBLBettingApp", "DBLBettingApp\DBLBettingApp.csproj", "{043043E6-ED91-4C23-817D-133FC2CDF092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBetApplicationGenerate", "WpfBetApplicationGenerate\WpfBetApplicationGenerate.csproj", "{E55FA873-1C09-454B-9E1E-10CD07D8EFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabasePlacedBets", "DatabasePlacedBets\DatabasePlacedBets.csproj", "{37BA8787-C1E3-41EC-A7F4-06DBD6FDFC60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deb|Any CPU = Deb|Any CPU
+		Deb|x86 = Deb|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{043043E6-ED91-4C23-817D-133FC2CDF092}.Deb|Any CPU.ActiveCfg = Debug|Any CPU
+		{043043E6-ED91-4C23-817D-133FC2CDF092}.Deb|Any CPU.Build.0 = Debug|Any CPU
+		{043043E6-ED91-4C23-817D-133FC2CDF092}.Deb|x86.ActiveCfg = Deb|x86
+		{043043E6-ED91-4C23-817D-133FC2CDF092}.Deb|x86.Build.0 = Deb|x86
+		{043043E6-ED91-4C23-817D-133FC2CDF092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043043E6-ED91-4C23-817D-133FC2CDF092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{043043E6-ED91-4C23-817D-133FC2CDF092}.Release|x86.ActiveCfg = Release|Any CPU
+		{043043E6-ED91-4C23-817D-133FC2CDF092}.Release|x86.Build.0 = Release|Any CPU
+		{E55FA873-1C09-454B-9E1E-10CD07D8EFE9}.Deb|Any CPU.ActiveCfg = Debug|Any CPU
+		{E55FA873-1C09-454B-9E1E-10CD07D8EFE9}.Deb|Any CPU.Build.0 = Debug|Any CPU
+		{E55FA873-1C09-454B-9E1E-10CD07D8EFE9}.Deb|x86.ActiveCfg = Deb|x86
+		{E55FA873-1C09-454B-9E1E-10CD07D8EFE9}.Deb|x86.Build.0 = Deb|x86
+		{E55FA873-1C09-454B-9E1E-10CD07D8EFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E55FA873-1C09-454B-9E1E-10CD07D8EFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E55FA873-1C09-454B-9E1E-10CD07D8EFE9}.Release|x86.ActiveCfg = Release|x86
+		{E55FA873-1C09-454B-9E1E-10CD07D8EFE9}.Release|x86.Build.0 = Release|x86
+		{37BA8787-C1E3-41EC-A7F4-06DBD6FDFC60}.Deb|Any CPU.ActiveCfg = Debug|Any CPU
+		{37BA8787-C1E3-41EC-A7F4-06DBD6FDFC60}.Deb|Any CPU.Build.0 = Debug|Any CPU
+		{37BA8787-C1E3-41EC-A7F4-06DBD6FDFC60}.Deb|x86.ActiveCfg = Deb|Any CPU
+		{37BA8787-C1E3-41EC-A7F4-06DBD6FDFC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37BA8787-C1E3-41EC-A7F4-06DBD6FDFC60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37BA8787-C1E3-41EC-A7F4-06DBD6FDFC60}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{37BA8787-C1E3-41EC-A7F4-06DBD6FDFC60}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

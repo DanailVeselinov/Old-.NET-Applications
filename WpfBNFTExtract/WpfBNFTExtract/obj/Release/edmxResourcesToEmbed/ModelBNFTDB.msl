@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BNFT_VSLModelStoreContainer" CdmEntityContainer="BNFT_VSLEntities">
+    <EntitySetMapping Name="CWCREW">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.CWCREW">
+        <MappingFragment StoreEntitySet="CWCREW">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LASTNAME" ColumnName="LASTNAME" />
+          <ScalarProperty Name="FIRSTNAME" ColumnName="FIRSTNAME" />
+          <ScalarProperty Name="CWPRANK_ID" ColumnName="CWPRANK_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CWCREWSERV">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.CWCREWSERV">
+        <MappingFragment StoreEntitySet="CWCREWSERV">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CWCREW_ID" ColumnName="CWCREW_ID" />
+          <ScalarProperty Name="CWPRANK_ID" ColumnName="CWPRANK_ID" />
+          <ScalarProperty Name="DATEE" ColumnName="DATEE" />
+          <ScalarProperty Name="DATED" ColumnName="DATED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CWPRANK">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.CWPRANK">
+        <MappingFragment StoreEntitySet="CWPRANK">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="AA" ColumnName="AA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CWRESTHRS">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.CWRESTHRS">
+        <MappingFragment StoreEntitySet="CWRESTHRS">
+          <ScalarProperty Name="FL_EDate" ColumnName="FL_EWdate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RH_DATE" ColumnName="RH_DATE" />
+          <ScalarProperty Name="CWCREW_ID" ColumnName="CWCREW_ID" />
+          <ScalarProperty Name="H01A" ColumnName="H01A" />
+          <ScalarProperty Name="H01B" ColumnName="H01B" />
+          <ScalarProperty Name="H02A" ColumnName="H02A" />
+          <ScalarProperty Name="H02B" ColumnName="H02B" />
+          <ScalarProperty Name="H03A" ColumnName="H03A" />
+          <ScalarProperty Name="H03B" ColumnName="H03B" />
+          <ScalarProperty Name="H04A" ColumnName="H04A" />
+          <ScalarProperty Name="H04B" ColumnName="H04B" />
+          <ScalarProperty Name="H05A" ColumnName="H05A" />
+          <ScalarProperty Name="H05B" ColumnName="H05B" />
+          <ScalarProperty Name="H06A" ColumnName="H06A" />
+          <ScalarProperty Name="H06B" ColumnName="H06B" />
+          <ScalarProperty Name="H07A" ColumnName="H07A" />
+          <ScalarProperty Name="H07B" ColumnName="H07B" />
+          <ScalarProperty Name="H08A" ColumnName="H08A" />
+          <ScalarProperty Name="H08B" ColumnName="H08B" />
+          <ScalarProperty Name="H09A" ColumnName="H09A" />
+          <ScalarProperty Name="H09B" ColumnName="H09B" />
+          <ScalarProperty Name="H10A" ColumnName="H10A" />
+          <ScalarProperty Name="H10B" ColumnName="H10B" />
+          <ScalarProperty Name="H11A" ColumnName="H11A" />
+          <ScalarProperty Name="H11B" ColumnName="H11B" />
+          <ScalarProperty Name="H12A" ColumnName="H12A" />
+          <ScalarProperty Name="H12B" ColumnName="H12B" />
+          <ScalarProperty Name="H13A" ColumnName="H13A" />
+          <ScalarProperty Name="H13B" ColumnName="H13B" />
+          <ScalarProperty Name="H14A" ColumnName="H14A" />
+          <ScalarProperty Name="H14B" ColumnName="H14B" />
+          <ScalarProperty Name="H15A" ColumnName="H15A" />
+          <ScalarProperty Name="H15B" ColumnName="H15B" />
+          <ScalarProperty Name="H16A" ColumnName="H16A" />
+          <ScalarProperty Name="H16B" ColumnName="H16B" />
+          <ScalarProperty Name="H17A" ColumnName="H17A" />
+          <ScalarProperty Name="H17B" ColumnName="H17B" />
+          <ScalarProperty Name="H18A" ColumnName="H18A" />
+          <ScalarProperty Name="H18B" ColumnName="H18B" />
+          <ScalarProperty Name="H19A" ColumnName="H19A" />
+          <ScalarProperty Name="H19B" ColumnName="H19B" />
+          <ScalarProperty Name="H20A" ColumnName="H20A" />
+          <ScalarProperty Name="H20B" ColumnName="H20B" />
+          <ScalarProperty Name="H21A" ColumnName="H21A" />
+          <ScalarProperty Name="H21B" ColumnName="H21B" />
+          <ScalarProperty Name="H22A" ColumnName="H22A" />
+          <ScalarProperty Name="H22B" ColumnName="H22B" />
+          <ScalarProperty Name="H23A" ColumnName="H23A" />
+          <ScalarProperty Name="H23B" ColumnName="H23B" />
+          <ScalarProperty Name="H24A" ColumnName="H24A" />
+          <ScalarProperty Name="H24B" ColumnName="H24B" />
+          <ScalarProperty Name="REST_24" ColumnName="REST_24" />
+          <ScalarProperty Name="WRK_24" ColumnName="WRK_24" />
+          <ScalarProperty Name="REST_IN24" ColumnName="REST_IN24" />
+          <ScalarProperty Name="REST_IN7D" ColumnName="REST_IN7D" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CWRHSCHED">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.CWRHSCHED">
+        <MappingFragment StoreEntitySet="CWRHSCHED">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CWPRANK_ID" ColumnName="CWPRANK_ID" />
+          <ScalarProperty Name="FL_WK" ColumnName="FL_WK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SQEVENT_HST">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.SQEVENT_HST">
+        <MappingFragment StoreEntitySet="SQEVENT_HST">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EVT_NOTES" ColumnName="EVT_NOTES" />
+          <ScalarProperty Name="SQEVENT_HST_ID" ColumnName="SQEVENT_HST_ID" />
+          <ScalarProperty Name="EVENT_DT" ColumnName="EVENT_DT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SQEVENT_HST_PARTIC">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.SQEVENT_HST_PARTIC">
+        <MappingFragment StoreEntitySet="SQEVENT_HST_PARTIC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SQEVENT_HST_ID" ColumnName="SQEVENT_HST_ID" />
+          <ScalarProperty Name="CWCREW_ID" ColumnName="CWCREW_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSL">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.VSL">
+        <MappingFragment StoreEntitySet="VSL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VSL_NAME" ColumnName="VSL_NAME" />
+          <ScalarProperty Name="VSL_FLAG_ID" ColumnName="VSL_FLAG_ID" />
+          <ScalarProperty Name="IMO_NO" ColumnName="IMO_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSL_FLAG">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.VSL_FLAG">
+        <MappingFragment StoreEntitySet="VSL_FLAG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PFINT_DATELINE">
+      <EntityTypeMapping TypeName="BNFT_VSLModel.PFINT_DATELINE">
+        <MappingFragment StoreEntitySet="PFINT_DATELINE">
+          <ScalarProperty Name="FL_REXST" ColumnName="FL_REXST" />
+          <ScalarProperty Name="FL_DLT" ColumnName="FL_DLT" />
+          <ScalarProperty Name="RLS_NO" ColumnName="RLS_NO" />
+          <ScalarProperty Name="FL_SENT" ColumnName="FL_SENT" />
+          <ScalarProperty Name="FL_CHNG" ColumnName="FL_CHNG" />
+          <ScalarProperty Name="VO_ID" ColumnName="VO_ID" />
+          <ScalarProperty Name="CS_ID" ColumnName="CS_ID" />
+          <ScalarProperty Name="DATE_UPD" ColumnName="DATE_UPD" />
+          <ScalarProperty Name="DATE_IN" ColumnName="DATE_IN" />
+          <ScalarProperty Name="FL_DATELINE" ColumnName="FL_DATELINE" />
+          <ScalarProperty Name="USERUPD_ID" ColumnName="USERUPD_ID" />
+          <ScalarProperty Name="USERIN_ID" ColumnName="USERIN_ID" />
+          <ScalarProperty Name="VSL_ID" ColumnName="VSL_ID" />
+          <ScalarProperty Name="FL_EW" ColumnName="FL_EW" />
+          <ScalarProperty Name="DATE_LINE" ColumnName="DATE_LINE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

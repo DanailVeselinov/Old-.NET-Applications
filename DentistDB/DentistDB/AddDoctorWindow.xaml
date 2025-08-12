@@ -1,0 +1,12 @@
+﻿<Window x:Class="DentistDB.AddDoctorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddDoctorWindow" SizeToContent="WidthAndHeight" Background="Aqua">
+    <StackPanel Margin="10">
+        <Label Content="Име" Target="{Binding ElementName=DoctorNameTB}"/>
+        <TextBox Name="DoctorNameTB"/>
+        <Label Content="Парола" Target="{Binding ElementName=DoctorPasswordTB}"/>
+        <TextBox Name="DoctorPasswordTB"/>
+        <Button Content="Добави" Margin="0,10" Click="Button_Click"/>
+    </StackPanel>
+</Window>

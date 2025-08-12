@@ -1,0 +1,17 @@
+C:\Users\Eddy\documents\visual studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\x86\Debug\BFDBL.sdf
+C:\Users\Eddy\documents\visual studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\x86\Debug\DBLBettingApp.dll.config
+C:\Users\Eddy\documents\visual studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\x86\Debug\DBLBettingApp.dll
+C:\Users\Eddy\documents\visual studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\x86\Debug\DBLBettingApp.pdb
+C:\Users\Eddy\documents\visual studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\x86\Debug\EntityFramework.dll
+C:\Users\Eddy\documents\visual studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\x86\Debug\EntityFramework.xml
+C:\Users\Eddy\documents\visual studio 2012\Projects\WpfBetApplication\DBLBettingApp\obj\x86\Debug\DBLBettingApp.dll
+C:\Users\Eddy\documents\visual studio 2012\Projects\WpfBetApplication\DBLBettingApp\obj\x86\Debug\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\x86\Debug\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\x86\Debug\DBLBettingApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\x86\Debug\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\x86\Debug\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\x86\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\x86\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\obj\x86\Debug\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\obj\x86\Debug\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\obj\x86\Debug\DBLBettingApp.csprojResolveAssemblyReference.cache

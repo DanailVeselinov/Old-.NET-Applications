@@ -1,0 +1,11 @@
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Mini\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Mini\DBLBettingApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Mini\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Mini\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Mini\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Mini\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Mini\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\bin\Mini\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\obj\Mini\DBLBettingApp.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\obj\Mini\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DBLBettingApp\obj\Mini\DBLBettingApp.pdb

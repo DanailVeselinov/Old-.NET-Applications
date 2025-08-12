@@ -1,0 +1,16 @@
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Debug\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Debug\DBLBettingApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Debug\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Debug\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\obj\Debug\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\DBLBettingApp\obj\Debug\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Debug\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Debug\DBLBettingApp.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Debug\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Debug\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\obj\Debug\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationTest\DBLBettingApp\obj\Debug\DBLBettingApp.pdb

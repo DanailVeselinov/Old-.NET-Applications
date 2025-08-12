@@ -1,0 +1,249 @@
+﻿<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfBetApplication" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WpfBetApplication.MainWindow" Closed="Window_Closed"
+        Title="EddyBetApplicationTest" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="LoginHeader" Height="40"/>
+            <RowDefinition x:Name="MarketSelector" Height="Auto" />
+            <RowDefinition x:Name="LastTransactions" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Left" Orientation="Horizontal" x:Name="_emailPanel" Visibility="Visible">
+            <Label Content="Report Email" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="" Width="150" x:Name="_email" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button Height="23" Click="SetEmail_Click" IsDefault="True">Set Email</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" Orientation="Horizontal"  x:Name="_LoginPanel" Visibility="Visible">
+            <Label Content="Username" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="sabina8234" Width="80" x:Name="_username" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Label Content="Password" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <PasswordBox Height="23" HorizontalAlignment="Right" Width="80" x:Name="_password" VerticalAlignment="Center" Password="Samota8234"/>
+            <StackPanel VerticalAlignment="Center">
+                <Button Content="Login" Click="Button_Click_Login" VerticalAlignment="Top"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" Orientation="Horizontal"  x:Name="_LoggedinPanel" Visibility="Hidden">
+            <Label Content="Welcome:" HorizontalAlignment="Right"/>
+            <Label HorizontalAlignment="Left" x:Name="_userFullName"/>
+            <Label Content="Funds:" HorizontalAlignment="Right"/>
+            <Label HorizontalAlignment="Left" x:Name="_Funds"/>
+            <Label HorizontalAlignment="Left" x:Name="_currency" Visibility="Hidden"/>
+            <Button Click="Button_Click_1" Width="20" Height="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="pack://siteoforigin:,,,/Image/refreshBtn.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="LogOut" Click="Button_Click_LogOut"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" x:Name="_MarketSelectPanel">            
+            <TabControl x:Name="Filters" HorizontalContentAlignment="Left" Background="#FF2EA2BB" Foreground="#FF040404">
+                <TabItem Header="Prymary Filters" x:Name="_PrimaryFilterTabItem" IsSelected="True" >
+                    <!--GotFocus="_PrimaryFilterTabItem_GotFocus_1"-->
+                    <StackPanel Orientation="Horizontal">
+
+                        <GroupBox Header="Select Event Types">
+                            <StackPanel>
+                                <ListView x:Name="_events" DisplayMemberPath="name" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionMode="Multiple" Height="100" />
+
+
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Select Country">
+                            <ListBox ItemsSource="{Binding}"  ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="_countryCodes" SelectionMode="Multiple" DisplayMemberPath="CountryName" Height="100"/>
+                        </GroupBox>
+                        <GroupBox Header="Select Period Range">
+                            <StackPanel>
+                                <TextBlock><Run Text="From"/></TextBlock>
+                                <DatePicker Text="From" x:Name="_fromEventDatePicker"/>
+                                <TextBlock><Run Text="To"/></TextBlock>
+
+                                <DatePicker x:Name="_toEventsDatePicker"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <StackPanel>
+                            <CheckBox Content="In Play Only" IsChecked="False" x:Name="_InPlayOnlyCheckbox" Margin="0,10" />
+                            <Button Content="Get Markets" VerticalAlignment="Bottom" Height="30" MinWidth="80" Click="FillPrimaryFilters"/>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="Secondary Filters" x:Name="_SecondaryFilterTabItem" Height="25" IsEnabled="False" >
+                    <StackPanel>
+                        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" >
+
+                            <GroupBox Header="Active Filter">
+                                <StackPanel x:Name="_ActiveFilter">
+                                    <RadioButton Content="All"/>
+                                    <RadioButton Content="Active" IsChecked="True"/>
+                                    <RadioButton Content="Non Active"/>
+                                </StackPanel>
+                            </GroupBox>
+                            <GroupBox Header="Is BSP Filter">
+                                <StackPanel x:Name="_IsBSPFilter">
+                                    <RadioButton Content="All"/>
+                                    <RadioButton Content="BSP"/>
+                                    <RadioButton Content="Non BSP" IsChecked="True"/>
+                                </StackPanel>
+                            </GroupBox>
+                            <GroupBox Header="Exchange ID Filter">
+                                <StackPanel x:Name="_ExchangeIDFilter">
+                                    <RadioButton Content="All" DataContext="Null"/>
+                                    <RadioButton DataContext="1" Content="Worldwide/UK" IsChecked="True"/>
+                                    <RadioButton DataContext="2" Content="Australian"/>
+                                </StackPanel>
+                            </GroupBox>
+                            <GroupBox Header="Market Type Filter">
+                                <StackPanel x:Name="_MarketTypeFilter">
+                                    <CheckBox Content="Asian Handycup" x:Name="_isSugar" />
+                                    <CheckBox Content="Line" IsChecked="True"/>
+                                    <CheckBox Content="Odds" IsChecked="True" />
+                                    <CheckBox Content="Range" />
+
+                                </StackPanel>
+                            </GroupBox>
+                            <GroupBox Header="Market Name">
+                                <ListView SelectionMode="Multiple" ScrollViewer.VerticalScrollBarVisibility="Visible" Width="150" Height="100" SelectionChanged="_marketName_SelectionChanged" ItemsSource="{Binding}" x:Name="_marketName">                    
+                                </ListView>
+                            </GroupBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                            <GroupBox Header="Runners Range">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <StackPanel>
+                                        <TextBlock Text="Min"/>
+                                        <TextBox x:Name="_runnersMin" MinWidth="35"/>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <TextBlock Text="Max"/>
+                                        <TextBox  x:Name="_runnersMax" MinWidth="35"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </GroupBox>
+                            <GroupBox Header="Winners Range">
+                                <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+                                    <StackPanel>
+                                        <TextBlock Text="Min"/>
+                                        <TextBox x:Name="_winnersMin" MinWidth="35"/>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <TextBlock Text="Max"/>
+                                        <TextBox  x:Name="_winnersMax" MinWidth="35"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </GroupBox>
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Button Content="New Betline" Height="40" Margin="2" Click="Button_Click_NewBetLine"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+                <TabItem x:Name="_BetlineTabItem" Header="Betline" IsEnabled="False" Height="29" VerticalAlignment="Bottom">
+                    <StackPanel Orientation="Horizontal">
+                        <GroupBox Header="Stake Range">
+                            <StackPanel>
+                                <TextBlock><Run Text="From"/></TextBlock>
+                                <TextBox x:Name="_StakeRangeMin"/>
+                                <TextBlock><Run Text="To"/></TextBlock>
+                                <TextBox x:Name="_StakeRangeMax"/>
+                                <GroupBox Header="Goal Difference" ToolTip="Goal Difference">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <StackPanel>
+                                            <TextBlock Text="Min"/>
+                                            <TextBox x:Name="_goalDifferenceMin" MinWidth="35"/>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <TextBlock Text="Max"/>
+                                            <TextBox  x:Name="_goalDifferenceMax" MinWidth="35"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </GroupBox>
+                            </StackPanel>
+                        </GroupBox>
+                        <StackPanel>
+                            <GroupBox Header="Profit Per Bet">
+                                <TextBox x:Name="_profit" Width="40" VerticalAlignment="Top"/>
+                            </GroupBox>
+                            <GroupBox Header="Matched Range" ToolTip="Total Amount Matched">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <StackPanel>
+                                        <TextBlock Text="Min"/>
+                                        <TextBox x:Name="_totalAmmountMatchedMin" MinWidth="35"/>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <TextBlock Text="Max"/>
+                                        <TextBox  x:Name="_totalAmmountMatchedMax" MinWidth="35"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </GroupBox>
+
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <StackPanel x:Name="_maxBetsCountStack" Visibility="Hidden">
+                                    <TextBlock Text="Maximum Bets"/>
+                                    <TextBox ToolTip="Number from 1 to 16" Width="40"/>
+                                </StackPanel>
+                                <StackPanel x:Name="_maxAmmountStack" Visibility="Hidden">
+                                    <TextBlock Text="Maximum Ammount To Bet" TextWrapping="Wrap" ToolTip="Maximum Ammount to be Bet on Incrementing bets" Width="100"/>
+                                    <TextBox  Width="80"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                        </StackPanel>
+
+                        <StackPanel>
+                            <GroupBox Header="Bet Type" Width="100" >
+                                <ComboBox HorizontalAlignment="Left" SelectedIndex="0" x:Name="_BetType">
+                                    <ComboBoxItem Content="Back"/>
+                                    <ComboBoxItem Content="Lay"/>
+                                </ComboBox>
+                            </GroupBox>
+                            <GroupBox Header="Select Algorithm">
+                                <ComboBox Width="120" x:Name="_algo" SelectedIndex="0" ItemsSource="{Binding}" DisplayMemberPath="Value" SelectionChanged="_algo_SelectionChanged"/>
+                            </GroupBox>
+                            <GroupBox Header="Betline Name">
+                                <TextBox x:Name="betlineName"></TextBox>
+
+                            </GroupBox>
+                            <Button Content="Start New BetLine" Height="30" Click="Button_Click_StartNewBetLine" Margin="0,5"/>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+        <DataGrid  Grid.Row="2" x:Name="_RunningBetLines" AutoGenerateColumns="False" ItemsSource="{Binding}" MouseLeftButtonUp="_RunningBetLines_MouseLeftButtonUp">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding BetlineId}"/>
+                <DataGridTextColumn Header="Name" MaxWidth="75" Binding="{Binding betlineName}"/>
+                <DataGridCheckBoxColumn Header="Is Active" Binding="{Binding isActive}"/>
+                <DataGridTextColumn Header="Last Bet Lost" Binding="{Binding lastBetLost}"/>
+                <DataGridTextColumn Header="Filter Id" Binding="{Binding Filter_FilterId}"/>
+                <DataGridTextColumn Header="Last Bet" Width="75" Binding="{Binding lastPlacedBetId}">
+                    <DataGridTextColumn.EditingElementStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            <Setter Property="TextBlock.TextTrimming" Value="CharacterEllipsis"/>
+                        </Style>
+                    </DataGridTextColumn.EditingElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Profit" Width="Auto" Binding="{Binding profitPerBet}"/>
+                <DataGridTextColumn Header="Ballance" Width="Auto" Binding="{Binding ballance}"/>
+                <DataGridTextColumn Header="Algorithm" Width="Auto" Binding="{Binding algorithmName}"/>
+                <DataGridTemplateColumn Header="Command">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Padding="0" Width="25" Click="UpdateBetline" Content="U" ToolTip="Update" VerticalContentAlignment="Top"/>
+                                <Button Click="ResumeBetline" Padding="0" Width="25" Content=">" ToolTip="Resume Betline" x:Name="ButtonResumeBetline"/>
+                                <Button Click="PauseBetline" Padding="0" Width="25" Content="||" ToolTip="Pause Betline" x:Name="ButtonPauseBetline"/>
+                                <Button Padding="0" Width="25" Click="StopOnWinBetline" Content="#" ToolTip="Stop on Winning Bet" x:Name="ButtonStopBetline"/>
+                                <Button Click="Restart" Padding="0" Width="25" Content="&lt;--" ToolTip="Restart Betline" x:Name="ButtonRestartBetline"/>
+                                <Button Click="DeleteBetline" Padding="0" Width="25" Content="X" ToolTip="Delete Betline"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

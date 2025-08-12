@@ -1,0 +1,30 @@
+﻿<Window x:Class="DentistDB.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DentistDB"
+        mc:Ignorable="d"
+        Title="Login Window" Height="250" Width="300" Background="Aqua">
+    <StackPanel>
+        <Label Content="Име:" Target="{Binding ElementName=LoginTB}"/>
+        <TextBox Name="LoginTB" MinWidth="80" GotFocus="LoginTB_GotFocus" TextChanged="LoginTB_TextChanged"/>
+        <ListView Name="DoctorsLV" ItemsSource="{Binding}" Loaded="DoctorsLV_Loaded"  Visibility="Collapsed" MouseDoubleClick="DoctorsLV_MouseDoubleClick" LostFocus="DoctorsLV_LostFocus" SelectionMode="Single" KeyDown="DoctorsLV_KeyDown" MaxHeight="200" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label Content="Парола:" Target="{Binding ElementName=PasswordTB}"/>
+        <PasswordBox Name="PasswordTB" MinWidth="80" PasswordChar="*" MaxLength="8" KeyDown="PasswordTB_KeyDown" />
+        <StackPanel x:Name="NewPassSP" Visibility="Collapsed">
+            <Label Content="Нова Парола:" Target="{Binding ElementName=PasswordTB}"/>
+            <PasswordBox Name="NewPasswordTB"  MinWidth="80" PasswordChar="*" MaxLength="8" />
+        </StackPanel>
+        <Button x:Name="LoginBtn" Content="Влез" Click="LoginBtn_Click"/>
+        <!--<Button x:Name="AddBtn" Content="Добави" Click="AddDoctorBtn_Click"/>-->
+        <Button x:Name="ChangePassBtn" Visibility="Hidden" Content="Влез" Click="ChangePassBtn_Click"/>
+        <Button x:Name="ChangePasswordBtn" Content="Смяна на парола" Visibility="Hidden" Click="ChangePasswordBtn_Click"/>
+    </StackPanel>
+</Window>

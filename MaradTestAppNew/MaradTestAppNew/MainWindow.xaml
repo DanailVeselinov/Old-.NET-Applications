@@ -1,0 +1,43 @@
+﻿<Window x:Class="MaradTestAppNew.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel>
+            <StackPanel Name="LoggedIn" Visibility="Collapsed">
+                <Label Name="WelcomeLabel" Content="Welcome"></Label>
+
+                <CheckBox Name="AddQuestionsCB" Content="Add Quesions" IsChecked="False"></CheckBox>
+                <StackPanel Orientation="Vertical" Visibility="{Binding IsChecked, ElementName=AddQuestionsCB,Converter={StaticResource BoolToVisibilityConverter},ConverterParameter='reverse'}" Margin="20">
+                    <StackPanel Name="TestSelectionSP" Orientation="Horizontal">
+                        <StackPanel Margin="10,0">
+                            <Label Content="Категория"/>
+                            <ListBox Name="CategoriesLB" SelectionMode="Multiple"/>
+                        </StackPanel>
+                        <StackPanel Margin="10,0">
+                            <Label Content="Ниво"/>
+                            <ListBox Name="LevelLB" SelectionMode="Multiple"/>
+                        </StackPanel>
+                        <GroupBox Header="Тип Тест">
+                            <StackPanel Name="TestTypeSP" Margin="10,0">
+                                <RadioButton GroupName="TestType" Content="Original" IsChecked="True" />
+                                <RadioButton GroupName="TestType" Content="All" />
+                                <RadioButton GroupName="TestType" Content="Bad and Unviewed Questions" />
+                                <RadioButton GroupName="TestType" Content="Bad Questions Only" />
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                    <Button Content="Start Test" Click="Start_Test_Button"/>
+                </StackPanel>
+                <StackPanel Name="LogInSP" Visibility="Visible">
+                    <Label Content="Username" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBox Text="didoeddy" Height="23" TextWrapping="Wrap" Width="80" x:Name="_username" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <Label Content="Password" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <PasswordBox Password="Eddy8479" Height="23" HorizontalAlignment="Right" Width="80" x:Name="_password" VerticalAlignment="Center"/>
+                    <Button Content="Login" Click="Login"/>
+                    <Button Content="Register" Click="Register"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Window>

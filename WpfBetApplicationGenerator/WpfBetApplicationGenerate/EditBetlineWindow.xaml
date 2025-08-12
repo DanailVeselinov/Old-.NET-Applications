@@ -1,0 +1,195 @@
+﻿<Window x:Class="WpfBetApplication.EditBetlineWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:DBL="clr-namespace:DBLBettingApp;assembly=DBLBettingApp"
+        xmlns:editLocal="clr-namespace:WpfBetApplication" Loaded="Window_Loaded"
+        Title="Edit Betline" SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <editLocal:ListSelectedConverter x:Key="ListSelectedConverter"/>
+        <editLocal:BoolRadioButtonConverter x:Key="BoolRadioButtonConverter"/>
+        <editLocal:PercentPerBudjetConverter x:Key="PercentConverter"/>
+        <editLocal:SelectionConverter x:Key="SelectionConverter"/>
+        <editLocal:MarketMenuPathConverter x:Key="MarketMenuPathConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <GroupBox Header="Select Event Types">
+                <StackPanel>
+                    <ListView x:Name="_eventsEdit" ItemsSource="{Binding}" SelectionChanged="_eventsEdit_SelectionChanged" DisplayMemberPath="name" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionMode="Multiple" MaxHeight="80" />
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Select Country">
+                <StackPanel>
+                    <ListBox ItemsSource="{Binding}" SelectionChanged="_countryCodes_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="_countryCodes" SelectionMode="Multiple" DisplayMemberPath="CountryName" MaxHeight="80"/>
+                </StackPanel>
+            </GroupBox>
+            <UniformGrid>
+                <GroupBox Header="Active Filter">
+                    <StackPanel x:Name="_ActiveFilter">
+                        <RadioButton Content="All" IsChecked="{Binding Filter.isActive,ConverterParameter='Null',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                        <RadioButton Content="Active" IsChecked="{Binding Filter.isActive,ConverterParameter='True',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                        <RadioButton Content="Non Active" IsChecked="{Binding Filter.isActive,ConverterParameter='False',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Is BSP Filter">
+                    <StackPanel x:Name="_IsBSPFilter">
+                        <RadioButton Content="All" IsChecked="{Binding Filter.isBSP,ConverterParameter='Null',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                        <RadioButton Content="BSP" IsChecked="{Binding Filter.isBSP,ConverterParameter='True',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                        <RadioButton Content="Non BSP" IsChecked="{Binding Filter.isBSP,ConverterParameter='False',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Exchange ID Filter">
+                    <StackPanel x:Name="_ExchangeIDFilter">
+                        <RadioButton Content="All" IsChecked="{Binding Filter.exchangeId,ConverterParameter='Null',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                        <RadioButton Content="Worldwide/UK" IsChecked="{Binding Filter.exchangeId,ConverterParameter='1',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                        <RadioButton Content="Australian" IsChecked="{Binding Filter.exchangeId,ConverterParameter='2',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Market Type Filter">
+                    <StackPanel x:Name="_MarketTypeFilter">
+                        <CheckBox Content="Asian Handycup" IsChecked="{Binding Filter.marketTypes,ConverterParameter='MT:A',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                        <CheckBox Content="Line" IsChecked="{Binding Filter.marketTypes,ConverterParameter='MT:L',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                        <CheckBox Content="Odds" IsChecked="{Binding Filter.marketTypes,ConverterParameter='MT:O',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                        <CheckBox Content="Range" IsChecked="{Binding Filter.marketTypes,ConverterParameter='MT:R',Converter={StaticResource BoolRadioButtonConverter}}"/>
+                    </StackPanel>
+                </GroupBox>                
+            </UniformGrid>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                <GroupBox Header="Runners Range">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <StackPanel>
+                            <TextBlock Text="Min"/>
+                            <TextBox x:Name="_runnersMin" Text="{Binding Filter.runnersMin}" MinWidth="35"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Max"/>
+                            <TextBox  x:Name="_runnersMax" Text="{Binding Filter.runnersMax}" MinWidth="35"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Winners Range">
+                    <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+                        <StackPanel>
+                            <TextBlock Text="Min"/>
+                            <TextBox x:Name="_winnersMin" Text="{Binding Filter.winnersMin}" MinWidth="35"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Max"/>
+                            <TextBox  x:Name="_winnersMax" Text="{Binding Filter.winnersMax}" MinWidth="35"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <CheckBox Content="In Play Only" IsChecked="{Binding Filter.isInPlay}" x:Name="_InPlayOnlyCheckbox" Margin="0,10" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <GroupBox Header="Market Name" VerticalAlignment="Top">
+                <ListView SelectionMode="Multiple" SelectionChanged="_marketName_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Visible" MaxHeight="80"  ItemsSource="{Binding}" x:Name="_marketName">
+                </ListView>
+            </GroupBox>
+            <GroupBox Header="Market Assets" Visibility="Collapsed" x:Name="_marketAssets">
+                <StackPanel Orientation="Horizontal">
+                    <Border BorderThickness="2" BorderBrush="Black">
+                        <WrapPanel MaxWidth="95" x:Name="_matchOddsAssets" Visibility="Collapsed">
+                            <Label Width="95" Content="Match Odds"/>
+                        </WrapPanel>
+                    </Border>
+                    <Border BorderThickness="2" BorderBrush="Black">
+                    <WrapPanel MaxWidth="90" x:Name="_correctScoreAssets" Visibility="Collapsed">
+                        <Label Content="Correct Score"/>
+                    </WrapPanel>
+                    </Border>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Stake Range">
+                <StackPanel>
+                    <TextBlock><Run Text="From"/></TextBlock>
+                    <TextBox x:Name="_StakeRangeMin" Text="{Binding stakeRangeMin}"/>
+                    <TextBlock><Run Text="To"/></TextBlock>
+                    <TextBox x:Name="_StakeRangeMax" Text="{Binding stakeRangeMax}"/>
+                </StackPanel>
+            </GroupBox>
+            <StackPanel>
+                <GroupBox Header="Profit Per Budjet">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="_profitPerBudjetTB" Text="{Binding profitPerBudjet}" Width="40" Margin="0,0,0,1"/>
+                        <TextBlock Text="%"/>
+                        <TextBox x:Name="_profitPerBetTB" Text="{Binding profitPerBudjet, Mode=TwoWay,Converter={StaticResource PercentConverter},UpdateSourceTrigger=LostFocus}" Width="40" Margin="0,0,0,1"/>
+                        <TextBlock Text="{Binding Content,ElementName=_currency}"/>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Matched Range" ToolTip="Total Amount Matched">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <StackPanel>
+                            <TextBlock Text="Min"/>
+                            <TextBox x:Name="_totalAmountMatchedMin" Text="{Binding Filter.totalAmountMatchedMin}"  MinWidth="35"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Max"/>
+                            <TextBox  x:Name="_totalAmountMatchedMax" Text="{Binding Filter.totalAmountMatchedMax}" MinWidth="35"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Bet Type" Width="100" >
+                    <ComboBox HorizontalAlignment="Left" x:Name="_BetType" SelectionChanged="_BetType_SelectionChanged" Height="22" VerticalAlignment="Bottom">
+                        <ComboBoxItem Content="Back"/>
+                        <ComboBoxItem Content="Lay"/>
+                    </ComboBox>
+                </GroupBox>
+            </StackPanel>
+            <StackPanel>
+                <GroupBox Header="Select Algorithm">
+                    <ComboBox Width="120" x:Name="_algo" SelectionChanged="_algo_SelectionChanged" ItemsSource="{Binding}" DisplayMemberPath="Value"/>
+                </GroupBox>
+                <GroupBox Header="Betline Name">
+                    <TextBox x:Name="betlineName" Text="{Binding betlineName}"/>
+                </GroupBox>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Height="Auto">
+                    <StackPanel x:Name="_maxBetsCountStack" Visibility="Visible">
+                        <TextBlock Text="Maximum Bets" Name="_maxBetsCountTB"/>
+                        <TextBox ToolTip="Number from 1 to 16" Text="{Binding Filter.maxBetsCount}" Width="40"/>
+                    </StackPanel>
+                    <StackPanel x:Name="_maxAmountStack" Visibility="Visible">
+                        <TextBlock Text="Maximum Amount To Bet Per Budjet %" TextWrapping="Wrap" ToolTip="Maximum Amount to be Bet on Incrementing bets" Width="100"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Width="40" x:Name="_maxAmountPercentTB" Text="{Binding Filter.maxAmmountIncrementedPerBudjet}"/>
+                            <TextBlock Text="%"/>
+                            <TextBox x:Name="_maxAmountTB" Text="{Binding Filter.maxAmmountIncrementedPerBudjet, Mode=TwoWay,Converter={StaticResource PercentConverter},UpdateSourceTrigger=LostFocus}" Width="40"/>
+                            <TextBlock Text="{Binding Content,ElementName=_currency}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Budjet"/>
+                <TextBox Text="{Binding budjet,StringFormat='0.00E'}"/>
+            </StackPanel>            
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+        <TextBlock Text="Placed Bets" HorizontalAlignment="Center" FontSize="20"/>
+        <DataGrid ItemsSource="{Binding PlacedBets}" HorizontalAlignment="Center" IsReadOnly="True" AutoGenerateColumns="False"  Height="100" CanUserReorderColumns="True" CanUserSortColumns="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Status" Binding="{Binding resultCode}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding marketMenuPath,Converter={StaticResource MarketMenuPathConverter}}"/>
+                <DataGridTextColumn Header="Score" Binding="{Binding score}"/>
+                <DataGridTextColumn Header="Selection" Binding="{Binding Converter={StaticResource SelectionConverter}}"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding averagePrice}"/>
+                <DataGridTextColumn Header="Size" Binding="{Binding sizeMatched}"/>
+                <DataGridTextColumn Header="Placed" Binding="{Binding datePlaced,StringFormat='dd/MMM/yy hh:mm'}"/>
+                <DataGridTextColumn Header="Settled" Binding="{Binding dateSettled,StringFormat='dd/MMM/yy hh:mm'}"/>
+                <DataGridCheckBoxColumn Header="Won" Binding="{Binding success}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        </StackPanel>
+        <UniformGrid Grid.Row="3">
+            <Button IsDefault="True" Click="OkButton_Click" Margin="10">OK</Button>
+            <Button IsCancel="True" Margin="10">Cancel</Button>
+        </UniformGrid>
+    </Grid>
+</Window>

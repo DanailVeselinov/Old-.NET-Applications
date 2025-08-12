@@ -1,0 +1,93 @@
+﻿<Window x:Class="DentistDB.TaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DentistDB"
+        Title="TaskWindow" SizeToContent="WidthAndHeight" MinHeight="300" Background="Aqua" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ContentRendered="Window_ContentRendered" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:Client x:Key="Client"/>
+        <local:ListFmStringConverter x:Key="ListFmStringConverter"/>
+    </Window.Resources>
+    <StackPanel>
+    <WrapPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Label Name="ClientFirstName" Content="{Binding FirstName}" Margin="20,0"/>
+            <Label Name="ClientLastName" Content="{Binding LastName}" Margin="20,0"/>
+            <Label Content="Зъб номер:"/>
+            <Label Name="ToothId"/>
+            <StackPanel x:Name="LoggedInSP" HorizontalAlignment="Right" Orientation="Horizontal">
+                <Label Content="Добре дошъл др." FontSize="25"/>
+                <Label Name="LoggedInLabel" FontSize="25"/>
+                <Button x:Name="LogOut" Click="LogOut_Click" Content="Logout" Height="30"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="10">
+            <Label Content="Статус" Target="{Binding ElementName=StatusCB}"/>
+            <ComboBox Name="StatusCB" ItemsSource="{Binding}"  DisplayMemberPath="StatusDescription"/>
+        </StackPanel>
+        <StackPanel Margin="10">
+            <Label Content="Диагноза/Лечение" Target="{Binding ElementName=DiagnoseTB}"/>
+            <TextBox Name="DiagnoseTB" MinWidth="280" TextWrapping="Wrap" MinHeight="50" AcceptsReturn="True"/>
+        </StackPanel>
+        <StackPanel>
+            <Image Name="ImageTask" MaxHeight="200" MaxWidth="200" Source="{Binding ElementName=ImagesList, Path=SelectedItem,Mode=OneWay}" MouseUp="ImageTask_MouseUp"/>
+            <ListView Name="ImagesList" ItemsSource="{Binding}" HorizontalContentAlignment="Center" HorizontalAlignment="Center" KeyUp="ImagesList_KeyUp">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel IsItemsHost="True" Orientation="Horizontal" MaxWidth="{Binding Width,ElementName=TaksWindow,UpdateSourceTrigger=PropertyChanged}"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Image Width="20" Height="20" Source="{Binding}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListView>
+            <Button Name="AddImageButton" Content="Добави Снимка" Click="AddImageButton_Click"/>
+        </StackPanel>
+        <StackPanel Margin="10" Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
+                <Label Content="Цена на Услугата" Target="{Binding ElementName=NOICodeTB}"/>
+                <TextBox Name="NOICodeTB" MinWidth="40"/>
+                <Label Content="лв."/>
+            </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                <Label Content="Цена на Услугата по НЗОК" Target="{Binding ElementName=NOICodeNOITB}"/>
+                <TextBox Name="NOICodeByNOITB" MinWidth="40"/>
+                <Label Content="лв."/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="10,0,0,10" Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Цена зъботехник" Target="{Binding ElementName=DTPriceTB}"/>
+                    <TextBox Name="DTPriceTB" MinWidth="40"/>
+                    <Label Content="лв."/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Дата" Target="{Binding ElementName=DateDP}"/>
+                    <DatePicker Name="DateDP" MinWidth="30"/>
+
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <Label FontWeight="Bold">Метод на плащане?</Label>
+                <RadioButton x:Name="NotPaidRB" IsChecked="True">Неплатено</RadioButton>
+                <RadioButton x:Name="PaidCashRB">В Брой</RadioButton>
+                <RadioButton x:Name="PaidByCardRB">С Карта</RadioButton>
+            </StackPanel>
+        </StackPanel>
+        
+        <DataGrid Name="SelectedToothDG" ItemsSource="{Binding}" MinHeight="20" MaxHeight="100" AutoGenerateColumns="False" MouseDoubleClick="SelectedToothDG_MouseDoubleClick" PreviewKeyDown="SelectedToothDG_PreviewKeyDown" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Date,Mode=OneWay, StringFormat=\{0:dd.MMM.yy\}}"/>
+                <DataGridTextColumn Header="Зъб" Binding="{Binding ToothCode,Mode=OneWay}"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status,Mode=OneWay}" MaxWidth="100"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Price,Mode=OneWay,StringFormat=\{0:F2\}}" MaxWidth="50"/>
+                <DataGridTextColumn Header="Техник" Binding="{Binding PriceDT,Mode=OneWay,StringFormat=\{0:F2\}}" MaxWidth="50"/>
+                <DataGridTextColumn Header="Диагноза" Binding="{Binding Diagnose,Mode=OneWay}" MaxWidth="300"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </WrapPanel>
+        <Button Name="SaveButton" Content="Запази" Margin="10" Click="Button_Click"/>
+    </StackPanel>
+</Window>

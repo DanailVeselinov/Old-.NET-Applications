@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NewsToEmailDBModelStoreContainer" CdmEntityContainer="NewsToEmailDBEntities2">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="NewsToEmailDBModel.Categories">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="webSiteId" ColumnName="webSiteId" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FiltersCategories">
+      <EntityTypeMapping TypeName="NewsToEmailDBModel.FiltersCategories">
+        <MappingFragment StoreEntitySet="FiltersCategories">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="filterText" ColumnName="filterText" />
+          <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="symbolsCount" ColumnName="symbolsCount" />
+          <ScalarProperty Name="isSelected" ColumnName="isSelected" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KeyWords">
+      <EntityTypeMapping TypeName="NewsToEmailDBModel.KeyWords">
+        <MappingFragment StoreEntitySet="KeyWords">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="webSiteId" ColumnName="webSiteId" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Livescores">
+      <EntityTypeMapping TypeName="NewsToEmailDBModel.Livescores">
+        <MappingFragment StoreEntitySet="Livescores">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sport" ColumnName="sport" />
+          <ScalarProperty Name="competition" ColumnName="competition" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="usersId" ColumnName="usersId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="NewsToEmailDBModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="dateSaved" ColumnName="dateSaved" />
+          <ScalarProperty Name="articleId" ColumnName="articleId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="href" ColumnName="href" />
+          <ScalarProperty Name="sourceWebSite" ColumnName="sourceWebSite" />
+          <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="lastUpdated" ColumnName="lastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsedEmails">
+      <EntityTypeMapping TypeName="NewsToEmailDBModel.UsedEmails">
+        <MappingFragment StoreEntitySet="UsedEmails">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="usedEmail1" ColumnName="usedEmail1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="NewsToEmailDBModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="userEmail" ColumnName="userEmail" />
+          <ScalarProperty Name="isEnabled" ColumnName="isEnabled" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="sendNewsHour" ColumnName="sendNewsHour" />
+          <ScalarProperty Name="convertCyrlicToLatin" ColumnName="convertCyrlicToLatin" />
+          <ScalarProperty Name="sizeLimit" ColumnName="sizeLimit" />
+          <ScalarProperty Name="webSitesMaxNumber" ColumnName="webSitesMaxNumber" />
+          <ScalarProperty Name="recieveFile" ColumnName="recieveFile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersWebsites">
+      <EntityTypeMapping TypeName="NewsToEmailDBModel.UsersWebsites">
+        <MappingFragment StoreEntitySet="UsersWebsites">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="webSiteId" ColumnName="webSiteId" />
+          <ScalarProperty Name="validUntil" ColumnName="validUntil" />
+          <ScalarProperty Name="isSelected" ColumnName="isSelected" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="lastSendDate" ColumnName="lastSendDate" />
+          <ScalarProperty Name="lastSendNewsId" ColumnName="lastSendNewsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebSites">
+      <EntityTypeMapping TypeName="NewsToEmailDBModel.WebSites">
+        <MappingFragment StoreEntitySet="WebSites">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="siteName" ColumnName="siteName" />
+          <ScalarProperty Name="encoding" ColumnName="encoding" />
+          <ScalarProperty Name="domain" ColumnName="domain" />
+          <ScalarProperty Name="lastUpdated" ColumnName="lastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

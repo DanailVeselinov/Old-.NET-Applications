@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MaradDBEntities-Web.config Connection String" description="MaradDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/MaradTestDBModel.csdl|res://*/MaradTestDBModel.ssdl|res://*/MaradTestDBModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=EDDY-PC\EDDYSERVER;initial catalog=MaradDB;persist security info=True;user id=Eddy;password=Eddy8479;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Eddy\\Documents\\Visual\ Studio\ 2013\\Projects\\NewsToEmailWebApp\\NewsToEmailWebApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MaradDBEntities']/@connectionString" />
+  </parameter>
+  <parameter name="NewsToEmailDBEntities-Web.config Connection String" description="NewsToEmailDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/NewsToEmailDBModel.csdl|res://*/NewsToEmailDBModel.ssdl|res://*/NewsToEmailDBModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=EDDY-PC\EDDYSERVER;initial catalog=NewsToEmailDB;persist security info=True;user id=Eddy;password=Eddy8479;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Eddy\\Documents\\Visual\ Studio\ 2013\\Projects\\NewsToEmailWebApp\\NewsToEmailWebApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NewsToEmailDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

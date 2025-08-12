@@ -1,0 +1,8 @@
+Commands
+subject		Body					result
+SQLCOMMAND	*					SQLServer Command executed + Report
+SQLQUERY	SQL Query String			SQLServer Query Results Report
+LIVESCORE	ITALY;LEVSKI;REAL M;			returns livescore for keywords or all if body empty
+HTTPTOTEXT	http:\\www.gong.bg;http:\\www.sporta.bg	returns the requested page text content(not formated) as rar archive
+HTTPTOHTML	http:\\www.gong.bg;http:\\www.sporta.bg	returns plain html page content as rar archive
+GOOGLE		sql server database growing too fast	returns plain html google results page content as rar archive

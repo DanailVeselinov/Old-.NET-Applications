@@ -1,0 +1,17 @@
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\DatabasePlacedBets.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\DatabasePlacedBets.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Debug\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Debug\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\DatabasePlacedBets.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\DatabasePlacedBets.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Debug\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Debug\DatabasePlacedBets.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Debug\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Debug\DatabasePlacedBets.pdb

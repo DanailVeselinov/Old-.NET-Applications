@@ -1,0 +1,16 @@
+c:\users\eddy\documents\visual studio 2012\Projects\ConsoleApplication2\DBLBF\bin\Debug\BFDBL.sdf
+c:\users\eddy\documents\visual studio 2012\Projects\ConsoleApplication2\DBLBF\bin\Debug\DBLBF.dll.config
+c:\users\eddy\documents\visual studio 2012\Projects\ConsoleApplication2\DBLBF\bin\Debug\DBLBF.dll
+c:\users\eddy\documents\visual studio 2012\Projects\ConsoleApplication2\DBLBF\bin\Debug\DBLBF.pdb
+c:\users\eddy\documents\visual studio 2012\Projects\ConsoleApplication2\DBLBF\bin\Debug\EntityFramework.dll
+c:\users\eddy\documents\visual studio 2012\Projects\ConsoleApplication2\DBLBF\bin\Debug\EntityFramework.xml
+c:\users\eddy\documents\visual studio 2012\Projects\ConsoleApplication2\DBLBF\obj\Debug\DBLBF.dll
+c:\users\eddy\documents\visual studio 2012\Projects\ConsoleApplication2\DBLBF\obj\Debug\DBLBF.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\RecalculateBDLBFApp\DBLBF\bin\Debug\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\RecalculateBDLBFApp\DBLBF\bin\Debug\DBLBF.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\RecalculateBDLBFApp\DBLBF\bin\Debug\DBLBF.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\RecalculateBDLBFApp\DBLBF\bin\Debug\DBLBF.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\RecalculateBDLBFApp\DBLBF\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\RecalculateBDLBFApp\DBLBF\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\RecalculateBDLBFApp\DBLBF\obj\Debug\DBLBF.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\RecalculateBDLBFApp\DBLBF\obj\Debug\DBLBF.pdb

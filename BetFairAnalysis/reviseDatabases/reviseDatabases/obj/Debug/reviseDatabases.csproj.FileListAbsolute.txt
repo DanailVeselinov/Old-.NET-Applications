@@ -1,0 +1,8 @@
+c:\users\eddy\documents\visual studio 2012\Projects\reviseDatabases\reviseDatabases\bin\Debug\reviseDatabases.exe.config
+c:\users\eddy\documents\visual studio 2012\Projects\reviseDatabases\reviseDatabases\bin\Debug\BFDBLRealDraw.sdf
+c:\users\eddy\documents\visual studio 2012\Projects\reviseDatabases\reviseDatabases\bin\Debug\reviseDatabases.exe
+c:\users\eddy\documents\visual studio 2012\Projects\reviseDatabases\reviseDatabases\bin\Debug\reviseDatabases.pdb
+c:\users\eddy\documents\visual studio 2012\Projects\reviseDatabases\reviseDatabases\bin\Debug\EntityFramework.dll
+c:\users\eddy\documents\visual studio 2012\Projects\reviseDatabases\reviseDatabases\bin\Debug\EntityFramework.xml
+c:\users\eddy\documents\visual studio 2012\Projects\reviseDatabases\reviseDatabases\obj\Debug\reviseDatabases.exe
+c:\users\eddy\documents\visual studio 2012\Projects\reviseDatabases\reviseDatabases\obj\Debug\reviseDatabases.pdb

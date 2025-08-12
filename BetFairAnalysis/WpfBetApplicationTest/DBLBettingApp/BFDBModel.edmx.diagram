@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1ad9472d84924dd696f8f1cdcfdfc178" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="BFDBLModel.Betline" Width="1.5" PointX="4.7042691729517045" PointY="12.578761225835775" />
+        <EntityTypeShape EntityType="BFDBLModel.Email" Width="1.5" PointX="7.3822983630850434" PointY="21.95583475658476" />
+        <EntityTypeShape EntityType="BFDBLModel.PlacedBet" Width="1.5" PointX="5.1249062386923034" PointY="31.213901981345334" />
+        <AssociationConnector Association="BFDBLModel.Betline1" />
+        <EntityTypeShape EntityType="BFDBLModel.Filter" Width="1.5" PointX="2.1303369561817203" PointY="12.407315051372775" />
+        <AssociationConnector Association="BFDBLModel.Filter1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

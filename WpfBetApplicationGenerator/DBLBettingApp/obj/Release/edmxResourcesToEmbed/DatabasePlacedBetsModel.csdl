@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabasePlacedBetsModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DatabasePlacedBetsEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="PlacedBets" EntityType="DatabasePlacedBetsModel.PlacedBet" />
+  </EntityContainer>
+  <EntityType Name="PlacedBet">
+    <Key>
+      <PropertyRef Name="betId" />
+    </Key>
+    <Property Type="String" Name="resultCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="success" Nullable="false" />
+    <Property Type="DateTime" Name="datePlaced" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="marketId" Nullable="false" />
+    <Property Type="String" Name="marketMenuPath" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="averagePrice" Nullable="false" />
+    <Property Type="String" Name="Selection" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="dateSettled" Precision="3" />
+    <Property Type="Int64" Name="betId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="sortedOrder" />
+    <Property Type="String" Name="marketName" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="score" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="eventType" />
+  </EntityType>
+</Schema>

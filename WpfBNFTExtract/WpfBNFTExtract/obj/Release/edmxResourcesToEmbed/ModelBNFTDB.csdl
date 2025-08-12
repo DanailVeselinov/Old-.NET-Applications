@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BNFT_VSLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CWCREW">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LASTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FIRSTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CWPRANK_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CWCREWSERV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CWCREW_ID" Type="Int32" />
+    <Property Name="CWPRANK_ID" Type="Int32" />
+    <Property Name="DATEE" Type="DateTime" Precision="3" />
+    <Property Name="DATED" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CWPRANK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AA" Type="Int16" />
+  </EntityType>
+  <EntityType Name="CWRESTHRS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RH_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CWCREW_ID" Type="Int32" />
+    <Property Name="H01A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H01B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H02A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H02B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H03A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H03B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H04A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H04B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H05A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H05B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H06A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H06B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H07A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H07B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H08A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H08B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H09A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H09B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H10A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H10B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H11A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H11B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H12A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H12B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H13A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H13B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H14A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H14B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H15A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H15B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H16A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H16B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H17A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H17B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H18A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H18B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H19A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H19B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H20A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H20B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H21A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H21B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H22A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H22B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H23A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H23B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H24A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H24B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="REST_24" Type="Double" />
+    <Property Name="WRK_24" Type="Double" />
+    <Property Name="REST_IN24" Type="Double" />
+    <Property Name="REST_IN7D" Type="Double" />
+    <Property Name="FL_EDate" Type="Int16" Nullable="true" />
+  </EntityType>
+  <EntityType Name="CWRHSCHED">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CWPRANK_ID" Type="Int32" />
+    <Property Name="FL_WK" Type="Int16" />
+  </EntityType>
+  <EntityType Name="SQEVENT_HST">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EVT_NOTES" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SQEVENT_HST_ID" Type="Int32" />
+    <Property Name="EVENT_DT" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="SQEVENT_HST_PARTIC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SQEVENT_HST_ID" Type="Int32" />
+    <Property Name="CWCREW_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="VSL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="VSL_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_FLAG_ID" Type="Int32" />
+    <Property Name="IMO_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VSL_FLAG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="BNFT_VSLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CWCREW" EntityType="Self.CWCREW" />
+    <EntitySet Name="CWCREWSERV" EntityType="Self.CWCREWSERV" />
+    <EntitySet Name="CWPRANK" EntityType="Self.CWPRANK" />
+    <EntitySet Name="CWRESTHRS" EntityType="Self.CWRESTHRS" />
+    <EntitySet Name="CWRHSCHED" EntityType="Self.CWRHSCHED" />
+    <EntitySet Name="SQEVENT_HST" EntityType="Self.SQEVENT_HST" />
+    <EntitySet Name="SQEVENT_HST_PARTIC" EntityType="Self.SQEVENT_HST_PARTIC" />
+    <EntitySet Name="VSL" EntityType="Self.VSL" />
+    <EntitySet Name="VSL_FLAG" EntityType="Self.VSL_FLAG" />
+    <EntitySet Name="PFINT_DATELINE" EntityType="BNFT_VSLModel.PFINT_DATELINE" />
+  </EntityContainer>
+  <EntityType Name="PFINT_DATELINE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DATE_LINE" Type="DateTime" Precision="3" />
+    <Property Name="FL_EW" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_ID" Type="Int32" />
+    <Property Name="USERIN_ID" Type="Int32" />
+    <Property Name="USERUPD_ID" Type="Int32" />
+    <Property Name="FL_DATELINE" Type="Int16" />
+    <Property Name="DATE_IN" Type="DateTime" Precision="3" />
+    <Property Name="DATE_UPD" Type="DateTime" Precision="3" />
+    <Property Name="CS_ID" Type="Int32" />
+    <Property Name="VO_ID" Type="Int32" />
+    <Property Name="FL_CHNG" Type="Int16" />
+    <Property Name="FL_SENT" Type="Int16" />
+    <Property Name="RLS_NO" Type="Int16" />
+    <Property Name="FL_DLT" Type="Int16" />
+    <Property Name="FL_REXST" Type="Int16" />
+  </EntityType>
+</Schema>

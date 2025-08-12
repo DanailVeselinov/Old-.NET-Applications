@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BFDBLModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BFDBLModelStoreContainer">
+    <EntitySet Name="ActiveBetLines" EntityType="BFDBLModel.Store.ActiveBetLines" store:Type="Tables" />
+    <EntitySet Name="Markets" EntityType="BFDBLModel.Store.Markets" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="ActiveBetLines">
+    <Key>
+      <PropertyRef Name="BetLineID" />
+    </Key>
+    <Property Name="BetLineID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EventType" Type="nvarchar" MaxLength="20" />
+    <Property Name="MarketType" Type="nvarchar" MaxLength="20" />
+    <Property Name="DateStarted" Type="datetime" Nullable="false" />
+    <Property Name="OddLimitMin" Type="float" />
+    <Property Name="OddLimitMax" Type="float" />
+    <Property Name="FromEventDate" Type="datetime" />
+    <Property Name="ToEventDate" Type="datetime" />
+    <Property Name="IsInPlay" Type="bit" />
+    <Property Name="IsBSP" Type="bit" />
+    <Property Name="ExchangeID" Type="smallint" />
+    <Property Name="CountryCodes" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="MarketTypes" Type="nvarchar" MaxLength="100" />
+    <Property Name="RunnersMin" Type="int" />
+    <Property Name="RunnersMax" Type="int" />
+    <Property Name="WinnersMin" Type="int" />
+    <Property Name="WinnersMax" Type="int" />
+    <Property Name="TotalAmmountMatchedMax" Type="money" />
+    <Property Name="TotalAmmountMatchedMin" Type="money" />
+    <Property Name="ProfitPerBet" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Markets">
+    <Key>
+      <PropertyRef Name="MarketID" />
+    </Key>
+    <Property Name="MarketName" Type="nvarchar" MaxLength="100" />
+    <Property Name="MarketType" Type="nvarchar" MaxLength="25" />
+    <Property Name="MarketStatus" Type="nvarchar" MaxLength="20" />
+    <Property Name="EventDate" Type="datetime" />
+    <Property Name="MenuPath" Type="nvarchar" MaxLength="100" />
+    <Property Name="EventHierarchy" Type="nvarchar" MaxLength="100" />
+    <Property Name="BetDelay" Type="nvarchar" MaxLength="100" />
+    <Property Name="ExchangeID" Type="tinyint" />
+    <Property Name="ISO3CountryCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="LastRefresh" Type="datetime" />
+    <Property Name="NumberOfRunners" Type="int" />
+    <Property Name="NumberOfWinners" Type="int" />
+    <Property Name="TotalAmountMatched" Type="float" />
+    <Property Name="BSPMarket" Type="bit" />
+    <Property Name="TurningInPlay" Type="bit" />
+    <Property Name="MarketID" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

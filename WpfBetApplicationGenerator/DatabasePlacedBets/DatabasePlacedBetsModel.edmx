@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BFBDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PlacedBets">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="betId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="resultCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="sizeMatched" Type="float" />
+          <Property Name="success" Type="bit" Nullable="false" />
+          <Property Name="betlineId" Type="int" />
+          <Property Name="datePlaced" Type="datetime" Nullable="false" />
+          <Property Name="eventId" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="marketMenuPath" Type="nvarchar" MaxLength="200" />
+          <Property Name="averagePrice" Type="float" />
+          <Property Name="Selection" Type="nvarchar" MaxLength="100" />
+          <Property Name="dateSettled" Type="datetime" />
+          <Property Name="score" Type="nvarchar" MaxLength="20" />
+          <Property Name="sortedOrder" Type="int" />
+          <Property Name="marketName" Type="nvarchar" MaxLength="50" />
+          <Property Name="betType" Type="nvarchar" MaxLength="20" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="BFBDBModelStoreContainer">
+          <EntitySet Name="PlacedBets" EntityType="Self.PlacedBets" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BFBDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="PlacedBet">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="betId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="resultCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="sizeMatched" Type="Double" />
+          <Property Name="success" Type="Boolean" Nullable="false" />
+          <Property Name="betlineId" Type="Int32" />
+          <Property Name="datePlaced" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="eventId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="marketMenuPath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="averagePrice" Type="Double" />
+          <Property Name="Selection" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="dateSettled" Type="DateTime" Precision="3" />
+          <Property Name="score" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="sortedOrder" Type="Int32" />
+          <Property Name="marketName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="betType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="BFDBLEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PlacedBets" EntityType="Self.PlacedBet" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BFBDBModelStoreContainer" CdmEntityContainer="BFDBLEntities">
+          <EntitySetMapping Name="PlacedBets">
+            <EntityTypeMapping TypeName="BFBDBModel.PlacedBet">
+              <MappingFragment StoreEntitySet="PlacedBets">
+                <ScalarProperty Name="betId" ColumnName="betId" />
+                <ScalarProperty Name="resultCode" ColumnName="resultCode" />
+                <ScalarProperty Name="sizeMatched" ColumnName="sizeMatched" />
+                <ScalarProperty Name="success" ColumnName="success" />
+                <ScalarProperty Name="betlineId" ColumnName="betlineId" />
+                <ScalarProperty Name="datePlaced" ColumnName="datePlaced" />
+                <ScalarProperty Name="eventId" ColumnName="eventId" />
+                <ScalarProperty Name="marketMenuPath" ColumnName="marketMenuPath" />
+                <ScalarProperty Name="averagePrice" ColumnName="averagePrice" />
+                <ScalarProperty Name="Selection" ColumnName="Selection" />
+                <ScalarProperty Name="dateSettled" ColumnName="dateSettled" />
+                <ScalarProperty Name="score" ColumnName="score" />
+                <ScalarProperty Name="sortedOrder" ColumnName="sortedOrder" />
+                <ScalarProperty Name="marketName" ColumnName="marketName" />
+                <ScalarProperty Name="betType" ColumnName="betType" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

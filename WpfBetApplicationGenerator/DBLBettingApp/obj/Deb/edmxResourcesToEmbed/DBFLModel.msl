@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BFDBLModelStoreContainer" CdmEntityContainer="BFDBLEntities">
+    <EntitySetMapping Name="Betlines">
+      <EntityTypeMapping TypeName="BFDBLModel.Betline">
+        <MappingFragment StoreEntitySet="Betlines">
+          <ScalarProperty Name="budjet" ColumnName="budjet" />
+          <ScalarProperty Name="profitPerBudjet" ColumnName="profitPerBudjet" />
+          <ScalarProperty Name="betlineName" ColumnName="betlineName" />
+          <ScalarProperty Name="betType" ColumnName="betType" />
+          <ScalarProperty Name="algorithmName" ColumnName="algorithmName" />
+          <ScalarProperty Name="lastPlacedBetId" ColumnName="lastPlacedBetId" />
+          <ScalarProperty Name="Filter_FilterId" ColumnName="Filter_FilterId" />
+          <ScalarProperty Name="currencyCode" ColumnName="currencyCode" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="lastBetLost" ColumnName="lastBetLost" />
+          <ScalarProperty Name="profitPerBet" ColumnName="profitPerBet" />
+          <ScalarProperty Name="initialProfitPerBet" ColumnName="initialProfitPerBet" />
+          <ScalarProperty Name="stakeRangeMax" ColumnName="stakeRangeMax" />
+          <ScalarProperty Name="stakeRangeMin" ColumnName="stakeRangeMin" />
+          <ScalarProperty Name="BetlineId" ColumnName="BetlineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emails">
+      <EntityTypeMapping TypeName="BFDBLModel.Email">
+        <MappingFragment StoreEntitySet="Emails">
+          <ScalarProperty Name="email1" ColumnName="email" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Filters">
+      <EntityTypeMapping TypeName="BFDBLModel.Filter">
+        <MappingFragment StoreEntitySet="Filters">
+          <ScalarProperty Name="maxAmmountIncrementedPerBudjet" ColumnName="maxAmmountIncrementedPerBudjet" />
+          <ScalarProperty Name="maxAmmountIncremented" ColumnName="maxAmmountIncremented" />
+          <ScalarProperty Name="maxBetsCount" ColumnName="maxBetsCount" />
+          <ScalarProperty Name="sortedOrdersCorrectScore" ColumnName="sortedOrdersCorrectScore" />
+          <ScalarProperty Name="sortedOrdersMatchOdds" ColumnName="sortedOrdersMatchOdds" />
+          <ScalarProperty Name="marketNames" ColumnName="marketNames" />
+          <ScalarProperty Name="totalAmountMatchedMax" ColumnName="totalAmountMatchedMax" />
+          <ScalarProperty Name="totalAmountMatchedMin" ColumnName="totalAmountMatchedMin" />
+          <ScalarProperty Name="winnersMax" ColumnName="winnersMax" />
+          <ScalarProperty Name="winnersMin" ColumnName="winnersMin" />
+          <ScalarProperty Name="runnersMax" ColumnName="runnersMax" />
+          <ScalarProperty Name="runnersMin" ColumnName="runnersMin" />
+          <ScalarProperty Name="marketTypes" ColumnName="marketTypes" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="countryCodes" ColumnName="countryCodes" />
+          <ScalarProperty Name="exchangeId" ColumnName="exchangeId" />
+          <ScalarProperty Name="isBSP" ColumnName="isBSP" />
+          <ScalarProperty Name="isInPlay" ColumnName="isInPlay" />
+          <ScalarProperty Name="toEventDate" ColumnName="toEventDate" />
+          <ScalarProperty Name="fromEventDate" ColumnName="fromEventDate" />
+          <ScalarProperty Name="eventTypes" ColumnName="eventTypes" />
+          <ScalarProperty Name="FilterId" ColumnName="FilterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlacedBets">
+      <EntityTypeMapping TypeName="BFDBLModel.PlacedBet">
+        <MappingFragment StoreEntitySet="PlacedBets">
+          <ScalarProperty Name="eventType" ColumnName="eventType" />
+          <ScalarProperty Name="score" ColumnName="score" />
+          <ScalarProperty Name="marketName" ColumnName="marketName" />
+          <ScalarProperty Name="sortedOrder" ColumnName="sortedOrder" />
+          <ScalarProperty Name="betId" ColumnName="betId" />
+          <ScalarProperty Name="eventId" ColumnName="eventId" />
+          <ScalarProperty Name="dateSettled" ColumnName="dateSettled" />
+          <ScalarProperty Name="Selection" ColumnName="Selection" />
+          <ScalarProperty Name="averagePrice" ColumnName="averagePrice" />
+          <ScalarProperty Name="marketMenuPath" ColumnName="marketMenuPath" />
+          <ScalarProperty Name="marketId" ColumnName="marketId" />
+          <ScalarProperty Name="datePlaced" ColumnName="datePlaced" />
+          <ScalarProperty Name="betlineId" ColumnName="betlineId" />
+          <ScalarProperty Name="success" ColumnName="success" />
+          <ScalarProperty Name="sizeMatched" ColumnName="sizeMatched" />
+          <ScalarProperty Name="resultCode" ColumnName="resultCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

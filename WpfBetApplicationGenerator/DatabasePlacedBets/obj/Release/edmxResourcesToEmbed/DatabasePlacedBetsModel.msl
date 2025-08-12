@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BFBDBModelStoreContainer" CdmEntityContainer="BFDBLEntities">
+    <EntitySetMapping Name="PlacedBets">
+      <EntityTypeMapping TypeName="BFBDBModel.PlacedBet">
+        <MappingFragment StoreEntitySet="PlacedBets">
+          <ScalarProperty Name="betId" ColumnName="betId" />
+          <ScalarProperty Name="resultCode" ColumnName="resultCode" />
+          <ScalarProperty Name="sizeMatched" ColumnName="sizeMatched" />
+          <ScalarProperty Name="success" ColumnName="success" />
+          <ScalarProperty Name="betlineId" ColumnName="betlineId" />
+          <ScalarProperty Name="datePlaced" ColumnName="datePlaced" />
+          <ScalarProperty Name="eventId" ColumnName="eventId" />
+          <ScalarProperty Name="marketMenuPath" ColumnName="marketMenuPath" />
+          <ScalarProperty Name="averagePrice" ColumnName="averagePrice" />
+          <ScalarProperty Name="Selection" ColumnName="Selection" />
+          <ScalarProperty Name="dateSettled" ColumnName="dateSettled" />
+          <ScalarProperty Name="score" ColumnName="score" />
+          <ScalarProperty Name="sortedOrder" ColumnName="sortedOrder" />
+          <ScalarProperty Name="marketName" ColumnName="marketName" />
+          <ScalarProperty Name="betType" ColumnName="betType" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

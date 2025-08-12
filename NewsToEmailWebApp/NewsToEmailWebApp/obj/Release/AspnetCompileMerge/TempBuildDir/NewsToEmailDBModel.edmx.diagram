@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4ece79438eaf483288d9a56c44cc330a" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="NewsToEmailDBModel.Categories" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.FiltersCategories" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.KeyWords" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.Livescores" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.News" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.UsedEmails" Width="1.5" PointX="3" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.Users" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.UsersWebsites" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsToEmailDBModel.WebSites" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_categoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_CategoryNews" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_WebSiteId" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_userId" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_KeyWS" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_UsersLivescore" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_WebSiteNews" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_UsersEmails" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsToEmailDBModel.FK_Website1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7EB3FC9-F84C-4ADE-88ED-123C32412BC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BetFairBot</RootNamespace>
+    <AssemblyName>BetFairBotLight</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Eddy\Documents\Visual Studio 2013\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>160DDC152D5DF6351DF9AD5F8F8608B0A6488122</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BetFairBotLight_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Algorithms.cs" />
+    <Compile Include="AuthClient.cs" />
+    <Compile Include="Betlines.cs">
+      <DependentUpon>BFBDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BettingItems.cs" />
+    <Compile Include="BFBDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BFBDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BFBDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BFBDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BFBDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BFBDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CountryCode.cs" />
+    <Compile Include="Filters.cs">
+      <DependentUpon>BFBDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IClient.cs" />
+    <Compile Include="JsonRpcClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlacedBets.cs">
+      <DependentUpon>BFBDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RescriptClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TO\APINGException.cs" />
+    <Compile Include="TO\BetStatus.cs" />
+    <Compile Include="TO\CancelExecutionReport-Mrt.cs" />
+    <Compile Include="TO\CancelInstruction.cs" />
+    <Compile Include="TO\CancelInstructionReport.cs" />
+    <Compile Include="TO\ClearedOrderSummary.cs" />
+    <Compile Include="TO\ClearedOrderSummaryReport.cs" />
+    <Compile Include="TO\Competition.cs" />
+    <Compile Include="TO\CompetitionResult.cs" />
+    <Compile Include="TO\CurrentOrderSummary.cs" />
+    <Compile Include="TO\CurrentOrderSummaryReport.cs" />
+    <Compile Include="TO\Event.cs" />
+    <Compile Include="TO\EventResult.cs" />
+    <Compile Include="TO\EventType.cs" />
+    <Compile Include="TO\EventTypeResult.cs" />
+    <Compile Include="TO\ExBestOffersOverrides.cs" />
+    <Compile Include="TO\Exception.cs" />
+    <Compile Include="TO\ExchangePrices.cs" />
+    <Compile Include="TO\ExecutionReportErrorCode.cs" />
+    <Compile Include="TO\ExecutionReportStatus.cs" />
+    <Compile Include="TO\GroupBy-Mrt.cs" />
+    <Compile Include="TO\InstructionReportErrorCode.cs" />
+    <Compile Include="TO\InstructionReportStatus.cs" />
+    <Compile Include="TO\ItemDescription.cs" />
+    <Compile Include="TO\LimitOnCloseOrder.cs" />
+    <Compile Include="TO\LimitOrder.cs" />
+    <Compile Include="TO\MarketBettingType.cs" />
+    <Compile Include="TO\MarketBook.cs" />
+    <Compile Include="TO\MarketCatalogue.cs" />
+    <Compile Include="TO\MarketDescription.cs" />
+    <Compile Include="TO\MarketFilter.cs" />
+    <Compile Include="TO\MarketOnCloseOrder.cs" />
+    <Compile Include="TO\MarketProfitAndLoss.cs" />
+    <Compile Include="TO\MarketProjection.cs" />
+    <Compile Include="TO\MarketSort.cs" />
+    <Compile Include="TO\MarketStatus.cs" />
+    <Compile Include="TO\Match.cs" />
+    <Compile Include="TO\MatchProjection.cs" />
+    <Compile Include="TO\Order.cs" />
+    <Compile Include="TO\OrderBy.cs" />
+    <Compile Include="TO\OrderProjection.cs" />
+    <Compile Include="TO\OrderStatus.cs" />
+    <Compile Include="TO\OrderType.cs" />
+    <Compile Include="TO\PersistenceType.cs" />
+    <Compile Include="TO\PlaceExecutionReport.cs" />
+    <Compile Include="TO\PlaceInstruction.cs" />
+    <Compile Include="TO\PlaceInstructionReport.cs" />
+    <Compile Include="TO\PriceData.cs" />
+    <Compile Include="TO\PriceProjection.cs" />
+    <Compile Include="TO\PriceSize.cs" />
+    <Compile Include="TO\ReplaceExecutionReport.cs" />
+    <Compile Include="TO\ReplaceInstruction.cs" />
+    <Compile Include="TO\ReplaceInstructionReport.cs" />
+    <Compile Include="TO\RollUpModel.cs" />
+    <Compile Include="TO\Runner.cs" />
+    <Compile Include="TO\RunnerDescription.cs" />
+    <Compile Include="TO\RunnerId-Mrt.cs" />
+    <Compile Include="TO\RunnerProfitAndLost.cs" />
+    <Compile Include="TO\RunnerStatus.cs" />
+    <Compile Include="TO\Side.cs" />
+    <Compile Include="TO\SortDir.cs" />
+    <Compile Include="TO\StartingPrices.cs" />
+    <Compile Include="TO\TimeRange.cs" />
+    <Compile Include="TO\UpdateExecutionReport.cs" />
+    <Compile Include="TO\UpdateInstruction.cs" />
+    <Compile Include="TO\UpdateInstructionReport.cs" />
+    <Compile Include="Users.cs">
+      <DependentUpon>BFBDBModel.tt</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Json\JsonConvert.cs" />
+    <Compile Include="Json\JsonRequest.cs" />
+    <Compile Include="Json\JsonResponse.cs" />
+    <Compile Include="Json\RescriptRequest.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\KeepAliveLogoutResponse.cs" />
+    <Compile Include="Models\LoginResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="BFBDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BFBDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BetFairBotLight_TemporaryKey.pfx" />
+    <None Include="BFBDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BFBDBModel.edmx</DependentUpon>
+      <LastGenOutput>BFBDBModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="BFBDBModel.edmx.diagram">
+      <DependentUpon>BFBDBModel.edmx</DependentUpon>
+    </None>
+    <None Include="BFBDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BFBDBModel.edmx</DependentUpon>
+      <LastGenOutput>BFBDBModel.cs</LastGenOutput>
+    </None>
+    <None Include="EddyBetFairApp.p12">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

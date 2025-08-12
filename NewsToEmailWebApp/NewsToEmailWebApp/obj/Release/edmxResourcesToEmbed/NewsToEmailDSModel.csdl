@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NewsToEmailDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="categoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="webSiteId" Type="Int32" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="FiltersCategories" Relationship="Self.FK_categoryId" FromRole="Categories" ToRole="FiltersCategories" />
+    <NavigationProperty Name="News" Relationship="Self.FK_CategoryNews" FromRole="Categories" ToRole="News" />
+    <NavigationProperty Name="WebSites" Relationship="Self.FK_WebSiteId" FromRole="Categories" ToRole="WebSites" />
+  </EntityType>
+  <EntityType Name="FiltersCategories">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="filterText" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="categoryId" Type="Int32" />
+    <Property Name="userId" Type="Int32" />
+    <Property Name="symbolsCount" Type="Int16" />
+    <Property Name="isSelected" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK_categoryId" FromRole="FiltersCategories" ToRole="Categories" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_userId" FromRole="FiltersCategories" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="KeyWords">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="webSiteId" Type="Int32" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="WebSites" Relationship="Self.FK_KeyWS" FromRole="KeyWords" ToRole="WebSites" />
+  </EntityType>
+  <EntityType Name="Livescores">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sport" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="competition" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="level" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usersId" Type="Int32" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_UsersLivescore" FromRole="Livescores" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="title" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dateSaved" Type="DateTime" Precision="3" />
+    <Property Name="articleId" Type="Int32" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="href" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="sourceWebSite" Type="Int32" />
+    <Property Name="categoryId" Type="Int32" Nullable="false" />
+    <Property Name="keywords" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="lastUpdated" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK_CategoryNews" FromRole="News" ToRole="Categories" />
+    <NavigationProperty Name="WebSites" Relationship="Self.FK_WebSiteNews" FromRole="News" ToRole="WebSites" />
+  </EntityType>
+  <EntityType Name="UsedEmails">
+    <Key>
+      <PropertyRef Name="usedEmail1" />
+    </Key>
+    <Property Name="userId" Type="Int32" />
+    <Property Name="usedEmail1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_UsersEmails" FromRole="UsedEmails" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userName" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="userEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="isEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sendNewsHour" Type="Int16" />
+    <Property Name="convertCyrlicToLatin" Type="Boolean" Nullable="false" />
+    <Property Name="sizeLimit" Type="Int32" />
+    <Property Name="webSitesMaxNumber" Type="Int16" Nullable="false" />
+    <Property Name="recieveFile" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="FiltersCategories" Relationship="Self.FK_userId" FromRole="Users" ToRole="FiltersCategories" />
+    <NavigationProperty Name="Livescores" Relationship="Self.FK_UsersLivescore" FromRole="Users" ToRole="Livescores" />
+    <NavigationProperty Name="UsedEmails" Relationship="Self.FK_UsersEmails" FromRole="Users" ToRole="UsedEmails" />
+    <NavigationProperty Name="UsersWebsites" Relationship="Self.FK_Users1" FromRole="Users" ToRole="UsersWebsites" />
+  </EntityType>
+  <EntityType Name="UsersWebsites">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="userId" Type="Int32" Nullable="false" />
+    <Property Name="webSiteId" Type="Int32" />
+    <Property Name="validUntil" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="isSelected" Type="Boolean" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="lastSendDate" Type="DateTime" Precision="3" />
+    <Property Name="lastSendNewsId" Type="Int32" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_Users1" FromRole="UsersWebsites" ToRole="Users" />
+    <NavigationProperty Name="WebSites" Relationship="Self.FK_Website1" FromRole="UsersWebsites" ToRole="WebSites" />
+  </EntityType>
+  <EntityType Name="WebSites">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="siteName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="encoding" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="domain" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="lastUpdated" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK_WebSiteId" FromRole="WebSites" ToRole="Categories" />
+    <NavigationProperty Name="KeyWords" Relationship="Self.FK_KeyWS" FromRole="WebSites" ToRole="KeyWords" />
+    <NavigationProperty Name="News" Relationship="Self.FK_WebSiteNews" FromRole="WebSites" ToRole="News" />
+    <NavigationProperty Name="UsersWebsites" Relationship="Self.FK_Website1" FromRole="WebSites" ToRole="UsersWebsites" />
+  </EntityType>
+  <Association Name="FK_categoryId">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FiltersCategories" Type="Self.FiltersCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FiltersCategories">
+        <PropertyRef Name="categoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryNews">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="categoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WebSiteId">
+    <End Role="WebSites" Type="Self.WebSites" Multiplicity="0..1" />
+    <End Role="Categories" Type="Self.Categories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebSites">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Categories">
+        <PropertyRef Name="webSiteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_userId">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FiltersCategories" Type="Self.FiltersCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FiltersCategories">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KeyWS">
+    <End Role="WebSites" Type="Self.WebSites" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="KeyWords" Type="Self.KeyWords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebSites">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="KeyWords">
+        <PropertyRef Name="webSiteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersLivescore">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Livescores" Type="Self.Livescores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Livescores">
+        <PropertyRef Name="usersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WebSiteNews">
+    <End Role="WebSites" Type="Self.WebSites" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebSites">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="sourceWebSite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersEmails">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="UsedEmails" Type="Self.UsedEmails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UsedEmails">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users1">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UsersWebsites" Type="Self.UsersWebsites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UsersWebsites">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Website1">
+    <End Role="WebSites" Type="Self.WebSites" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UsersWebsites" Type="Self.UsersWebsites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebSites">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UsersWebsites">
+        <PropertyRef Name="webSiteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NewsToEmailDBEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="Self.Categories" />
+    <EntitySet Name="FiltersCategories" EntityType="Self.FiltersCategories" />
+    <EntitySet Name="KeyWords" EntityType="Self.KeyWords" />
+    <EntitySet Name="Livescores" EntityType="Self.Livescores" />
+    <EntitySet Name="News" EntityType="Self.News" />
+    <EntitySet Name="UsedEmails" EntityType="Self.UsedEmails" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <EntitySet Name="UsersWebsites" EntityType="Self.UsersWebsites" />
+    <EntitySet Name="WebSites" EntityType="Self.WebSites" />
+    <AssociationSet Name="FK_categoryId" Association="Self.FK_categoryId">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="FiltersCategories" EntitySet="FiltersCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryNews" Association="Self.FK_CategoryNews">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WebSiteId" Association="Self.FK_WebSiteId">
+      <End Role="WebSites" EntitySet="WebSites" />
+      <End Role="Categories" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_userId" Association="Self.FK_userId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="FiltersCategories" EntitySet="FiltersCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KeyWS" Association="Self.FK_KeyWS">
+      <End Role="WebSites" EntitySet="WebSites" />
+      <End Role="KeyWords" EntitySet="KeyWords" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersLivescore" Association="Self.FK_UsersLivescore">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Livescores" EntitySet="Livescores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WebSiteNews" Association="Self.FK_WebSiteNews">
+      <End Role="WebSites" EntitySet="WebSites" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersEmails" Association="Self.FK_UsersEmails">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UsedEmails" EntitySet="UsedEmails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users1" Association="Self.FK_Users1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UsersWebsites" EntitySet="UsersWebsites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Website1" Association="Self.FK_Website1">
+      <End Role="WebSites" EntitySet="WebSites" />
+      <End Role="UsersWebsites" EntitySet="UsersWebsites" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

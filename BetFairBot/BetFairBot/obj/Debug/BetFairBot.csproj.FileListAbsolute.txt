@@ -1,0 +1,74 @@
+c:\users\eddy\documents\visual studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BetFairBot.exe.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\App.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot_MarkupCompile.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\MainWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot_MarkupCompile.lref
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EddyBetFairApp.p12
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BetFairBot.exe
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BetFairBot.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BFDL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\Mail.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\nunit.core.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\nunit.framework.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BFDL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\Mail.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\MainWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.g.resources
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.Properties.Resources.resources
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.csproj.GenerateResource.Cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.exe
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\App.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\DialogWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\DialogWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BetFairBot.exe.config
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.exe
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.pdb
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.csprojResolveAssemblyReference.cache
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\DialogWindow.baml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\App.baml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\DialogWindow.g.cs
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\MainWindow.g.cs
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\App.g.cs
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot_MarkupCompile.cache
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot_MarkupCompile.lref
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EddyBetFairApp.p12
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BFBDB.mdf
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BFBDB_log.ldf
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BetFairBot.exe
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BetFairBot.pdb
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BFDL.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EntityFramework.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\Mail.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\nunit.core.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\nunit.framework.dll
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BFDL.pdb
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EntityFramework.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\Mail.xml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\MainWindow.baml
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.g.resources
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.Properties.Resources.resources
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.csproj.GenerateResource.Cache
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BetFairBot.exe.manifest
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\bin\Debug\BetFairBot.application
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.exe.manifest
+C:\Users\Danail Veselinov\Documents\Visual Studio 2013\Projects\BetFairBot\BetFairBot\obj\Debug\BetFairBot.application

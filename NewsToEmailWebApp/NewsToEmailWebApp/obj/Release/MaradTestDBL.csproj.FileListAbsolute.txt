@@ -1,0 +1,13 @@
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\MaradTestDBL.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\MaradTestDBL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\MaradTestDBL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\obj\Release\MaradTestDBL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\obj\Release\MaradTestDBL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\EntityFramework.SqlServerCompact.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\System.Data.SqlServerCe.Entity.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\MaradTestDBL\bin\Release\EntityFramework.SqlServerCompact.xml

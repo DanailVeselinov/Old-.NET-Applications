@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BFDBLModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BFDBLEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Betlines" EntityType="BFDBLModel.Betline" />
+    <EntitySet Name="Emails" EntityType="BFDBLModel.Email" />
+    <EntitySet Name="PlacedBets" EntityType="BFDBLModel.PlacedBet" />
+    <AssociationSet Name="Betline1" Association="BFDBLModel.Betline1">
+      <End Role="Betline" EntitySet="Betlines" />
+      <End Role="PlacedBet" EntitySet="PlacedBets" />
+    </AssociationSet>
+    <EntitySet Name="Filters" EntityType="BFDBLModel.Filter" />
+    <AssociationSet Name="Filter1" Association="BFDBLModel.Filter1">
+      <End Role="Filter" EntitySet="Filters" />
+      <End Role="Betline" EntitySet="Betlines" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Betline">
+    <Key>
+      <PropertyRef Name="BetlineId" />
+    </Key>
+    <Property Type="Int32" Name="BetlineId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Double" Name="stakeRangeMin" Nullable="false" />
+    <Property Type="Double" Name="stakeRangeMax" Nullable="false" />
+    <Property Type="Double" Name="initialProfitPerBet" Nullable="false" />
+    <Property Type="Double" Name="profitPerBet" Nullable="false" />
+    <Property Type="Boolean" Name="lastBetLost" Nullable="false" />
+    <Property Type="Boolean" Name="isActive" Nullable="false" />
+    <Property Type="String" Name="currencyCode" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Filter_FilterId" />
+    <Property Type="String" Name="lastPlacedBetId" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="algorithmName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="betType" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="betlineName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PlacedBets" Relationship="BFDBLModel.Betline1" FromRole="Betline" ToRole="PlacedBet" />
+    <Property Type="Decimal" Name="ballance" Precision="19" Scale="4" />
+    <NavigationProperty Name="Filter" Relationship="BFDBLModel.Filter1" FromRole="Betline" ToRole="Filter" />
+  </EntityType>
+  <EntityType Name="Email">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="email1" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PlacedBet">
+    <Key>
+      <PropertyRef Name="betId" />
+    </Key>
+    <Property Type="String" Name="resultCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="sizeMatched" Nullable="false" />
+    <Property Type="Boolean" Name="success" Nullable="false" />
+    <Property Type="Int32" Name="betlineId" />
+    <Property Type="DateTime" Name="datePlaced" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="marketId" Nullable="false" />
+    <Property Type="String" Name="marketMenuPath" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="averagePrice" Nullable="false" />
+    <Property Type="String" Name="Selection" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="dateSettled" Precision="3" />
+    <Property Type="Int32" Name="eventId" />
+    <Property Type="Int64" Name="betId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="sortedOrder" />
+    <Property Type="String" Name="marketName" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="score" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="eventType" />
+    <NavigationProperty Name="Betline" Relationship="BFDBLModel.Betline1" FromRole="PlacedBet" ToRole="Betline" />
+    <Property Type="String" Name="betType" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="Betline1">
+    <End Type="BFDBLModel.Betline" Role="Betline" Multiplicity="0..1" />
+    <End Type="BFDBLModel.PlacedBet" Role="PlacedBet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Betline">
+        <PropertyRef Name="BetlineId" />
+      </Principal>
+      <Dependent Role="PlacedBet">
+        <PropertyRef Name="betlineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Filter">
+    <Key>
+      <PropertyRef Name="FilterId" />
+    </Key>
+    <Property Type="Int32" Name="FilterId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="eventTypes" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="fromEventDate" Precision="3" />
+    <Property Type="DateTime" Name="toEventDate" Precision="3" />
+    <Property Type="Boolean" Name="isInPlay" Nullable="false" />
+    <Property Type="Boolean" Name="isBSP" />
+    <Property Type="Byte" Name="exchangeId" />
+    <Property Type="String" Name="countryCodes" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="isActive" />
+    <Property Type="String" Name="marketTypes" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="runnersMin" Nullable="false" />
+    <Property Type="Int32" Name="runnersMax" Nullable="false" />
+    <Property Type="Int32" Name="winnersMin" Nullable="false" />
+    <Property Type="Int32" Name="winnersMax" Nullable="false" />
+    <Property Type="Double" Name="totalAmountMatchedMin" />
+    <Property Type="Double" Name="totalAmountMatchedMax" />
+    <Property Type="String" Name="marketNames" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="sortedOrdersMatchOdds" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="sortedOrdersCorrectScore" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Byte" Name="maxBetsCount" />
+    <Property Type="Int32" Name="maxAmmountIncremented" />
+    <Property Type="Int16" Name="goalDifferenceMin" />
+    <Property Type="Int16" Name="goalDifferenceMax" />
+    <NavigationProperty Name="Betlines" Relationship="BFDBLModel.Filter1" FromRole="Filter" ToRole="Betline" />
+  </EntityType>
+  <Association Name="Filter1">
+    <End Type="BFDBLModel.Filter" Role="Filter" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="BFDBLModel.Betline" Role="Betline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Filter">
+        <PropertyRef Name="FilterId" />
+      </Principal>
+      <Dependent Role="Betline">
+        <PropertyRef Name="Filter_FilterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

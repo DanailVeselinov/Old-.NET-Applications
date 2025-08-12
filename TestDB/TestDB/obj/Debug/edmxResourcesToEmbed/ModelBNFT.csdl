@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BNFT_VSLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CWCREW">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LASTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FIRSTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FATHERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MOTHERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WIFENAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CHILD_NUM" Type="Int16" />
+    <Property Name="ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CITY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZIPCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TELEPHONE1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TELEPHONE2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BRTH_PLC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BRTH_DT" Type="DateTime" Precision="3" />
+    <Property Name="RECOMMENDED" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NEXTOFKIN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NEXTADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NEXTCITY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NEXTZIP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NEXTTEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RELATION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PSPRT_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PSPRT_PLACE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PSPRT_ISSUE" Type="DateTime" Precision="3" />
+    <Property Name="PSPRT_EXPIRY" Type="DateTime" Precision="3" />
+    <Property Name="SB_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SB_PLACE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SB_ISSUE" Type="DateTime" Precision="3" />
+    <Property Name="SB_EXPIRY" Type="DateTime" Precision="3" />
+    <Property Name="FL_MARITAL" Type="Int32" />
+    <Property Name="REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CWPNATION_ID" Type="Int32" />
+    <Property Name="CWPRELIGION_ID" Type="Int32" />
+    <Property Name="CWPRANK_ID" Type="Int32" />
+    <Property Name="DATEIN" Type="DateTime" Precision="3" />
+    <Property Name="USERIN_ID" Type="Int32" />
+    <Property Name="DATEUPD" Type="DateTime" Precision="3" />
+    <Property Name="USERUPD_ID" Type="Int32" />
+    <Property Name="FL_ONBOARD" Type="Int16" />
+    <Property Name="DOC_DIR_NAME" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ATCH_DIR" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ATCH_REM" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE_IN" Type="DateTime" Precision="3" />
+    <Property Name="DATE_UPD" Type="DateTime" Precision="3" />
+    <Property Name="RLS_NO" Type="Int16" />
+    <Property Name="FL_CHNG" Type="Int16" />
+    <Property Name="FL_SENT" Type="Int16" />
+    <Property Name="FL_REXST" Type="Int16" />
+    <Property Name="FL_FRNG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LASTNAME_GR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FIRSTNAME_GR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FATHERNAME_GR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FL_USE" Type="Int16" />
+    <Property Name="SIZE_POLO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SIZE_PANTS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SIZE_OVERALL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SIZE_WINTER" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SIZE_TSHIRT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SIZE_SHOES" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SIZE_CATER" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BRTH_PLC_GR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MIDDLENAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PAG_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HEALTH_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SSS_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SKYPE_ACCOUNT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="FB_ACCOUNT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="TRM_DATE" Type="DateTime" Precision="3" />
+    <Property Name="FL_TRM_REASON" Type="Int16" />
+  </EntityType>
+  <EntityType Name="CWCREWSERV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CWCREW_ID" Type="Int32" />
+    <Property Name="VSL_ID" Type="Int32" />
+    <Property Name="CWPRANK_ID" Type="Int32" />
+    <Property Name="CWPAITIOL_ID" Type="Int32" />
+    <Property Name="DATEE" Type="DateTime" Precision="3" />
+    <Property Name="DATED" Type="DateTime" Precision="3" />
+    <Property Name="REM1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="REM2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FL_OTHER" Type="Int16" />
+    <Property Name="FL_PASSEG" Type="Int16" />
+    <Property Name="STARTING_DT" Type="DateTime" Precision="3" />
+    <Property Name="ARVD_HOME_DT" Type="DateTime" Precision="3" />
+    <Property Name="DATEIN" Type="DateTime" Precision="3" />
+    <Property Name="USERIN_ID" Type="Int32" />
+    <Property Name="DATEUPD" Type="DateTime" Precision="3" />
+    <Property Name="USERUPD_ID" Type="Int32" />
+    <Property Name="FL_MGSERV" Type="Int16" />
+    <Property Name="PORTE_ID" Type="Int32" />
+    <Property Name="PORTD_ID" Type="Int32" />
+    <Property Name="DATE_UPD" Type="DateTime" Precision="3" />
+    <Property Name="DATE_IN" Type="DateTime" Precision="3" />
+    <Property Name="FL_PREP" Type="Int16" />
+    <Property Name="LARGE_ADVANCE" Type="Double" />
+    <Property Name="OLD_ID" Type="Int32" />
+    <Property Name="CWRHSCHED_ID" Type="Int32" />
+    <Property Name="FL_RHERR" Type="Int32" />
+    <Property Name="PROP_DT" Type="DateTime" Precision="3" />
+    <Property Name="FL_PROMOT" Type="Int16" />
+    <Property Name="PRV_RANK_ID" Type="Int32" />
+    <Property Name="ADVANCE_AMNT" Type="Double" />
+  </EntityType>
+  <EntityType Name="CWPRANK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ABREV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AA" Type="Int16" />
+    <Property Name="FL_USE" Type="Int16" />
+    <Property Name="OLD_ID" Type="Int32" />
+    <Property Name="FL_CLSF" Type="Int16" />
+    <Property Name="FL_INTEGR" Type="Int32" />
+    <Property Name="DESCR_GR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FL_TYPE" Type="Int16" />
+    <Property Name="FL_DSGN" Type="Int16" />
+  </EntityType>
+  <EntityType Name="CWRESTHR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VSL_ID" Type="Int32" />
+    <Property Name="RH_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CWCREW_ID" Type="Int32" />
+    <Property Name="CWSERV_ID" Type="Int32" />
+    <Property Name="H01A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H01B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H02A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H02B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H03A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H03B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H04A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H04B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H05A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H05B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H06A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H06B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H07A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H07B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H08A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H08B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H09A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H09B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H10A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H10B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H11A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H11B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H12A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H12B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H13A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H13B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H14A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H14B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H15A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H15B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H16A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H16B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H17A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H17B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H18A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H18B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H19A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H19B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H20A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H20B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H21A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H21B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H22A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H22B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H23A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H23B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H24A" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="H24B" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="FL_RSLTS" Type="Int16" />
+    <Property Name="FL_UPD" Type="Int16" />
+    <Property Name="FL_FLZD" Type="Int16" />
+    <Property Name="RH_RSLTS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RH_NOTES" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="REST_24" Type="Double" />
+    <Property Name="WRK_24" Type="Double" />
+    <Property Name="REST_IN24" Type="Double" />
+    <Property Name="REST_IN7D" Type="Double" />
+    <Property Name="REST_IN3D" Type="Double" />
+    <Property Name="RLS_NO" Type="Int16" />
+    <Property Name="FL_CHNG" Type="Int16" />
+    <Property Name="FL_SENT" Type="Int16" />
+    <Property Name="FL_REXST" Type="Int16" />
+    <Property Name="FL_DLT" Type="Int16" />
+    <Property Name="REST_PER_NUM" Type="Int32" />
+    <Property Name="RH_LOG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VO_ID" Type="Int32" />
+    <Property Name="CS_ID" Type="Int32" />
+    <Property Name="FL_HIDE" Type="Int16" />
+    <Property Name="REPL_REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FL_EWdate" Type="Int16" />
+    <Property Name="NONC_24" Type="Double" />
+    <Property Name="FL_EXCEPTION" Type="Int16" />
+    <Property Name="fl_excelption" Type="Int16" />
+  </EntityType>
+  <EntityType Name="VSL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="VSL_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TRN_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ABRV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EX_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_TYPE_ID" Type="Int32" />
+    <Property Name="VSL_YARD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_HULL_NO" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_BLT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_KEEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_DWT" Type="Double" />
+    <Property Name="VSL_CROSS" Type="Double" />
+    <Property Name="VSL_NATION_TONAG" Type="Double" />
+    <Property Name="BEAM_M" Type="Double" />
+    <Property Name="BEAM_F" Type="Double" />
+    <Property Name="DPTH_M" Type="Double" />
+    <Property Name="DPTH_F" Type="Double" />
+    <Property Name="DRFT_M" Type="Double" />
+    <Property Name="DRFT_F" Type="Double" />
+    <Property Name="VSL_FLAG_ID" Type="Int32" />
+    <Property Name="PORT_REGISTR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_NOID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IMO_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MAIN_CLASS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CLASS_NOTATON" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SIGNAL_LTRS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SPD_LD" Type="Double" />
+    <Property Name="SPD_BAL" Type="Double" />
+    <Property Name="IFO_LD" Type="Double" />
+    <Property Name="IFO_BAL" Type="Double" />
+    <Property Name="IFO_PORT" Type="Double" />
+    <Property Name="IFO_IDL" Type="Double" />
+    <Property Name="IFO_HEAT" Type="Double" />
+    <Property Name="DO_SEA_BAL" Type="Double" />
+    <Property Name="DO_SEA" Type="Double" />
+    <Property Name="DO_PORT" Type="Double" />
+    <Property Name="DO_IDL" Type="Double" />
+    <Property Name="LUB_ENG" Type="Double" />
+    <Property Name="LUB_CYL" Type="Double" />
+    <Property Name="LUB_DG" Type="Double" />
+    <Property Name="LUB_TURBO" Type="Double" />
+    <Property Name="CONS_WATER" Type="Double" />
+    <Property Name="VSL_ENG_ID" Type="Int32" />
+    <Property Name="ENG_MODEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ENG_POWER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_OWN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_OWN_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_MNG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_MNG_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_MNG_ADR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_MNG_CITY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_MNG_ZIP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_MNG_CNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE_DTL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE_REGISTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE_SPD" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE_ENG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE_SPC_DTLS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE_OWN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FL_USE" Type="Int16" />
+    <Property Name="AA" Type="Int16" />
+    <Property Name="PREFIX" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ME_LD_CONS" Type="Double" />
+    <Property Name="ME_BAL_CONS" Type="Double" />
+    <Property Name="AUX_LD_FO_CONS" Type="Double" />
+    <Property Name="AUX_BAL_FO_CONS" Type="Double" />
+    <Property Name="AUX_LD_DO_CONS" Type="Double" />
+    <Property Name="AUX_BAL_DO_CONS" Type="Double" />
+    <Property Name="AUX_LD_FO_FTP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AUX_BAL_FO_FTP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AUX_LD_DO_FTP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AUX_BAL_DO_FTP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ME_LD_FTP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ME_BAL_FTP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_LOA" Type="Double" />
+    <Property Name="VSL_GEAR" Type="Int16" />
+    <Property Name="CUB_M" Type="Double" />
+    <Property Name="CUB_M_UNIT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FL_DSGN" Type="Int16" />
+    <Property Name="FL_USEFMC" Type="Int16" />
+    <Property Name="FL_PROP" Type="Int16" />
+    <Property Name="IMAGE_ID" Type="Int16" />
+    <Property Name="VSL_CAPACITY" Type="Double" />
+    <Property Name="VSL_DRAFT" Type="Double" />
+    <Property Name="VSL_TONS_RATE" Type="Double" />
+    <Property Name="VSL_TONS_FL_INC_CM" Type="Int16" />
+    <Property Name="VSL_CONSTANT_WT" Type="Double" />
+    <Property Name="VSL_FW" Type="Double" />
+    <Property Name="VSL_CREW" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_TELECOM" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_DESCR_REP" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="USERIN_ID" Type="Int32" />
+    <Property Name="DATE_UPD" Type="DateTime" Precision="0" />
+    <Property Name="USERUPD_ID" Type="Int32" />
+    <Property Name="DATE_IN" Type="DateTime" Precision="0" />
+    <Property Name="MNG_DATE_FRM" Type="DateTime" Precision="0" />
+    <Property Name="MNG_DATE_UP" Type="DateTime" Precision="0" />
+    <Property Name="PRJ_RUNCOST" Type="Double" />
+    <Property Name="MARKET_VALUE" Type="Double" />
+    <Property Name="FL_TYPE" Type="Int16" />
+    <Property Name="LUB_ENG_CAPACITY" Type="Double" />
+    <Property Name="LUB_CYL_CAPACITY" Type="Double" />
+    <Property Name="LUB_DG_CAPACITY" Type="Double" />
+    <Property Name="DG_FO_LD" Type="Double" />
+    <Property Name="DG_FO_BAL" Type="Double" />
+    <Property Name="acsite_id" Type="Int32" />
+    <Property Name="OLD_CWPENGINE_ID" Type="Int32" />
+    <Property Name="OLD_CWPVSLTYPE_ID" Type="Int32" />
+    <Property Name="OLD_CWPFLAG_ID" Type="Int32" />
+    <Property Name="VSL_DPT_ID" Type="Int32" />
+    <Property Name="VSL_RSP_ID" Type="Int32" />
+    <Property Name="VSL_LOC_ID" Type="Int32" />
+    <Property Name="FL_FORM_TYPE" Type="Int16" />
+    <Property Name="CAPACITY_BILGE" Type="Double" />
+    <Property Name="CAPACITY_SLOP" Type="Double" />
+    <Property Name="CAPACITY_SEWAGE" Type="Double" />
+    <Property Name="IFO_TNK_LOAD_PORT" Type="Double" />
+    <Property Name="IFO_TNK_DISH_PORT" Type="Double" />
+    <Property Name="VSL_SIZE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FL_CONTAINER" Type="Int16" />
+    <Property Name="IMO_PLACE" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="IMO_PLACE_GR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="REG_NO" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_ENGINE" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="VSL_MNG_CNTRY_GR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VSL_FLAG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ABRV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AA" Type="Int16" />
+    <Property Name="FL_USE" Type="Int16" />
+    <Property Name="DESCR_GR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="BNFT_VSLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CWCREWs" EntityType="Self.CWCREW" />
+    <EntitySet Name="CWCREWSERVs" EntityType="Self.CWCREWSERV" />
+    <EntitySet Name="CWPRANKs" EntityType="Self.CWPRANK" />
+    <EntitySet Name="CWRESTHRS" EntityType="Self.CWRESTHR" />
+    <EntitySet Name="VSLs" EntityType="Self.VSL" />
+    <EntitySet Name="VSL_FLAG" EntityType="Self.VSL_FLAG" />
+  </EntityContainer>
+</Schema>

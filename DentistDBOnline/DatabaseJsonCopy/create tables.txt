@@ -1,0 +1,156 @@
+CREATE TABLE `Client` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `FirstName` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `SecondName` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `LastName` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `PersonalIdNumber` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `TypeID` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `BirthDate` date DEFAULT NULL,
+  `Sex` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Phone1` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Phone2` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Email` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Address` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `FirstDate` datetime DEFAULT NULL,
+  `LastDateUpdate` datetime DEFAULT NULL,
+  `ClinicalDisorders` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a11` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a12` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a13` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a14` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a15` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a16` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a17` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a18` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a21` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a22` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a23` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a24` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a25` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a26` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a27` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a28` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a31` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a32` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a33` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a34` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a35` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a36` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a37` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a38` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a41` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a42` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a43` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a44` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a45` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a46` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a47` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a48` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `a51` bit(1) NOT NULL DEFAULT b'0',
+  `a52` bit(1) NOT NULL DEFAULT b'0',
+  `a53` bit(1) NOT NULL DEFAULT b'0',
+  `a54` bit(1) NOT NULL DEFAULT b'0',
+  `a55` bit(1) NOT NULL DEFAULT b'0',
+  `a61` bit(1) NOT NULL DEFAULT b'0',
+  `a62` bit(1) NOT NULL DEFAULT b'0',
+  `a63` bit(1) NOT NULL DEFAULT b'0',
+  `a64` bit(1) NOT NULL DEFAULT b'0',
+  `a65` bit(1) NOT NULL DEFAULT b'0',
+  `a71` bit(1) NOT NULL DEFAULT b'0',
+  `a72` bit(1) NOT NULL DEFAULT b'0',
+  `a73` bit(1) NOT NULL DEFAULT b'0',
+  `a74` bit(1) NOT NULL DEFAULT b'0',
+  `a75` bit(1) NOT NULL DEFAULT b'0',
+  `a81` bit(1) NOT NULL DEFAULT b'0',
+  `a82` bit(1) NOT NULL DEFAULT b'0',
+  `a83` bit(1) NOT NULL DEFAULT b'0',
+  `a84` bit(1) NOT NULL DEFAULT b'0',
+  `a85` bit(1) NOT NULL DEFAULT b'0',
+  `Notes` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `IsDeleted` bit(1) NOT NULL DEFAULT b'0',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=903 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+CREATE TABLE `Doctors` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `Password` varchar(16) CHARACTER SET utf8 DEFAULT NULL,
+  `IsDeleted` bit(1) NOT NULL DEFAULT b'0',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+
+CREATE TABLE `Invoice` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `SupplierId` int(11) DEFAULT NULL,
+  `UserId` int(11) DEFAULT NULL,
+  `IsCashPayment` bit(1) DEFAULT NULL,
+  `InvoiceNumber` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `DateOfPayment` datetime DEFAULT NULL,
+  `Sum` decimal(15,2) DEFAULT NULL,
+  `Currency` varchar(10) CHARACTER SET utf8 DEFAULT NULL,
+  `IsDeleted` bit(1) NOT NULL DEFAULT b'0',
+  PRIMARY KEY (`Id`),
+  KEY `fk_user_id_idx` (`UserId`),
+  KEY `fk_supplier_id` (`SupplierId`),
+  CONSTRAINT `fk_doc_id` FOREIGN KEY (`UserId`) REFERENCES `Doctors` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_supplier_id` FOREIGN KEY (`SupplierId`) REFERENCES `Suppliers` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+
+CREATE TABLE `InvoiceItem` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `InvoiceId` int(11) DEFAULT NULL,
+  `ItemName` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `ValueOfPayment` decimal(15,2) DEFAULT NULL,
+  `CurrencyOfPayment` varchar(10) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  KEY `fk_invoice_id` (`InvoiceId`),
+  CONSTRAINT `fk_invoice_id` FOREIGN KEY (`InvoiceId`) REFERENCES `Invoice` (`Id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+
+CREATE TABLE `StatusTable` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `StatusCode` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `StatusDescription` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `StatusColourCode` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+CREATE TABLE `Suppliers` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `Address` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `BulStat` varchar(15) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+CREATE TABLE `Task` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `ClientId` int(11) NOT NULL,
+  `ToothCode` tinyint(4) NOT NULL,
+  `Date` datetime NOT NULL,
+  `Status` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `Diagnose` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `Price` decimal(15,2) DEFAULT NULL,
+  `Image` varchar(1000) CHARACTER SET utf8 DEFAULT NULL,
+  `DoctorId` int(11) DEFAULT NULL,
+  `PriceNOI` decimal(15,2) DEFAULT NULL,
+  `PriceDT` decimal(15,2) DEFAULT NULL,
+  `IsDeleted` bit(1) NOT NULL DEFAULT b'0',
+  `PaidByCard` bit(1) DEFAULT b'0',
+  `PaidCash` bit(1) DEFAULT b'0',
+  PRIMARY KEY (`Id`),
+  KEY `fk_client_id` (`ClientId`),
+  KEY `fk_doctor_id` (`DoctorId`),
+  CONSTRAINT `fk_client_id` FOREIGN KEY (`ClientId`) REFERENCES `Client` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_doctor_id` FOREIGN KEY (`DoctorId`) REFERENCES `Doctors` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=3297 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+CREATE TABLE `TeethCodes` (
+  `Id` tinyint(4) NOT NULL AUTO_INCREMENT,
+  `ToothName` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci

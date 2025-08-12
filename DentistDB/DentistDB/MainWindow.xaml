@@ -1,0 +1,16 @@
+﻿<Window x:Class="DentistDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Loaded="Window_Loaded" Name="DentistDBMainWindow" Title="Ортодонтална База Данни" Height="250" Width="400" Background="Aqua">
+    <StackPanel>
+        <StackPanel x:Name="LoggedInSP"  HorizontalAlignment="Center" Orientation="Horizontal">
+            <Label Content="Добре дошъл др." FontSize="25"/>
+            <Label Name="LoggedInLabel" FontSize="25"/>
+            <Button x:Name="LogOut" Click="LogOut_Click" Content="Logout" Height="30"/>
+        </StackPanel>
+        <Button Name="PatientsBtn" Content="Списък с Пациенти" Width="120" Margin="0,12" Click="PatientsBtn_Click"/>
+        <Button Name="NewPatientBtn" Content="Нов Пациент" Width="80" Margin="0,12" Click="NewPatientBtn_Click"/>
+        <Button Name="StatusBtn" Content="Справка" Width="50" Margin="0,12" Click="StatusBtn_Click"/>
+        <Button Name="ExpensesBtn" Content="Разходи" Width="50" Margin="0,12" Click="ExpensesBtn_Click"/>
+    </StackPanel>
+</Window>

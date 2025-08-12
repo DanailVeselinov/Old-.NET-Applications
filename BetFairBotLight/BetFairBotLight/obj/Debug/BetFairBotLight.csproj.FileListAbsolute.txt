@@ -1,0 +1,53 @@
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\BetFairBotLight.exe.config
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\BetFairBotLight.exe
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\BetFairBotLight.pdb
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\MainWindow.baml
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\MainWindow.g.cs
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\App.g.cs
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight_MarkupCompile.cache
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.g.resources
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.csproj.GenerateResource.Cache
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.exe
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.pdb
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBot.Properties.Resources.resources
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EntityFramework.dll
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\HtmlAgilityPack.dll
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\Newtonsoft.Json.dll
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EntityFramework.xml
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\HtmlAgilityPack.pdb
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\HtmlAgilityPack.xml
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\Newtonsoft.Json.xml
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EddyBetFairApp.p12
+c:\users\danail veselinov\documents\visual studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\BetFairBotLight.exe.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.exe
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EddyBetFairApp.p12
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\BetFairBotLight.exe
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\BetFairBotLight.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\MainWindow.baml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\MainWindow.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\App.g.cs
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight_MarkupCompile.cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.g.resources
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBot.Properties.Resources.resources
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.csproj.GenerateResource.Cache
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\BetFairBotLight.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\BetFairBotLight.application
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.exe.manifest
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.application
+D:\Downloads\Programming\Projects\BetFairBotLight\BetFairBotLight\bin\Debug\BetFairBotLight.exe.config
+D:\Downloads\Programming\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.exe
+D:\Downloads\Programming\Projects\BetFairBotLight\BetFairBotLight\obj\Debug\BetFairBotLight.pdb

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabasePlacedBetsModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DatabasePlacedBetsModelStoreContainer">
+    <EntitySet Name="PlacedBets" EntityType="DatabasePlacedBetsModel.Store.PlacedBets" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="PlacedBets">
+    <Key>
+      <PropertyRef Name="betId" />
+    </Key>
+    <Property Name="resultCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="sizeMatched" Type="float" Nullable="false" />
+    <Property Name="success" Type="bit" Nullable="false" />
+    <Property Name="betlineId" Type="int" />
+    <Property Name="datePlaced" Type="datetime" Nullable="false" />
+    <Property Name="marketId" Type="int" Nullable="false" />
+    <Property Name="marketMenuPath" Type="nvarchar" MaxLength="200" />
+    <Property Name="averagePrice" Type="float" Nullable="false" />
+    <Property Name="Selection" Type="nvarchar" MaxLength="50" />
+    <Property Name="dateSettled" Type="datetime" />
+    <Property Name="eventId" Type="int" />
+    <Property Name="betId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sortedOrder" Type="int" />
+    <Property Name="marketName" Type="nvarchar" MaxLength="20" />
+    <Property Name="score" Type="ntext" />
+    <Property Name="eventType" Type="int" />
+    <Property Name="betType" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+</Schema>

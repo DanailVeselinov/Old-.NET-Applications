@@ -1,0 +1,21 @@
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="NewsToEmailWebApp._Default" %>
+
+<asp:Content runat="server" ID="MainContent" ContentPlaceHolderID="MainContent">   
+    <p>
+        Welcome to my unique News to E-mail service web site.</p>
+    <p>
+        This web site provides you access to an unique totally free service.</p>
+    <p>
+        You want to read your favorite <b>news</b> <strong>website</strong> (www.sportal.bg, www.BBC.com, etc.) no matter which and/or all sports <strong>Livescore</strong>?
+    </p>
+    <p>
+        Easy, free, without any unneccessary information like advertising or pictures.
+    </p>
+    <p>
+        Get this information on your <b>e-mail</b>. Just <a href="Account/Register.aspx">Register</a> Free and get Started.</p>
+    <p>
+        We all know how <strong>expensive internet</strong> is abroad, so if you travel alot and you want to stay updated with all the <strong>news allover the world</strong>. <br />All you need is <strong>e-mail</strong> access and our free News to E-mail service.</p>
+    <p>
+        This service is made by a <b>sailor</b> and is very convinient for this proffesion, so I made it available for everybodey who want to use it. I hope you enjoy it.
+    </p>   
+</asp:Content>

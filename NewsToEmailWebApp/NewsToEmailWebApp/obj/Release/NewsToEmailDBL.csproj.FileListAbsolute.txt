@@ -1,0 +1,13 @@
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\NewsToEmailDBL.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\NewsToEmailDBL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\NewsToEmailDBL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\obj\Release\NewsToEmailDBL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\obj\Release\NewsToEmailDBL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\EntityFramework.SqlServerCompact.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\System.Data.SqlServerCe.Entity.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Release\EntityFramework.SqlServerCompact.xml

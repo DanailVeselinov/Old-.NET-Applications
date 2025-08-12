@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BFBDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PlacedBet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="betId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="resultCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sizeMatched" Type="Double" />
+    <Property Name="success" Type="Boolean" Nullable="false" />
+    <Property Name="betlineId" Type="Int32" />
+    <Property Name="datePlaced" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="eventId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="marketMenuPath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="averagePrice" Type="Double" />
+    <Property Name="Selection" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dateSettled" Type="DateTime" Precision="3" />
+    <Property Name="score" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="sortedOrder" Type="Int32" />
+    <Property Name="marketName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="betType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="BFDBLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PlacedBets" EntityType="Self.PlacedBet" />
+  </EntityContainer>
+</Schema>

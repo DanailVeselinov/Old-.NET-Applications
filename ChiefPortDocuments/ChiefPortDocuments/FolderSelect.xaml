@@ -1,0 +1,19 @@
+﻿<Window x:Class="ChiefPortDocuments.FolderSelect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Folder Select" WindowStyle="None" MouseMove="Window_MouseMove" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <ScrollViewer>
+        <StackPanel>
+            <Label Content="Select Destination Folder"/>
+        <StackPanel x:Name="SelectPanel" Visibility="Visible">
+            <ListView x:Name="foldersLV" ItemsSource="{Binding}">                
+            </ListView>
+        </StackPanel>
+        <StackPanel x:Name="NamePanel" Visibility="Collapsed">
+                <Label Content="Enter Folder Name"/>
+                <TextBox x:Name="fileNameTB" Text="New Folder"/>
+        </StackPanel>
+            <Button Content="Ok" Click="Button_Click" IsDefault="True"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

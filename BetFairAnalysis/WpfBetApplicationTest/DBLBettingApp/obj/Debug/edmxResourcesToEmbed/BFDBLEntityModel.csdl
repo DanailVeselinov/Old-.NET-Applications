@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BFDBLModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BFDBLEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="ActiveBetLines1" EntityType="BFDBLModel.ActiveBetLines" />
+    <EntitySet Name="Markets" EntityType="BFDBLModel.Market" />
+  </EntityContainer>
+  <EntityType Name="ActiveBetLines">
+    <Key>
+      <PropertyRef Name="BetLineID" />
+    </Key>
+    <Property Type="Guid" Name="BetLineID" Nullable="false" />
+    <Property Type="String" Name="EventType" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MarketType" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStarted" Nullable="false" Precision="3" />
+    <Property Type="Double" Name="OddLimitMin" />
+    <Property Type="Double" Name="OddLimitMax" />
+    <Property Type="DateTime" Name="FromEventDate" Precision="3" />
+    <Property Type="DateTime" Name="ToEventDate" Precision="3" />
+    <Property Type="Boolean" Name="IsInPlay" />
+    <Property Type="Boolean" Name="IsBSP" />
+    <Property Type="Int16" Name="ExchangeID" />
+    <Property Type="String" Name="CountryCodes" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="String" Name="MarketTypes" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RunnersMin" />
+    <Property Type="Int32" Name="RunnersMax" />
+    <Property Type="Int32" Name="WinnersMin" />
+    <Property Type="Int32" Name="WinnersMax" />
+    <Property Type="Decimal" Name="TotalAmmountMatchedMax" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="TotalAmmountMatchedMin" Precision="19" Scale="4" />
+    <Property Type="Double" Name="ProfitPerBet" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Market">
+    <Key>
+      <PropertyRef Name="MarketID" />
+    </Key>
+    <Property Type="String" Name="MarketName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MarketType" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MarketStatus" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="EventDate" Precision="3" />
+    <Property Type="String" Name="MenuPath" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EventHierarchy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BetDelay" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Byte" Name="ExchangeID" />
+    <Property Type="String" Name="ISO3CountryCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastRefresh" Precision="3" />
+    <Property Type="Int32" Name="NumberOfRunners" />
+    <Property Type="Int32" Name="NumberOfWinners" />
+    <Property Type="Double" Name="TotalAmountMatched" />
+    <Property Type="Boolean" Name="BSPMarket" />
+    <Property Type="Boolean" Name="TurningInPlay" />
+    <Property Type="Int32" Name="MarketID" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,13 @@
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\ConsoleTest.exe
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\ConsoleTest.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\obj\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\obj\Debug\ConsoleTest.exe
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\obj\Debug\ConsoleTest.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\WpfBetApplication.exe
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\WpfBetApplication.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\BFDBL.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\DBLBettingApp.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\DBLBettingApp.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplication\ConsoleTest\bin\Debug\EntityFramework.xml

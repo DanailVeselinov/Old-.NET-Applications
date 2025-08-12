@@ -1,0 +1,11 @@
+﻿<Window x:Class="StatisticsTest.StatisticsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StatisticsWindow" Height="300" Width="300">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+        <UniformGrid Columns="2" x:Name="_mainStatsGrid"/>
+        <UniformGrid Columns="2" x:Name="_sortedOrderSeparatedGrid"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

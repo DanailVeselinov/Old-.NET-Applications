@@ -1,0 +1,11 @@
+﻿<Window x:Class="BetFairBot.DialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Select Events" SizeToContent="WidthAndHeight" Opacity="0.8" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterOwner">
+    <StackPanel>
+        <Label HorizontalAlignment="Center" FontSize="25" x:Name="_TitleLabel"/>
+        <Label Visibility="Hidden" FontSize="25" x:Name="_TitleLabelType"/>
+        <WrapPanel x:Name="_CheckBoxStackPanel" MaxHeight="280"/>
+        <Button Content="OK" IsDefault="True" Click="Button_Click"/>
+    </StackPanel>
+</Window>

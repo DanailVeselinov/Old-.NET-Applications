@@ -1,0 +1,14 @@
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\NewsToEmailDBL.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\NewsToEmailDBL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\NewsToEmailDBL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\obj\Debug\NewsToEmailDBL.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\obj\Debug\NewsToEmailDBL.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\NewsToEmailWebApp\NewsToEmailDBL\obj\Debug\NewsToEmailDBL.csprojResolveAssemblyReference.cache

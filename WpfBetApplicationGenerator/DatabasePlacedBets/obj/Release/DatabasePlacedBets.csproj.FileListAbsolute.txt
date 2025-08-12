@@ -1,0 +1,35 @@
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\EntityFramework.SqlServerCompact.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\EntityFramework.SqlServerCompact.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.sdf
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\EntityFramework.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\EntityFramework.xml
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2012\Projects\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.pdb
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.sdf
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.dll.config
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.pdb
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\EntityFramework.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\EntityFramework.xml
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.csprojResolveAssemblyReference.cache
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.dll
+D:\WpfBetApplicationGenerator\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\BFBDB.mdf
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\BFBDB_log.ldf
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.dll.config
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\bin\Release\DatabasePlacedBets.pdb
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.dll
+C:\Users\Eddy\Documents\Visual Studio 2013\Projects\WpfBetApplicationGenerator\DatabasePlacedBets\obj\Release\DatabasePlacedBets.pdb

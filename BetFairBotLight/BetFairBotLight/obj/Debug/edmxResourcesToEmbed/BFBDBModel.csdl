@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BFBDB.MDFModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Betlines">
+    <Key>
+      <PropertyRef Name="BetlineId" />
+    </Key>
+    <Property Name="BetlineId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stakeRangeMin" Type="Double" Nullable="false" />
+    <Property Name="stakeRangeMax" Type="Double" Nullable="false" />
+    <Property Name="initialProfitPerBet" Type="Double" Nullable="false" />
+    <Property Name="profitPerBet" Type="Double" Nullable="false" />
+    <Property Name="lastBetLost" Type="Boolean" Nullable="false" />
+    <Property Name="isActive" Type="Boolean" Nullable="false" />
+    <Property Name="currencyCode" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Filter_FilterId" Type="Int32" />
+    <Property Name="lastPlacedBetId" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="algorithmName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="betType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ownersUserName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="betlineName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="profitPerBudjet" Type="Double" Nullable="false" />
+    <Property Name="ballance" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="PlacedBets" Relationship="Self.FK_Betline1" FromRole="Betlines" ToRole="PlacedBets" />
+    <NavigationProperty Name="Filters" Relationship="Self.FK_Filter1" FromRole="Betlines" ToRole="Filters" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_OwnerUser" FromRole="Betlines" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Filters">
+    <Key>
+      <PropertyRef Name="FilterId" />
+    </Key>
+    <Property Name="FilterId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="marketTimeFrom" Type="DateTime" Precision="3" />
+    <Property Name="marketTimeTo" Type="DateTime" Precision="3" />
+    <Property Name="isActive" Type="Boolean" />
+    <Property Name="totalAmountMatchedMin" Type="Double" />
+    <Property Name="totalAmountMatchedMax" Type="Double" />
+    <Property Name="marketNames" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="sortedOrders" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="maxBetsCount" Type="Byte" />
+    <Property Name="maxAmmountIncremented" Type="Double" />
+    <Property Name="maxAmmountIncrementedPerBudjet" Type="Double" Nullable="false" />
+    <Property Name="goalDifferenceMin" Type="Int16" />
+    <Property Name="goalDifferenceMax" Type="Int16" />
+    <Property Name="textQuery" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="exchangeIds" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="eventTypeIds" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="compeitionIds" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="marketIds" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="venues" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="bspOnly" Type="Boolean" />
+    <Property Name="inPlayOnly" Type="Boolean" />
+    <Property Name="marketBettingTypes" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="marketCountries" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="withOrders" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Betlines" Relationship="Self.FK_Filter1" FromRole="Filters" ToRole="Betlines" />
+  </EntityType>
+  <EntityType Name="PlacedBets">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="betId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="resultCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sizeMatched" Type="Double" />
+    <Property Name="success" Type="Boolean" Nullable="false" />
+    <Property Name="betlineId" Type="Int32" />
+    <Property Name="datePlaced" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="eventId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="marketMenuPath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="averagePrice" Type="Double" />
+    <Property Name="Selection" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dateSettled" Type="DateTime" Precision="3" />
+    <Property Name="score" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="sortedOrder" Type="Int32" />
+    <Property Name="marketName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="betType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Betlines" Relationship="Self.FK_Betline1" FromRole="PlacedBets" ToRole="Betlines" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="userName" />
+    </Key>
+    <Property Name="userName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="isActive" Type="Boolean" Nullable="false" />
+    <Property Name="appKey" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="certFileName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Betlines" Relationship="Self.FK_OwnerUser" FromRole="Users" ToRole="Betlines" />
+  </EntityType>
+  <Association Name="FK_Betline1">
+    <End Role="Betlines" Type="Self.Betlines" Multiplicity="0..1" />
+    <End Role="PlacedBets" Type="Self.PlacedBets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Betlines">
+        <PropertyRef Name="BetlineId" />
+      </Principal>
+      <Dependent Role="PlacedBets">
+        <PropertyRef Name="betlineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Filter1">
+    <End Role="Filters" Type="Self.Filters" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Betlines" Type="Self.Betlines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Filters">
+        <PropertyRef Name="FilterId" />
+      </Principal>
+      <Dependent Role="Betlines">
+        <PropertyRef Name="Filter_FilterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OwnerUser">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Betlines" Type="Self.Betlines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="userName" />
+      </Principal>
+      <Dependent Role="Betlines">
+        <PropertyRef Name="ownersUserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Betlines" EntityType="Self.Betlines" />
+    <EntitySet Name="Filters" EntityType="Self.Filters" />
+    <EntitySet Name="PlacedBets" EntityType="Self.PlacedBets" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_Betline1" Association="Self.FK_Betline1">
+      <End Role="Betlines" EntitySet="Betlines" />
+      <End Role="PlacedBets" EntitySet="PlacedBets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Filter1" Association="Self.FK_Filter1">
+      <End Role="Filters" EntitySet="Filters" />
+      <End Role="Betlines" EntitySet="Betlines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OwnerUser" Association="Self.FK_OwnerUser">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Betlines" EntitySet="Betlines" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

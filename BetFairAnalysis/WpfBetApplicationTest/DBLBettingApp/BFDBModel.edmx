@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BFDBLModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="BFDBLModelStoreContainer">
+          <EntitySet Name="Betlines" EntityType="BFDBLModel.Store.Betlines" store:Type="Tables" />
+          <EntitySet Name="Emails" EntityType="BFDBLModel.Store.Emails" store:Type="Tables" />
+          <EntitySet Name="Filters" EntityType="BFDBLModel.Store.Filters" store:Type="Tables" />
+          <EntitySet Name="PlacedBets" EntityType="BFDBLModel.Store.PlacedBets" store:Type="Tables" />
+          <AssociationSet Name="Betline" Association="BFDBLModel.Store.Betline">
+            <End Role="Betlines" EntitySet="Betlines" />
+            <End Role="PlacedBets" EntitySet="PlacedBets" />
+          </AssociationSet>
+          <AssociationSet Name="Filter" Association="BFDBLModel.Store.Filter">
+            <End Role="Filters" EntitySet="Filters" />
+            <End Role="Betlines" EntitySet="Betlines" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Betlines">
+          <Key>
+            <PropertyRef Name="BetlineId" />
+          </Key>
+          <Property Name="BetlineId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="stakeRangeMin" Type="float" Nullable="false" />
+          <Property Name="stakeRangeMax" Type="float" Nullable="false" />
+          <Property Name="initialProfitPerBet" Type="float" Nullable="false" />
+          <Property Name="profitPerBet" Type="float" Nullable="false" />
+          <Property Name="lastBetLost" Type="bit" Nullable="false" />
+          <Property Name="isActive" Type="bit" Nullable="false" />
+          <Property Name="currencyCode" Type="nvarchar" MaxLength="5" />
+          <Property Name="Filter_FilterId" Type="int" />
+          <Property Name="lastPlacedBetId" Type="nvarchar" MaxLength="500" />
+          <Property Name="algorithmName" Type="nvarchar" MaxLength="50" />
+          <Property Name="betType" Type="nvarchar" MaxLength="20" />
+          <Property Name="betlineName" Type="nvarchar" MaxLength="100" />
+          <Property Name="ballance" Type="money" />
+        </EntityType>
+        <EntityType Name="Emails">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="email" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Filters">
+          <Key>
+            <PropertyRef Name="FilterId" />
+          </Key>
+          <Property Name="FilterId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="eventTypes" Type="nvarchar" />
+          <Property Name="fromEventDate" Type="datetime" />
+          <Property Name="toEventDate" Type="datetime" />
+          <Property Name="isInPlay" Type="bit" Nullable="false" />
+          <Property Name="isBSP" Type="bit" />
+          <Property Name="exchangeId" Type="tinyint" />
+          <Property Name="countryCodes" Type="nvarchar" Nullable="false" />
+          <Property Name="isActive" Type="bit" />
+          <Property Name="marketTypes" Type="nvarchar" />
+          <Property Name="runnersMin" Type="int" Nullable="false" />
+          <Property Name="runnersMax" Type="int" Nullable="false" />
+          <Property Name="winnersMin" Type="int" Nullable="false" />
+          <Property Name="winnersMax" Type="int" Nullable="false" />
+          <Property Name="totalAmountMatchedMin" Type="float" />
+          <Property Name="totalAmountMatchedMax" Type="float" />
+          <Property Name="marketNames" Type="nvarchar" />
+          <Property Name="sortedOrdersMatchOdds" Type="nvarchar" MaxLength="20" />
+          <Property Name="sortedOrdersCorrectScore" Type="nvarchar" MaxLength="50" />
+          <Property Name="maxBetsCount" Type="tinyint" />
+          <Property Name="maxAmmountIncremented" Type="int" />
+          <Property Name="goalDifferenceMin" Type="smallint" />
+          <Property Name="goalDifferenceMax" Type="smallint" />
+        </EntityType>
+        <EntityType Name="PlacedBets">
+          <Key>
+            <PropertyRef Name="betId" />
+          </Key>
+          <Property Name="resultCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="sizeMatched" Type="float" Nullable="false" />
+          <Property Name="success" Type="bit" Nullable="false" />
+          <Property Name="betlineId" Type="int" />
+          <Property Name="datePlaced" Type="datetime" Nullable="false" />
+          <Property Name="marketId" Type="int" Nullable="false" />
+          <Property Name="marketMenuPath" Type="nvarchar" MaxLength="200" />
+          <Property Name="averagePrice" Type="float" Nullable="false" />
+          <Property Name="Selection" Type="nvarchar" MaxLength="50" />
+          <Property Name="dateSettled" Type="datetime" />
+          <Property Name="eventId" Type="int" />
+          <Property Name="betId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="sortedOrder" Type="int" />
+          <Property Name="marketName" Type="nvarchar" MaxLength="20" />
+          <Property Name="score" Type="ntext" />
+          <Property Name="eventType" Type="int" />
+          <Property Name="betType" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="Betline">
+          <End Role="Betlines" Type="BFDBLModel.Store.Betlines" Multiplicity="0..1" />
+          <End Role="PlacedBets" Type="BFDBLModel.Store.PlacedBets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Betlines">
+              <PropertyRef Name="BetlineId" />
+            </Principal>
+            <Dependent Role="PlacedBets">
+              <PropertyRef Name="betlineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Filter">
+          <End Role="Filters" Type="BFDBLModel.Store.Filters" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Betlines" Type="BFDBLModel.Store.Betlines" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Filters">
+              <PropertyRef Name="FilterId" />
+            </Principal>
+            <Dependent Role="Betlines">
+              <PropertyRef Name="Filter_FilterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BFDBLModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BFDBLEntities1" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Betlines" EntityType="BFDBLModel.Betline" />
+          <EntitySet Name="Emails" EntityType="BFDBLModel.Email" />
+          <EntitySet Name="PlacedBets" EntityType="BFDBLModel.PlacedBet" />
+          <AssociationSet Name="Betline1" Association="BFDBLModel.Betline1">
+            <End Role="Betline" EntitySet="Betlines" />
+            <End Role="PlacedBet" EntitySet="PlacedBets" />
+          </AssociationSet>
+          <EntitySet Name="Filters" EntityType="BFDBLModel.Filter" />
+          <AssociationSet Name="Filter1" Association="BFDBLModel.Filter1">
+            <End Role="Filter" EntitySet="Filters" />
+            <End Role="Betline" EntitySet="Betlines" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Betline">
+          <Key>
+            <PropertyRef Name="BetlineId" />
+          </Key>
+          <Property Type="Int32" Name="BetlineId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Double" Name="stakeRangeMin" Nullable="false" />
+          <Property Type="Double" Name="stakeRangeMax" Nullable="false" />
+          <Property Type="Double" Name="initialProfitPerBet" Nullable="false" />
+          <Property Type="Double" Name="profitPerBet" Nullable="false" />
+          <Property Type="Boolean" Name="lastBetLost" Nullable="false" />
+          <Property Type="Boolean" Name="isActive" Nullable="false" />
+          <Property Type="String" Name="currencyCode" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Filter_FilterId" />
+          <Property Type="String" Name="lastPlacedBetId" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="algorithmName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="betType" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="betlineName" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="PlacedBets" Relationship="BFDBLModel.Betline1" FromRole="Betline" ToRole="PlacedBet" />
+          <Property Type="Decimal" Name="ballance" Precision="19" Scale="4" />
+          <NavigationProperty Name="Filter" Relationship="BFDBLModel.Filter1" FromRole="Betline" ToRole="Filter" />
+        </EntityType>
+        <EntityType Name="Email">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="email1" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PlacedBet">
+          <Key>
+            <PropertyRef Name="betId" />
+          </Key>
+          <Property Type="String" Name="resultCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="sizeMatched" Nullable="false" />
+          <Property Type="Boolean" Name="success" Nullable="false" />
+          <Property Type="Int32" Name="betlineId" />
+          <Property Type="DateTime" Name="datePlaced" Nullable="false" Precision="3" />
+          <Property Type="Int32" Name="marketId" Nullable="false" />
+          <Property Type="String" Name="marketMenuPath" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="averagePrice" Nullable="false" />
+          <Property Type="String" Name="Selection" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="dateSettled" Precision="3" />
+          <Property Type="Int32" Name="eventId" />
+          <Property Type="Int64" Name="betId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="sortedOrder" />
+          <Property Type="String" Name="marketName" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="score" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="eventType" />
+          <NavigationProperty Name="Betline" Relationship="BFDBLModel.Betline1" FromRole="PlacedBet" ToRole="Betline" />
+          <Property Type="String" Name="betType" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="Betline1">
+          <End Type="BFDBLModel.Betline" Role="Betline" Multiplicity="0..1" />
+          <End Type="BFDBLModel.PlacedBet" Role="PlacedBet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Betline">
+              <PropertyRef Name="BetlineId" />
+            </Principal>
+            <Dependent Role="PlacedBet">
+              <PropertyRef Name="betlineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Filter">
+          <Key>
+            <PropertyRef Name="FilterId" />
+          </Key>
+          <Property Type="Int32" Name="FilterId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="eventTypes" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="fromEventDate" Precision="3" />
+          <Property Type="DateTime" Name="toEventDate" Precision="3" />
+          <Property Type="Boolean" Name="isInPlay" Nullable="false" />
+          <Property Type="Boolean" Name="isBSP" />
+          <Property Type="Byte" Name="exchangeId" />
+          <Property Type="String" Name="countryCodes" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="isActive" />
+          <Property Type="String" Name="marketTypes" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="runnersMin" Nullable="false" />
+          <Property Type="Int32" Name="runnersMax" Nullable="false" />
+          <Property Type="Int32" Name="winnersMin" Nullable="false" />
+          <Property Type="Int32" Name="winnersMax" Nullable="false" />
+          <Property Type="Double" Name="totalAmountMatchedMin" />
+          <Property Type="Double" Name="totalAmountMatchedMax" />
+          <Property Type="String" Name="marketNames" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="sortedOrdersMatchOdds" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="sortedOrdersCorrectScore" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Byte" Name="maxBetsCount" />
+          <Property Type="Int32" Name="maxAmmountIncremented" />
+          <Property Type="Int16" Name="goalDifferenceMin" />
+          <Property Type="Int16" Name="goalDifferenceMax" />
+          <NavigationProperty Name="Betlines" Relationship="BFDBLModel.Filter1" FromRole="Filter" ToRole="Betline" />
+        </EntityType>
+        <Association Name="Filter1">
+          <End Type="BFDBLModel.Filter" Role="Filter" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="BFDBLModel.Betline" Role="Betline" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Filter">
+              <PropertyRef Name="FilterId" />
+            </Principal>
+            <Dependent Role="Betline">
+              <PropertyRef Name="Filter_FilterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BFDBLModelStoreContainer" CdmEntityContainer="BFDBLEntities1">
+          <EntitySetMapping Name="Betlines">
+            <EntityTypeMapping TypeName="BFDBLModel.Betline">
+              <MappingFragment StoreEntitySet="Betlines">
+                <ScalarProperty Name="ballance" ColumnName="ballance" />
+                <ScalarProperty Name="betlineName" ColumnName="betlineName" />
+                <ScalarProperty Name="betType" ColumnName="betType" />
+                <ScalarProperty Name="algorithmName" ColumnName="algorithmName" />
+                <ScalarProperty Name="lastPlacedBetId" ColumnName="lastPlacedBetId" />
+                <ScalarProperty Name="Filter_FilterId" ColumnName="Filter_FilterId" />
+                <ScalarProperty Name="currencyCode" ColumnName="currencyCode" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+                <ScalarProperty Name="lastBetLost" ColumnName="lastBetLost" />
+                <ScalarProperty Name="profitPerBet" ColumnName="profitPerBet" />
+                <ScalarProperty Name="initialProfitPerBet" ColumnName="initialProfitPerBet" />
+                <ScalarProperty Name="stakeRangeMax" ColumnName="stakeRangeMax" />
+                <ScalarProperty Name="stakeRangeMin" ColumnName="stakeRangeMin" />
+                <ScalarProperty Name="BetlineId" ColumnName="BetlineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Emails">
+            <EntityTypeMapping TypeName="BFDBLModel.Email">
+              <MappingFragment StoreEntitySet="Emails">
+                <ScalarProperty Name="email1" ColumnName="email" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlacedBets">
+            <EntityTypeMapping TypeName="BFDBLModel.PlacedBet">
+              <MappingFragment StoreEntitySet="PlacedBets">
+                <ScalarProperty Name="betType" ColumnName="betType" />
+                <ScalarProperty Name="eventType" ColumnName="eventType" />
+                <ScalarProperty Name="score" ColumnName="score" />
+                <ScalarProperty Name="marketName" ColumnName="marketName" />
+                <ScalarProperty Name="sortedOrder" ColumnName="sortedOrder" />
+                <ScalarProperty Name="betId" ColumnName="betId" />
+                <ScalarProperty Name="eventId" ColumnName="eventId" />
+                <ScalarProperty Name="dateSettled" ColumnName="dateSettled" />
+                <ScalarProperty Name="Selection" ColumnName="Selection" />
+                <ScalarProperty Name="averagePrice" ColumnName="averagePrice" />
+                <ScalarProperty Name="marketMenuPath" ColumnName="marketMenuPath" />
+                <ScalarProperty Name="marketId" ColumnName="marketId" />
+                <ScalarProperty Name="datePlaced" ColumnName="datePlaced" />
+                <ScalarProperty Name="betlineId" ColumnName="betlineId" />
+                <ScalarProperty Name="success" ColumnName="success" />
+                <ScalarProperty Name="sizeMatched" ColumnName="sizeMatched" />
+                <ScalarProperty Name="resultCode" ColumnName="resultCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Filters">
+            <EntityTypeMapping TypeName="BFDBLModel.Filter">
+              <MappingFragment StoreEntitySet="Filters">
+                <ScalarProperty Name="goalDifferenceMax" ColumnName="goalDifferenceMax" />
+                <ScalarProperty Name="goalDifferenceMin" ColumnName="goalDifferenceMin" />
+                <ScalarProperty Name="maxAmmountIncremented" ColumnName="maxAmmountIncremented" />
+                <ScalarProperty Name="maxBetsCount" ColumnName="maxBetsCount" />
+                <ScalarProperty Name="sortedOrdersCorrectScore" ColumnName="sortedOrdersCorrectScore" />
+                <ScalarProperty Name="sortedOrdersMatchOdds" ColumnName="sortedOrdersMatchOdds" />
+                <ScalarProperty Name="marketNames" ColumnName="marketNames" />
+                <ScalarProperty Name="totalAmountMatchedMax" ColumnName="totalAmountMatchedMax" />
+                <ScalarProperty Name="totalAmountMatchedMin" ColumnName="totalAmountMatchedMin" />
+                <ScalarProperty Name="winnersMax" ColumnName="winnersMax" />
+                <ScalarProperty Name="winnersMin" ColumnName="winnersMin" />
+                <ScalarProperty Name="runnersMax" ColumnName="runnersMax" />
+                <ScalarProperty Name="runnersMin" ColumnName="runnersMin" />
+                <ScalarProperty Name="marketTypes" ColumnName="marketTypes" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+                <ScalarProperty Name="countryCodes" ColumnName="countryCodes" />
+                <ScalarProperty Name="exchangeId" ColumnName="exchangeId" />
+                <ScalarProperty Name="isBSP" ColumnName="isBSP" />
+                <ScalarProperty Name="isInPlay" ColumnName="isInPlay" />
+                <ScalarProperty Name="toEventDate" ColumnName="toEventDate" />
+                <ScalarProperty Name="fromEventDate" ColumnName="fromEventDate" />
+                <ScalarProperty Name="eventTypes" ColumnName="eventTypes" />
+                <ScalarProperty Name="FilterId" ColumnName="FilterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

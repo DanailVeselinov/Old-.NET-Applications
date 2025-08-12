@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>WpfColorFontDialog</id>
+    <version>1.0.7</version>
+    <title>Wpf Color/Font Dialog</title>
+    <authors>Sverre Kristoffer Skodje</authors>
+    <owners>Sverre Kristoffer Skodje</owners>
+    <projectUrl>https://github.com/sskodje/WpfColorFont</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A wpf color and font picker.</description>
+    <summary />
+    <releaseNotes>Updated NuGet package to support PackageReference system.</releaseNotes>
+    <language>en-GB</language>
+    <tags>wpf font dialog color</tags>
+  </metadata>
+</package>
